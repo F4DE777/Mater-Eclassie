@@ -1,6 +1,6 @@
 import React,  {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
-import SchLogo from '../assets/epitome-school-logo-bckgrnd-246x300.png'
+import SchLogo from '../assets/MaryLandlogo.png'
 import fIcon from '../assets/Icon feather-user.svg';
 import {navMenus} from './MenuItems';
 import Dropdown from './Dropdown';
@@ -81,7 +81,7 @@ function NavBar() {
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <NavLink to={'/academics'} className='nav-links' onClick={closeMobileMenu}>
-                  ACADEMICS
+                ADMISSION
                 </NavLink>
                 {activeMenu.menu2 && <Dropdown menuArray={navMenus.academics}/>}
               </li>
@@ -101,14 +101,14 @@ function NavBar() {
               </li>
               <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  >
                 <NavLink to={'/news'} className='nav-links' onClick={closeMobileMenu}>
-                    NEWS
+                  GALLERY
                 </NavLink>
                 {activeMenu.menu5 && <Dropdown menuArray={navMenus.news}/>}
               </li>
 
               <li className='nav-item '> 
                 <NavLink to={'/gallery'} className='nav-links' onClick={closeMobileMenu}>
-                      GALLERY
+                      NEWS AND EVENTS
                 </NavLink>
               </li>
 

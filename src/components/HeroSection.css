@@ -3,29 +3,69 @@
     z-index: 0;
 }
 
+.carousel::after{
+        display: block;
+        clear: both;
+        content: "";
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 180px 180px 0 0;
+        z-index: 100;
+        margin-top: -100px;
+        height: 100px;
+        width: 100%;
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border: 10px solid transparent;
+        border-bottom: 0;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        background-image:
+        linear-gradient(
+            #4CA149,
+            #4CA149CF 50%,
+            #4CA149
+        );
+
+    }
+
 .imgCaro{
     width: 100%;
     height: 60rem;
     object-fit: cover;
 }
 
-.carousel-control-prev{
-    display: none;
-}
 
-.carousel-control-next{
-    display: none;
-}
 
 
 
 
 .carousel-indicators > button.active {
     opacity: 1;
-    background-color: #4287BD !important;
-    border-color: #4287BD !important;
+    width: 14px !important;
+    height:60px  !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
     outline: none;
     border: none;
+    border-radius: 7px !important;
+
+}
+
+.carousel-indicators button{
+    width: 14px !important;
+    height: 14px !important;
+    margin: 3px 5px !important;
+    border-radius: 7px !important;
+    background-color: #4CA14900 !important;
+    border: 1px solid #fff !important;
+    transition: height .5s linear ;
+
+}
+
+.carousel-indicators button:focus{
+        outline:0;
+        border-color: #4287BD;
 }
 
 
@@ -35,13 +75,13 @@
     bottom: 10px;
     left: 0;
     z-index: 15;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
+    flex-direction: column;
+    height: 100%;
     justify-content: center;
     padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 0;
+    margin-left: 1%;
     list-style: none;
     outline: none;
     border: none;
@@ -49,38 +89,91 @@
 
 
 
-/* .carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+
+.visually-hidden{
+    display: none;
+}
+
+
+
+.carousel-control-next {
+    left: 21px;
+    transform: rotate(-91deg);
+    position: absolute;
+    margin-top: 20% !important;
+    justify-content: right !important;
+    height: 10px;
+    width: 18px !important;
+    font-size: 50px;
+
+}
+.carousel-control-next::after{
+    content: '\01F862';
+    color: #fff;
+    font-size: 54px;
+    z-index: 100;
+    right: 0;
+    width: 20px;
+    height: 80px;
+}
+
+.carousel-control-prev {
+    left: 21px;
+    transform: rotate(91deg) !important;
+    position: absolute;
+    margin-top: 29% !important;
+    justify-content: right !important;
+    height: 10px;
+    font-size: 50px;
+    width: 20px !important;
+}
+
+.carousel-control-prev::after{
+    content: '\01F862';
+    color: #fff;
+    font-size: 54px;
+    z-index: 100;
+    right: 0;
+    width: 20px;
+    height: 80px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    text-align: center;
     opacity: .5;
-    transition: opacity .6s ease;
-} */
-
-.carousel-indicators button{
-    width: 4rem !important;
-    height: 7px !important;
-    margin: 0 5px !important;
-    border-radius: 4px !important;
-    background-color: #fff !important;
-    border: 2px solid #fff !important;
+    transition: opacity .15s ease;
+    color: transparent!important;
 }
 
-.carousel-indicators button:focus{
-        outline:0;
-        border-color: #4287BD;
+
+
+
+
+.believe{
+    position: relative;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin: 0 auto;
+    top: -80px;
 }
+
+
+.believe h4{
+    font-size: 45px;
+    font-family: skia;
+    color: #fff;
+}
+
 
 
 .intro-container{
@@ -99,9 +192,14 @@
     flex: 1;
 }
 
+.welcome-note label{
+    font-family: monserat;
+    font-size: 20px;
+    color: #F29A38;
+}
 
 .welcome-note h3{
-    font-family: noteworthy;
+    font-family: skia;
     font-size: 50px;
 }
 
@@ -132,22 +230,49 @@
     width: 90%;
 }
 
-.initials{
-    margin-top: 2rem;
+.tip-block{
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    background-color: #F29A38;
+    left: 0;
 }
+
+
 
 .read{
     font-family:monserat ;
     font-size: 20px;
     text-decoration: none !important;
+    color: #4CA149;
+    background-color: #fff;
+    border: 1px solid #4CA149;
+    height: 50px;
+    width: 150px;
+    transition: all .5s ease;
 }
 
-.read:hover::after{
-    padding-left: 20px;
-    text-decoration: none;
+.read:focus{
+    outline:#4CA149 ;
+    border: linear-gradient(
+        #4CA149,
+        #4CA149
+    );
+    
 }
 
+.read:hover{
+    background-color: #4CA149;
+    color: #fff;
+}
 
+.green-line{
+    position: absolute;
+    border-bottom: 2px solid #4CA149;
+    width: 700px;
+    left: 30%;
+    margin-top: -30px;
+}
 
   .page-trans {
     /* position: absolute; */
@@ -156,15 +281,52 @@
     right: 0;
     }
 
-.read::after{
-    content: "\01F862";
-    font-size: 25px;
-    transform: translateY(-2px);
-    position: absolute;
-    transition: padding-left 1.5s ease-out;
+.hooked div{
+    transform: rotate(91deg) !important;
+    margin: 48px -30px;
 }
 
+.search-fixed{
+    background-color: #E9BD40;
+    height: 4rem;
+    width: 7rem;
+    padding: 20px;
+}
 
+.enquire-fixed{
+    background-color: #191919;
+    height: 4rem;
+    width: 7rem;
+    padding: 20px;
+}
+
+.apply-fixed{
+    background-color: #F29A38;
+    height: 4rem;
+    width: 7rem;
+    padding: 20px;
+}
+
+.visit-fixed{
+    background-color: #4CA149;
+    height: 4rem;
+    width: 7rem;
+    padding: 20px;
+}
+
+.search-fixed a,.visit-fixed a,.apply-fixed a, .enquire-fixed a{
+    color: #ffff;
+    font-size: 19px;
+}
+
+.hooked-cov{
+    position: fixed;
+    right: 0;
+    display: flex;
+    z-index: 100;
+    top: 15%;
+
+}
 
 .discover{
     background-color: #4287BD;

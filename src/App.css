@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: noteworthy;
-    src: url(./assets/fonts/FontsFree-Net-Noteworthy-Bold.ttf);
+    font-family: skia;
+    src: url(./assets/fonts/Skia\ Regular.ttf);
 }
 
 .fade-appear,
