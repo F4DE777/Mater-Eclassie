@@ -1,4 +1,3 @@
-@media (min-width: 1200px) {
 
 
     
@@ -19,8 +18,9 @@
     
     .use{
         color: #ffffff !important;
-        font-family: 'Gill';
+        font-family: monserat;
         font-weight: 700;
+        font-size: 19px;
         display: flex;
         text-align: left;
     }
@@ -62,7 +62,6 @@
         margin-left: 7em;
         font-size: 17px;
         font-weight: 100;
-        font-family: 'Gill';
     }
     
     
@@ -76,26 +75,28 @@
     }
     
     .carr-add{
-        /* margin-top: 8rem; */
+        margin-top: 2rem;
         position: relative;
         display: block;
-        /* height: 18rem; */
-    }
-    
+        width: 70%;
+
     }
 
+    .carr-add p{
+        font-family:monserat ;
+        line-height: 2;
 
-    /* .submit{
-        background-color: #5DA7DF;
-    } */
+    }
     
+
+
+
     
     
     .footer{
         box-sizing: border-box;
         display: blocK;
-        /* background-color: #4287BD; */
-        background-image: url('../assets/Group1073@2x.png');
+        background-color: #4CA149;
         width: 100%;
         color: #ffffff;
         text-decoration: none;
@@ -109,11 +110,11 @@
     
     .divider{
         width: 100%;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 2px solid #ffffff69;
         display: block;
         text-align: right;
         justify-content: flex-end;
-        margin-top: 7rem;
+        margin-top: 1.5rem;
     }
     
     .divider h4{
@@ -123,14 +124,26 @@
     
     .use{
         color: #ffffff !important;
-        font-family: monseratSemi;
+        font-family: monserat;
         font-weight: 700;
+        font-size: 19px;
         display: flex;
         text-align: left;
     }
     
     
+    .grade-level{
+        padding: 0;
+        text-align: left;
+        list-style: none;
+        line-height: 2;
+    }
     
+
+    .grade-level li{
+        font-size: 18px;
+        font-weight: 100;
+    }
     
     
     .copyrights{
@@ -151,7 +164,7 @@
     }
     
     .lined{
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 700;
         font-family:monseratSemi ;
 
@@ -175,13 +188,18 @@
         text-align: left;
         border-radius: 100%;
         justify-content: center;
+        transition: background-color .5s linear ;
     }
     
     .dxty img{
         position: relative;
         top: 10%;
         width: 80px;
-        height: 40px;
+    }
+
+    .dxty img:hover{
+        background-color: #ffffff1c;
+        border-radius: 30px;
     }
 
     .w-mark{
@@ -310,72 +328,110 @@
     
     .join-head h1{
         font-size: 40px;
-        font-family: noteworthy;
+        font-family: skia;
         color: #000;
     }
     
-    .join-head hr{
-        width: 7rem;
-        border-bottom: 4px solid #4287BD;
-        border-radius: 92px;
-        transform: translateY(-10px);
+    .join-head label{
+        font-size: 18px;
+        font-family: monserat;
+        color: #F29A38;
+        margin: 0;
     }
+  
 
 
-.clicker {
-    background-color: #4287BD !important;
-    background-position: center;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    color: white !important;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    transition: 0.5s;
-    font-family: monserat;
-    font-weight: 600;
-    border: none;
-    margin-top: 10px;
 
-}
 
-.clicker:hover{
-    background-color: #5DA7DF !important;
-    transform: scale(1.02);
-    text-decoration: none;
-}
-
-.join-img{
-    height: 20rem;
-    position: relative;
-}
-
-.join-img img{
-    height: 20rem;
-
-}
 
 .smooth{
     margin: 13rem auto;
 }
 
+.telephone h4{
+    font-family:monserat ;
+    font-size: 18px;
+    font-weight: 900;
+}
+.telephone p{
+    font-family:monserat ;
+    font-weight: 100;
+
+}
+
+.contain-sponsors{
+    position: relative;
+    margin-top: 4rem;
+}
+
+
+.sponsors{
+    display: flex;
+    position: relative;
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.sponsors li{
+    flex: 1;
+    text-align: center;
+    min-height: 4rem;
+    margin: 0 7px;
+
+}
+
+.sponsors li img{
+    height: 52px;
+    width: auto;
+    opacity: .5;
+    /* -webkit-filter: grayscale(70%); */
+    transition: all .5s ease;
+}
+
+.sponsors li img:hover{
+    opacity: 1;
+    cursor: pointer;
+    /* -webkit-filter: grayscale(0%); */
+
+}
+
+.affliation{
+    display: flex;
+    margin-top: 6rem;
+
+}
+
+.white-line{
+    flex: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.336);
+}
+
+.text-aff{
+    flex: .3;
+    text-align: center;
+    font-family: monseratSemi;
+}
+
+.text-aff h4{
+    font-size: 16px;
+    margin-bottom: -5px;
+}
+
     
-            @media(max-width:960px) {
+@media(max-width:960px) {
                 
     
                 .footer{
                     box-sizing: border-box;
                     display: blocK;
-                    background-image: url('../assets/Group1073@2x.png');
                     width: 100%;
                     color: #ffffff;
                     text-decoration: none;
+                    background-color: #4CA149;
                     position: relative;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    justify-content: center;
+                   
                     display: flex;
                 }
                 
@@ -403,6 +459,7 @@
 
     .carr-add p{
         font-family:monserat ;
+        line-height: 2;
 
     }
     

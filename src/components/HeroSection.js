@@ -4,26 +4,19 @@ import scholar from "../assets/Rectangle-2@2x.png";
 import Des from "../assets/Rectangle-22@2x.png";
 import Hard from "../assets/Rectangle-2e@2x.png";
 import Pex from "../assets/Rectangle-2s@2x.png";
-import Photos1 from "../assets/Rectangle18.png";
-import Kid from "../assets/dockid.png";
-import Photos2 from "../assets/Rectangle39@2x.png";
-import Photos3 from "../assets/Rectangle43.png";
-import PhotNur from "../assets/Rectangle40.png";
-import Assem from "../assets/Rectangle44.png";
-import Para from "../assets/Rectangle70.png";
-import Team from "../assets/Rectangle177.png";
-import Robo from "../assets/Rectangle8493.png";
-import Photos4 from "../assets/Rectangle37.png";
-import Photos5 from "../assets/Rectangle45.png";
-import Photos6 from "../assets/Rectangle8453@2x.png";
-import Photos7 from "../assets/Rectangle177@2x.png";
-import Photos8 from "../assets/Rectangle444.png";
-import Photo1 from "../assets/Rectangle44@2x.png";
+import Photos2 from "../assets/Rectangle-2s@2x.png";
+import Photos3 from "../assets/Rectangle9err@2x.png";
+import Photos4 from "../assets/Rectangle-22@2x.png";
+import Photos5 from "../assets/Rectanglehlijkn@2x.png";
+import Photos6 from "../assets/Rectangle9rrf@2x.png";
+import Photos7 from "../assets/Rectangle9.png";
+import Photos8 from "../assets/Rectangle9rrr@2x.png";
+import Photo1 from "../assets/Rectanglefff@2x.png";
 import Teacher from "../MaryLand/1632735791._DSC3088.png";
 import { Link } from "react-router-dom";
-import Phyz from "../assets/Rectangle8453@2x.png"
-import Prayer from "../assets/Rectangle8454@2x.png"
-import House from "../assets/Rectangle466@2x.png"
+import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
+import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
+import Apply from "../assets/1632735791._DSC3088rf@2x.png"
 import Cart from "./Carousel"
 import Vision from "./Vision";
 import "./HeroSection.css";
@@ -93,131 +86,57 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          
 
-          <div className="discover">
-            <div className="discover-cover">
-              <div className="disc-head">
-                <h1>Discover Our Divisions</h1>
-                <hr />
-              </div>
-              <div className="container-xl mt-5">
-                <div className="row mt-5">
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                      <div className="disc-img" style={{ backgroundImage: `url(${Photos1})` }}  >
-                        <div className="overlay">
-                          <img className="eyfs" src={Kid} alt="" />
+
+          <div className="container">
+              <div className="row">
+                    <div className="col-12">
+                      <div>
+                        <div className="mission-cont">
+                          <label htmlFor="#"> OUR MISSION</label>
+                          <h4>At A Glance</h4>
+                          <div>
+                            <p>
+                              AT MCSS we are Intentional with providing an 
+                              enduring legacy of qualitative and affordable education 
+                              in Nigeria. Our students as much as possible, acquire the 
+                              best education in a conducive, fair, competitive and dynamic
+                              atmosphere with the assistance of competent and dedicated teache
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="disc-body">
-                        <h4> EYFS </h4>
-                        <p>
-                          Our crèche is home away from home where babies play and
-                          rest. We have a wide range of age-appropriate toys
-                        </p>
-                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                      <div  className="disc-img" style={{ backgroundImage: `url(${Photos2})` }} >
-                          <div className="overlay">
-                            <img className="eyfs" src={PhotNur} alt="" />
-                          </div>
-                      </div>
-                      
-                      <div className="disc-body">
-                        <h4> Nursery </h4>
-                        <p>
-                          We offer early childhood education to children usually
-                          between the age of 2 and 5. In Nursery, children are
-                          involved in physical activities
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                      <div  className="disc-img" style={{ backgroundImage: `url(${Assem})` }} >
-                          <div className="overlay">
-                            <img className="eyfs" src={Photos3} alt="" />
-                          </div>
-                      </div>
-                      <div className="disc-body">
-                        <h4> Primary School </h4>
-                        <p>
-                          Primary education is an important stage in a child’s
-                          education. Our primary section supports your child’s
-                          continuity of learning development.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                      <div  className="disc-img" style={{ backgroundImage: `url(${Photos4})` }} >
-                          <div className="overlay">
-                            <img className="eyfs" src={Para} alt="" />
-                          </div>
-                      </div>
-                      <div className="disc-body">
-                        <h4> Junior School </h4>
-                        <p>
-                          The environment is friendly and extremely conducive for
-                          learning.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                      <div  className="disc-img" style={{ backgroundImage: `url(${Photos5})` }} >
-                          <div className="overlay">
-                            <img className="eyfs" src={Team} alt="" />
-                          </div>
-                      </div>
-                      <div className="disc-body">
-                        <h4> Secondary School </h4>
-                        <p>
-                          The environment is friendly and extremely conducive for
-                          learning.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12 col-xs-12">
-                    <div>
-                    <div  className="disc-img" style={{ backgroundImage: `url(${Photos6})` }} >
-                          <div className="overlay">
-                            <img className="eyfs" src={Robo} alt="" />
-                          </div>
-                      </div>
-                      <div className="disc-body">
-                        <h4> Robotics </h4>
-                        <p>
-                          We offer Robotics program to give our students insight on
-                          the new world of Ai{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
           </div>
+
+          
           <Vision/>
           <Cart/>
           <div className="gallery-cont">
-          <div>
-              <div className="gallery-head">
-                  <h1>Gallery</h1>
-                    <hr/>
-                </div>
-              <table className='gallery'>
-                <tr>
-                  <td className='mic-img'>
-                    <div  style={{ background: `url(${Photos7}) center/cover no-repeat`, backgroundColor: 'black',   height: '100%', width: '-webkit-fill-available'   }} >
+            <div>
+                <div className="gallery-head">
+                  <label htmlFor="">EXPLORE</label>
+                    <h1>Take A School Tour</h1>
+                    <p>Our Campus Have A Lot To Offer For Our Students</p>
+                  </div>
+                <table className='gallery'>
+                  <tr>
+                    <td className='mic-img'>
+                      <div  style={{ background: `url(${Photos7}) center/cover no-repeat`,   height: '100%', width: '-webkit-fill-available'   }} >
+                          <div className='text-cover'>
+                              <div className='text-content'>
+                              <i class="fas fa-caret-left"></i>
+                              <i class="fas fa-search"></i>
+                              <i class="fas fa-caret-right"></i>
+                              <i class="fa-solid fa-magnifying-glass-plus"></i>
+                              </div>
+                            </div>
+                      </div>
+                        
+                    </td>
+                    <td colSpan='2'>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                      <div style={{ background: `url(${Photos4}) center/cover no-repeat`,  height: '100%', width: '-webkit-fill-available'  }} className='img-fluid'>
                         <div className='text-cover'>
                             <div className='text-content'>
                             <i class="fas fa-caret-left"></i>
@@ -226,157 +145,136 @@ function HeroSection() {
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                             </div>
                           </div>
-                    </div>
-                      
-                  </td>
-                  <td colSpan='2'>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                    <div style={{ background: `url(${Photos4}) center/cover no-repeat`,  backgroundColor: 'black',  height: '100%', width: '-webkit-fill-available'  }} className='img-fluid'>
-                      <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                      </div>
+                    </td>
+                    <td rowSpan='2'>
+                      <div style={{
+                        background: `url(${Photos2}) center/cover no-repeat`,
+                        height: '100%', width: '417px'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                  </td>
-                  <td rowSpan='2'>
+                      </div>
+                    </td>
+                    <td>
+                      <div style={{
+                        background: `url(${Photos3}) center/cover no-repeat`,
+                        height: '100%', width: '-webkit-fill-available'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                          </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >
+                      <div style={{
+                        background: `url(${Photos8}) center/cover no-repeat`,
+                        height: '100%', width: '371px'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                          </div>
+                      </div>
+                    </td>
+                    <td>
                     <div style={{
-                      background: `url(${Photos2}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '417px'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        background: `url(${Photo1}) center/cover no-repeat`,
+                        height: '100%', width: '371px'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
                           </div>
-                        </div>
-                    </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div style={{
+                        background: `url(${Photos5}) center/cover no-repeat`,
+                        height: '100%', width: '371px'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                          </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div style={{
+                        background: `url(${Photos6}) center/cover no-repeat`,
+                        height: '100%', width: '371px'
+                      }} className='img-fluid'>
+                          <div className='text-cover'>
+                            <div className='text-content'>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                          </div>
+                  </div>             
                   </td>
-                  <td>
-                    <div style={{
-                      background: `url(${Photos3}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '-webkit-fill-available'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
-                          </div>
-                        </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td >
-                    <div style={{
-                      background: `url(${Photos8}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '500px'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
-                          </div>
-                        </div>
-                    </div>
-                  </td>
-                  <td>
-                  <div style={{
-                      background: `url(${Photo1}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '500px'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
-                          </div>
-                        </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div style={{
-                      background: `url(${Photos5}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '500px'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
-                          </div>
-                        </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div style={{
-                      background: `url(${Photos6}) center/cover no-repeat`,
-                      backgroundColor: 'black',
-                      height: '100%', width: '500px'
-                    }} className='img-fluid'>
-                        <div className='text-cover'>
-                          <div className='text-content'>
-                          <i class="fas fa-caret-left"></i>
-                          <i class="fas fa-search"></i>
-                          <i class="fas fa-caret-right"></i>
-                          <i class="fa-solid fa-magnifying-glass-plus"></i>
-                          </div>
-                        </div>
-                </div>             
-                </td>
-                </tr>
-              </table>
+                  </tr>
+                </table>
+                <div className="">
+                      <button>More News + Events</button>
+                </div>
             </div>
           </div>
           <div className="container-lg  smooth">
                         <div className="join-head">
-                            <h1>Join Us</h1>
-                                <hr/>
+                          <label htmlFor="">EXPLORE</label>
+                            <h1>Discover More</h1>
                         </div>
-                        <div className="row mb-5">
+                        <div className="row mb-5 mt-5">
                             <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
                                 <div className='join-img'>
-                                    <img src={Phyz} alt="stairs " className="img-fluid"/>
+                                    <img src={Enquire} alt="stairs " className="img-fluid"/>
                                 </div>
-                                <div>
-                                    <a href="#" target={'_blank'} className={'clicker'}
-                                    style={{width: '100%', borderRadius: '5px'}}>Inquire</a>
-                                </div>
+                                <div className="ing-tag">
+                                    <h4>Enquire</h4>
+                                  </div>  
                             </div>
                             <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-                                <div className='join-img'>
-                                    <img src={Prayer} alt="stairs" className="img-fluid"/>
+                                <div className='join-img1'>
+                                    <img src={Visit} alt="stairs" className="img-fluid"/>
                                 </div>
-                                <div>
-                                    <a href="#" target={'_blank'} className={'clicker'}
-                                  style={{width: '100%', borderRadius: '5px'}}>Apply</a>
-                                </div>
-
+                                <div className="ing-tag">
+                                    <h4>Visit</h4>
+                                  </div>  
                             </div>
                             <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-                                <div className='join-img'>
-                                    <img src={House} alt="stairs" className="img-fluid"/>
+                                <div className='join-img2'>
+                                    <img src={Apply} alt="stairs" className="img-fluid"/>
                                 </div>
-                                <div>
-                                    <a href="#" target={'_blank'} className={'clicker'}
-                                  style={{width: '100%', borderRadius: '5px'}}>Take a tour</a>
-                                </div>
-                                
+                                <div className="ing-tag">
+                                    <h4>Apply</h4>
+                                  </div>  
                             </div>
 
                         </div>

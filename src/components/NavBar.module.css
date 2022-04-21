@@ -3,8 +3,8 @@ nav{
     /* background-color: red; */
     background-image:
         linear-gradient(
-            #4CA149 ,
-            #4CA149CF 50%,
+             #4CA149CF ,
+             #4CA149 50%,
             #4CA14900 
         );
     min-height: 5rem;
