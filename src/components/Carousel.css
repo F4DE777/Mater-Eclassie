@@ -8,52 +8,12 @@
 
 
 
-.slick-dots li.slick-active {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 14px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-    background-color: #4287BD !important;
-    border: 1px solid white;
-    border-radius: 20px;
-    transition: width 0.5s ease-out;
-}
 
-.slick-dots li{
-    position: relative;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-    background-color:#fff !important;
-    border: 1px solid #4287BD;
-    border-radius: 20px;
-}
 
-.slick-dots li.slick-active button:before {
-   display: none;
-}
-
-.slick-dots li button:before {
-    display: none;
-}
 
 
 .slick-dots {
-    position: absolute;
-    bottom: -25px;
-    display: flex !important;
-    width: 59%;
-    list-style: none;
-    text-align: center;
-    bottom: 10rem;
-    justify-content: flex-end;
-    margin: 0 auto !important;
+    display: none !important;
 }
 
 
@@ -78,7 +38,7 @@
 }
 
 .slick-next::after{
-    content: url('../assets/right-arrow.png');
+    content: url('../assets/right-long-arrow.png');
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
@@ -86,11 +46,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
-    transform: translateX(-7.5vw);
+    transform: translate(-75vw,52vh);
 }
 
 .slick-prev::after {
-    content: url('../assets/left-arrow.png');
+    content: url('../assets/left-long-arrow.png');
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
@@ -98,16 +58,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
-    transform: translateX(91.7vw);
+    transform: translate(22vw ,52vh);
 }
 
 
 
 .contents-slide{
-    background-image: url('../assets/Group795.svg');
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     position: relative;
     color: rgb(241, 237, 237);
     top: 4em;
@@ -128,45 +85,51 @@
 
 
 
-.faded-img{
-    flex: .2;
-    position: relative;
-}
-
-.faded-img img{
-    height: 500px;
-    max-height: 32rem;
-    top: 2em;
-    opacity: 0.4;
-    width: 100%;
-    display: flex;
-}
 
 .hero-img{
+    background-image: url('../assets/OrangeBck.svg');
+    background-position: -15vw -17px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     flex: .8;
+    display: flex;
     height: 40rem;
+    text-align: center;
+    justify-content: center;
 }
 
+
+
 .hero-img img{
-    height: 100%;
+    height: 350px;
     object-fit: cover;
-    width: 100%;
+    position: relative;
+    border-radius: 400px;
+    left: 5vw;
+    top: 30%;
+    width: 350px;
 }
 
 
 .date-event{
-    margin-top: 6rem;
-    height: 8rem;
+    margin: 6rem auto !important;
+    height: 15rem;
     width: 70%;
+    text-align: center;
+    color: #000;
 }
 
 .date-event label{
     font-family:monseratSemi ;
+    color: #F29A38;
     font-size: 18px;
 }
 
 .date-event h1{
-    font-family: noteworthy;
+    font-family: Skia;
+    font-weight: 900;
     margin: 10px 0;
     font-size: 40px;
 }
@@ -212,13 +175,11 @@
 }
 
 @media(max-width:960px){
-    .faded-img{
-        display: none;
-    }
+
 
 
     .contents-slide{
-        background-image: url('../assets/Group795.svg');
+        background-image: url('../assets/OrangeBck.svg');
         background-position: cover;
         background-repeat: no-repeat;
         background-size: cover;
@@ -275,49 +236,12 @@
 }
 
 
-.slick-dots li.slick-active {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 14px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-    background-color: #4287BD !important;
-    border: 1px solid white;
-    border-radius: 20px;
-    transition: width 0.5s ease-out;
-}
 
-.slick-dots li{
-    position: relative;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-    background-color:#fff !important;
-    border: 1px solid #4287BD;
-    border-radius: 20px;
-}
 
 .slick-dots {
-    position: absolute;
-    bottom: 35px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    right: 30px;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-.slick-dots li.slick-active button:before {
-    display: none;
- }
+   
+    display: none !important;
  
- .slick-dots li button:before {
-     display: none;
- }
+}
+
 }

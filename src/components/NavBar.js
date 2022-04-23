@@ -81,7 +81,7 @@ function NavBar() {
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <NavLink to={'/academics'} className='nav-links' onClick={closeMobileMenu}>
-                ADMISSION
+                    ADMISSION
                 </NavLink>
                 {activeMenu.menu2 && <Dropdown menuArray={navMenus.academics}/>}
               </li>

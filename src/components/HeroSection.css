@@ -81,7 +81,7 @@
     justify-content: center;
     padding-left: 0;
     margin-right: 0;
-    margin-left: 1%;
+    margin-left: 1vw;
     list-style: none;
     outline: none;
     border: none;
@@ -97,7 +97,7 @@
 
 
 .carousel-control-next {
-    left: 21px;
+    left: 1vw;
     transform: rotate(-91deg);
     position: absolute;
     margin-top: 20% !important;
@@ -118,7 +118,7 @@
 }
 
 .carousel-control-prev {
-    left: 21px;
+    left: 1vw;
     transform: rotate(91deg) !important;
     position: absolute;
     margin-top: 29% !important;
@@ -269,7 +269,7 @@
 .green-line{
     position: absolute;
     border-bottom: 2px solid #4CA149;
-    width: 700px;
+    width: 37%;
     left: 30%;
     margin-top: -30px;
 }
@@ -413,10 +413,8 @@
     color: #fff;
 }
 
-.eyfs{
-    height: 13rem;
-    width: 100%;
-    border-radius: 10px;
+.more-news{
+    display: blof;
 }
 
 .gallery-cont{

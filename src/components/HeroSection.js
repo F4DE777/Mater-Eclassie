@@ -241,12 +241,12 @@ function HeroSection() {
                   </td>
                   </tr>
                 </table>
-                <div className="">
+                <div className="more-news">
                       <button>More News + Events</button>
                 </div>
             </div>
           </div>
-          <div className="container-lg  smooth">
+          <div className="container  smooth">
                         <div className="join-head">
                           <label htmlFor="">EXPLORE</label>
                             <h1>Discover More</h1>
