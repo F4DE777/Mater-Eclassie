@@ -23,7 +23,7 @@
         background-image:
         linear-gradient(
             #4CA149,
-            #4CA149CF 50%,
+            #4CA149 50%,
             #4CA149
         );
 
@@ -345,6 +345,14 @@
     font-weight: 800;
 }
 
+
+.mission-cont p{
+    font-size: 20px;
+    font-family: monserat;
+    width: 70%;
+    padding-left: 20px;
+}
+
 .disc-img{
     height: 13rem;
     position: relative;
@@ -414,7 +422,19 @@
 }
 
 .more-news{
-    display: blof;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.more-news > button{
+    width: 226px;
+    height: 55px;
+    background: #4CA149 0% 0% no-repeat padding-box;
+    border: 1px solid #4CA149;
+    opacity: 1;
+    color: #fff;
 }
 
 .gallery-cont{
@@ -618,11 +638,147 @@
 
 }
 
+.swift{
+    text-align: center;
+}
+
+.swift h4 {
+    position: relative;
+    bottom: -88%;
+    height: 0%;
+    text-align: center;
+    font-size: 37px;
+    font-family: 'skia';
+    font-weight: 900;
+    color: #fff;
+}
+
+
+.our-mission{
+    display: flex;
+    margin-top: 17rem;
+}
+.wit{
+    flex: .4;
+}
+
+.our-miss{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    top: -5rem;
+    position: relative;
+}
+
+.our-miss label{
+    color: #F29A38;
+    margin: 0;
+    font-style: 16px;
+}
+
+.our-miss h4{
+    font-size: 29px;
+    font-family: Skia;
+    font-weight: 900;
+}
+
+.our-miss p{
+    font-family: monserat;
+    padding: 30px 0 0 30px;
+}
+
+.wit2{
+    flex: 1;
+}
+
+.box-out::after{
+    content: '';
+    width: 379px;
+    height: 126px;
+    background-color: #F29A38;
+    border: 84px solid #F29A38;
+    opacity: 1;
+    z-index: -1;
+    position: relative;
+    left: -20px;
+    top: -80px;
+}
+
+.box-over::before{
+    content: '';
+    width: 227px;
+    height: 126px;
+    background-color: #F29A38;
+    border: 121px solid #F29A38;
+    opacity: 1;
+    z-index: -26;
+    position: absolute;
+    /* left: -20px; */
+    top: -41px;
+    right: 0;
+}
+
+.yellow-border::before{
+    background: #F29A38;
+    position: absolute;
+    content: '';
+    border: 1px solid #F29A38;
+    width: 30px;
+    height: 10rem;
+    right: 0;
+    top: 0;
+}
+
+.yellow-border::after{
+    background: #F29A38;
+    position: absolute;
+    content: '';
+    border: 1px solid #F29A38;
+    width: 10rem;
+    height: 30px;
+    right: 0;
+    top: 0;
+}
+
+
+/* .btm-yellow::before{
+    background: #F29A38;
+    position: relative;
+    content: '';
+    border-right: 40px solid #F29A38;
+    width: 30px;
+    height: 10rem;
+    left:  0;
+    bottom: 0;
+} */
+
+
+
+.btm-yellow::after{
+    background: #F29A38;
+    position: relative;
+    content: '';
+    border-left: 40px solid #F29A38;
+    width: 10rem;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+}
+
+.marg{
+    margin-top: 17rem;
+}
+
+
 @media screen and (max-width: 960px) {
 
     .imgCaro{
         width: 100%;
         height: 25rem;
+    }
+
+    .marg{
+        margin-top: 7rem;
     }
 
     .intro-cover{
@@ -646,6 +802,91 @@
         font-family: noteworthy;
         font-size: 35px;
     }
+
+    .believe {
+        position: relative;
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        margin: 0 auto;
+        top: -42px;
+    }
+
+    .believe h4 {
+        font-size: 26px;
+        font-family: skia;
+        color: #fff;
+    }
+
+
+.join-img {
+    width: auto;
+    height: 440px;
+}
+
+.join-img1 {
+    width: auto;
+    height: 440px;
+}
+
+.join-img2 {
+    width: auto;
+    height: 440px;
+}
+
+.carousel-control-prev {
+    left: 1vw;
+    transform: rotate(91deg) !important;
+    position: absolute;
+    margin-top: 65% !important;
+    justify-content: right !important;
+    height: 10px;
+    font-size: 50px;
+    width: 20px !important;
+}
+
+.carousel-control-next {
+    left: 1vw;
+    transform: rotate(-91deg);
+    position: absolute;
+    margin-top: 20vh !important;
+    justify-content: right !important;
+    height: 10px;
+    width: 18px !important;
+    font-size: 50px;
+
+}
+
+.welcome-img{
+    display: none;
+}
+
+.mission-cont p {
+    font-size: 20px;
+    font-family: monserat;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.our-mission {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17rem;
+}
+
+.box-over::before {
+    content: '';
+    width: 27px;
+    height: 126px;
+    background-color: #F29A38;
+    border: 60px solid #F29A38;
+    opacity: 1;
+    z-index: -26;
+    position: absolute;
+    /* left: -20px; */
+    top: -27px;
+    right: 0;
+}
 }
 
 @media (min-width: 1200px){

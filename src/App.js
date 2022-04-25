@@ -21,7 +21,7 @@ function App() {
                   <CSSTransition 
                     key={location.key}
                     timeout={450}
-                    classNames="fade"
+                    classNames="fade "
                   >
                       <Switch>
                               <Route path="/" component={HeroSection}   exact/>
@@ -37,9 +37,6 @@ function App() {
 
            )} />
 
-         
-         
-              
           <Footer/>
       </Router>
     

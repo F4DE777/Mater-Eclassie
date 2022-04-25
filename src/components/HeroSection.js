@@ -4,15 +4,18 @@ import scholar from "../assets/Rectangle-2@2x.png";
 import Des from "../assets/Rectangle-22@2x.png";
 import Hard from "../assets/Rectangle-2e@2x.png";
 import Pex from "../assets/Rectangle-2s@2x.png";
+import Believe from "../assets/Group1080ed@2x.png";
+import Inspire from "../assets/Group1080e@2x.png";
+import Succeed from "../assets/Group1130uyjjy@2x.png";
 import Photos2 from "../assets/Rectangle-2s@2x.png";
 import Photos3 from "../assets/Rectangle9err@2x.png";
 import Photos4 from "../assets/Rectangle-22@2x.png";
 import Photos5 from "../assets/Rectanglehlijkn@2x.png";
 import Photos6 from "../assets/Rectangle9rrf@2x.png";
-import Photos7 from "../assets/Rectangle9.png";
+import Photos7 from "../assets/Rectangle9@2x.png";
 import Photos8 from "../assets/Rectangle9rrr@2x.png";
 import Photo1 from "../assets/Rectanglefff@2x.png";
-import Teacher from "../MaryLand/1632735791._DSC3088.png";
+import Teacher from "../MaryLand/1632735791._DSC3088@2x.png";
 import { Link } from "react-router-dom";
 import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
 import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
@@ -88,9 +91,9 @@ function HeroSection() {
           </div>
 
 
-          <div className="container">
+          <div className="container marg " >
               <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 yellow-border">
                       <div>
                         <div className="mission-cont">
                           <label htmlFor="#"> OUR MISSION</label>
@@ -105,16 +108,68 @@ function HeroSection() {
                             </p>
                           </div>
                         </div>
+                        <div>
+                          <div className="row" style={{marginTop:'7rem'}}>
+                            <div className="col-lg-4 col-sm-4  col-xs-4">
+                              <div style={{ background: `url(${Believe}) center/cover no-repeat`,   height: '624px', width: '-webkit-fill-available'}} className="swift">
+                                  <h4>Believe</h4>
+                              </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-4 col-xs-4">
+                              <div style={{ background: `url(${Inspire}) center/cover no-repeat`,   height: '881px', width: '-webkit-fill-available'}} className="swift">
+                                  <h4>Inspire</h4>
+                              </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-4 col-xs-4">
+                              <div style={{ background: `url(${Succeed}) center/cover no-repeat`,   height: '724px', width: '-webkit-fill-available'}} className="swift">
+                                  <h4>Succeed</h4>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
                       </div>
                     </div>
               </div>
           </div>
 
+          <div className="our-mission">
+              <div className="wit">
+                <div className="our-miss">
+                    <label htmlFor="">OUR MISSION</label>
+                    <h4>Our Group Of Schools</h4>
+                    <p>Quiere la boca exhausta vid, kiwi, piña y 
+                      fugaz jamón. Fabio me exige, sin tapujos, que añada
+                      cerveza al whisky. Jovencillo emponzoñado de whisky,
+                        ¡qué figurota exhibes! La cigüeña tocaba cada vez 
+                        mejor el saxofón y el búho pedía kiwi y queso. 
+                        El jefe buscó el éxtasis en un imprevisto baño de
+                        whisky.
+                      </p>
+                </div>
+                  
+              </div>
+              <div className="container wit2">
+                <div className="row">
+                <div className="col-6 box-out">
+                        <div style={{ background: `url(${Inspire}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
+                            <h4>Inspire</h4>
+                        </div>
+                  </div>
+                  <div className="col-6 box-over">
+                    <div style={{ background: `url(${Succeed}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
+                        <h4>Succeed</h4>
+                    </div>
+                  </div>
+                </div>
+                  
+              </div>
+          </div>
           
           <Vision/>
           <Cart/>
           <div className="gallery-cont">
-            <div>
+            <div className="btm-yellow">
                 <div className="gallery-head">
                   <label htmlFor="">EXPLORE</label>
                     <h1>Take A School Tour</h1>

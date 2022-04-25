@@ -345,7 +345,7 @@
 
 
 .smooth{
-    margin: 3rem auto;
+    margin: 13rem auto;
 }
 
 .telephone h4{
@@ -480,6 +480,11 @@
 
     .policy p{
         padding: 0 5px;
+    }
+
+    .affliation {
+        display: flex;
+        margin-top: 9rem;
     }
     
             }

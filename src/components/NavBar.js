@@ -1,6 +1,6 @@
 import React,  {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
-import SchLogo from '../assets/MaryLandlogo.png'
+import SchLogo from '../assets/MaryLandlogo@2x.png'
 import fIcon from '../assets/Icon feather-user.svg';
 import {navMenus} from './MenuItems';
 import Dropdown from './Dropdown';
@@ -62,7 +62,7 @@ function NavBar() {
         <div  className={classes.navCont}>
           <div className={classes.imgCont}>
             <Link to={'/'}>
-                        <img src={SchLogo} alt=" logo" className={classes.imgContent}  />
+                  <img src={SchLogo} alt=" logo" className={classes.imgContent}  />
             </Link>
           </div>
               <div className='menu-icon' onClick={handleClick}>

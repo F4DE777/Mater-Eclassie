@@ -63,6 +63,7 @@
 
 
 
+
 .contents-slide{
    
     position: relative;
@@ -172,6 +173,12 @@
     transform: translateY(-5px);
     position: absolute;
     transition: padding-left 1.5s ease-out;
+}
+
+
+.quote{
+    height: 50px !important;
+    /* width: 50px !important; */
 }
 
 @media(max-width:960px){

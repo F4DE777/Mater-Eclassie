@@ -2,10 +2,12 @@
     background: #4CA149 !important;
     width: 368px !important;
     position: absolute;
-    top: 30px !important;
+    top: 40px !important;
     list-style: none;
     text-align: start;
     left: auto !important;
+    margin-left: 250px;
+    padding: 20px;
 
 }
 
@@ -24,6 +26,11 @@
 
 .dropdown-menu.clicked {
     display: block;
+}
+
+.dropdown-menu li a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .dropdown-link {
