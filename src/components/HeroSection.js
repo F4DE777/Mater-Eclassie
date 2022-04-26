@@ -115,7 +115,7 @@ function HeroSection() {
               </div>
           </div>
           <div className="container">
-                          <div className="row" style={{marginTop:'7rem'}}>
+                          <div className="row v-hide" style={{marginTop:'7rem'}}>
                             <div className="col-lg-4 col-md-4 col-sm-4  col-xs-4 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
                                  height: '624px', width: '31%'
                                  }}>
