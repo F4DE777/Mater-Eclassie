@@ -20,6 +20,8 @@
 .imgContent{
     position: absolute;
     z-index: 1;
+    height: 6vw;
+
 }
 
 .btnPortal{
