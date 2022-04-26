@@ -1,3 +1,19 @@
+.navContainer{
+    background-image:
+        linear-gradient(
+             #4CA149CF ,
+             #4CA149 50%,
+            #4CA14900 
+        );
+    min-height: 5rem;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    width: 100%;
+    top: 0;
+}
+
+
 .nav-list{
     display: flex;
     width: 70rem;

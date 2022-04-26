@@ -17,10 +17,11 @@ import Photos8 from "../assets/Rectangle9rrr@2x.png";
 import Photo1 from "../assets/Rectanglefff@2x.png";
 import Teacher from "../MaryLand/1632735791._DSC3088@2x.png";
 import { Link } from "react-router-dom";
-import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
-import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
-import Apply from "../assets/1632735791._DSC3088rf@2x.png"
 import Cart from "./Carousel"
+import Violin from "../assets/1632735791._DSC3088@2x.png";
+import Play from "../assets/1632735791._DSC3088ed@2x.png";
+
+
 import Vision from "./Vision";
 import "./HeroSection.css";
 
@@ -153,12 +154,12 @@ function HeroSection() {
               <div className="container wit2">
                 <div className="row">
                 <div className="col-6 box-out">
-                        <div style={{ background: `url(${Inspire}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
+                        <div style={{ background: `url(${Violin}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
                             <h4>Inspire</h4>
                         </div>
                   </div>
                   <div className="col-6 box-over">
-                    <div style={{ background: `url(${Succeed}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
+                    <div style={{ background: `url(${Play}) center/cover no-repeat`,   height: '427px', width: '-webkit-fill-available'}} className="swift">
                         <h4>Succeed</h4>
                     </div>
                   </div>
@@ -302,39 +303,7 @@ function HeroSection() {
                 </div>
             </div>
           </div>
-          <div className="container  smooth">
-                        <div className="join-head">
-                          <label htmlFor="">EXPLORE</label>
-                            <h1>Discover More</h1>
-                        </div>
-                        <div className="row mb-5 mt-5">
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
-                                <div className='join-img'>
-                                    <img src={Enquire} alt="stairs " className="img-fluid"/>
-                                </div>
-                                <div className="ing-tag">
-                                    <h4>Enquire</h4>
-                                  </div>  
-                            </div>
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-                                <div className='join-img1'>
-                                    <img src={Visit} alt="stairs" className="img-fluid"/>
-                                </div>
-                                <div className="ing-tag">
-                                    <h4>Visit</h4>
-                                  </div>  
-                            </div>
-                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-                                <div className='join-img2'>
-                                    <img src={Apply} alt="stairs" className="img-fluid"/>
-                                </div>
-                                <div className="ing-tag">
-                                    <h4>Apply</h4>
-                                  </div>  
-                            </div>
-
-                        </div>
-          </div>
+          
 
     </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
-
+import { CBreadcrumbItem } from '@coreui/react'
+import { CBreadcrumb } from '@coreui/react'
 
 function AgeCons() {
   return (
@@ -11,7 +12,11 @@ function AgeCons() {
                 <img src={Pex} alt="Header" className="img-fluid" />
             </div>
         </section>
-
+        <CBreadcrumb style={{"--cui-breadcrumb-divider": "'>'"}}>
+                <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+                <CBreadcrumbItem href="/academics/how_to_apply">Admission</CBreadcrumbItem>
+                <CBreadcrumbItem active>School Fees</CBreadcrumbItem>
+            </CBreadcrumb>
 
         <section className="container-md">
                 <div className="comments">

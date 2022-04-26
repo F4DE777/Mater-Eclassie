@@ -90,12 +90,12 @@ height: 453px;
 
 .intro header {
   text-align: left;
-  font-family: Skia;
-  font-size: 45px;
-  letter-spacing: 0px;
-  font-weight: 900;
-  color: #191a1d;
-  opacity: 1;
+    font-family: Skia;
+    font-size: 45px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    color: #191a1d;
+    opacity: 1;
 }
 
 .bread-crumbs {
@@ -235,6 +235,67 @@ padding-top: 20px;
   font-family: Skia;
   font-weight: 900;
   margin: 20px 0;
+}
+
+.happy {
+  font-family: Skia;
+  font-size: 27px;
+  letter-spacing: -1px;
+  font-weight: 900;
+}
+
+.happy1 {
+  font-family: Skia;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 900;
+  margin: 20px 0 20px 0;
+}
+
+.telecont{
+  display: flex;
+  margin:0 0 50px 0;
+}
+
+.telecont div {
+  flex: 1;
+}
+
+.telecont div h6{
+  font-family: Skia;
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-weight: 900;
+}
+
+.telecont div p{
+  font-family: monserat;
+  font-size: 20px;
+  letter-spacing: -1px;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb{
+  position: relative;
+  margin: 40px auto;
+  width: 95%;
+}
+
+.breadcrumb::before{
+  content: 'You are here: ';
+  font-size: 20px;
+}
+
+.breadcrumb-item a{
+  color: #191919 !important;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.breadcrumb-item.active{
+  font-size: 20px;
+
 }
 
 @media (max-width: 960px) {

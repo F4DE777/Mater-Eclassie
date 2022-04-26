@@ -1,6 +1,7 @@
 import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
-
+import { CBreadcrumbItem } from '@coreui/react'
+import { CBreadcrumb } from '@coreui/react'
 
 function Result() {
   return (
@@ -10,30 +11,38 @@ function Result() {
                 <img src={Pex} alt="Header" className="img-fluid" />
             </div>
         </section>
-
+            <CBreadcrumb style={{"--cui-breadcrumb-divider": "'>'"}}>
+                <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+                <CBreadcrumbItem href="/academics/how_to_apply">Admission</CBreadcrumbItem>
+                <CBreadcrumbItem active>Transfer</CBreadcrumbItem>
+            </CBreadcrumb>
 
         <section className="container-md">
                 <div className="comments">
                     <div className="intro">
-                        <small>ACADEMICS </small>
-                        <header>Results & Scholarships</header>
+                        <small>ADMISSION </small>
+                        <header>Transfer</header>
                     </div>
-                    <div className="row create">
-                        <div className="col-12 move-down">
-                            <div className="speech">
-                                <div>
-                                    <p>EPITOME MODEL ISLAMIC SCHOOLS is a group of co-educational institutions established in year 2008. The aim is to prepare youth for the where issues of ethnicity, tribalism nepotism, etc will not have a place to make an attempt towards creating a country that will be crisis free, where the fear of God will guide the actions of our youth rather than the manipulation of some ungodly people in the society, are also part of the school programme.</p>
-                                    <div className='vis-state'>
-                                        <h4>Vision Statement</h4>
-                                        <p>Preparing for a nation where the fear of Allah will be paramount in the minds of the leaders and mutual suspicion among tribes will be a thing of the past.</p>
-                                    </div>
-                                    <div>
-
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
+                    <div className="create">
+                        <p>                           
+                             Admission Requirements
+                        </p>
+                        <p>
+                        JSS 2 & SS 1 (TRANSFER) 
+                        </p>
+                        <p>
+                             
+                             Sale of Admission form for Jss2 and SS1 transfer usually starts April and it runs in batches. Sales of Entrance Forms (Point of Sales are usually: Maryland Convent Private School, Maryland; Catholic Church of Presentation G.R.A & School Bookshop). 
+                        </p>
+                        <h4>
+                            SS 1 (RETURNING STUDENTS) 
+                        </h4>
+                        <p>
+                             Returning Student here refers to old MCSS Students from JS 3 coming into SS 1
+                        </p>
+                        <p>
+                            Payment of N2, 000.00 for Application into Senior School form via cash.
+                        </p>
                     </div>
                 </div>
             </section>

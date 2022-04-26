@@ -8,7 +8,9 @@ import WaterMark from "../assets/Group1066.png";
 import Alliance from "../assets/alliancef1.png";
 import Cobis from "../assets/cobis.png";
 import Acca from "../assets/Acca.png";
-
+import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
+import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
+import Apply from "../assets/1632735791._DSC3088rf@2x.png"
 import Aisha from "../assets/aisa-logo-blk.png";
 import Apen from "../assets/Apen.png";
 import Microsoft from "../assets/Microsoft.png";
@@ -22,6 +24,39 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
+    <div className="container  smooth">
+                        <div className="join-head">
+                          <label htmlFor="">EXPLORE</label>
+                            <h1>Discover More</h1>
+                        </div>
+                        <div className="row mb-5 mt-5">
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
+                                <div className='join-img'>
+                                    <img src={Enquire} alt="stairs " className="img-fluid"/>
+                                </div>
+                                <div className="ing-tag">
+                                    <h4>Enquire</h4>
+                                  </div>  
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
+                                <div className='join-img1'>
+                                    <img src={Visit} alt="stairs" className="img-fluid"/>
+                                </div>
+                                <div className="ing-tag">
+                                    <h4>Visit</h4>
+                                  </div>  
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
+                                <div className='join-img2'>
+                                    <img src={Apply} alt="stairs" className="img-fluid"/>
+                                </div>
+                                <div className="ing-tag">
+                                    <h4>Apply</h4>
+                                  </div>  
+                            </div>
+
+                        </div>
+          </div>
 
                 
             <footer className="footer ">

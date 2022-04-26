@@ -58,7 +58,7 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false)
 
   return (
-   <nav>
+   <nav className='navContainer'>
         <div  className={classes.navCont}>
           <div className={classes.imgCont}>
             <Link to={'/'}>

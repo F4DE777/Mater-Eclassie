@@ -1,5 +1,5 @@
 import React from 'react'
-import Pex from "../../../../assets/building@2x.png";
+import Pex from "../../../../assets/studentLife@2x.png";
 
 function Nursery() {
   return (
@@ -14,8 +14,8 @@ function Nursery() {
         <section className="container-md">
                 <div className="comments">
                     <div className="intro">
-                        <small>ACADEMICS </small>
-                        <header>Age Consideration</header>
+                        <small>Learning </small>
+                        <header>Junior School</header>
                     </div>
                     <div className="row create">
                         <div className="col-12 move-down">

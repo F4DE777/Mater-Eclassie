@@ -1,7 +1,8 @@
 import React from 'react';
 import Teacher from "../../../../assets/sister10@2x.png";
 import Pex from "../../../../assets/Group10121@2x.png";
-
+import { CBreadcrumbItem } from '@coreui/react'
+import { CBreadcrumb } from '@coreui/react'
 import './Style.css'
 
 function PrincipalsDesk() {
@@ -13,7 +14,11 @@ function PrincipalsDesk() {
                         <img src={Pex} alt="Header" className="img-fluid" />
                     </div>
                 </section>
-                
+                <CBreadcrumb style={{"--cui-breadcrumb-divider": "'>'"}}>
+                    <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+                    <CBreadcrumbItem href="/about/administrators-message">About</CBreadcrumbItem>
+                    <CBreadcrumbItem active>Administrator’s Message</CBreadcrumbItem>
+                </CBreadcrumb>
 
                 <section className="container-md">
                     <div className="comments">
