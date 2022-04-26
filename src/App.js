@@ -14,14 +14,14 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 function App() {
   return (
     <>
-    <Router>
+    <Router>                                                                                  
           <NavBar />
           <Route render={({location}) => (  
                 <TransitionGroup>
                   <CSSTransition 
                     key={location.key}
                     timeout={450}
-                    classNames="fade "
+                    classNames="fade"
                   >
                       <Switch>
                               <Route path="/" component={HeroSection}   exact/>

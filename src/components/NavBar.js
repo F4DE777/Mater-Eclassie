@@ -31,7 +31,7 @@ function NavBar() {
     }else{
       setActiveMenu({
         menu1: menuText === 'about',
-        menu2: menuText === 'academics',
+        menu2: menuText === 'admission',
         menu3: menuText === 'learning',
         menu4: menuText === 'school life',
         menu5: menuText === 'news',
@@ -83,7 +83,7 @@ function NavBar() {
                 <NavLink to={'/academics'} className='nav-links' onClick={closeMobileMenu}>
                     ADMISSION
                 </NavLink>
-                {activeMenu.menu2 && <Dropdown menuArray={navMenus.academics}/>}
+                {activeMenu.menu2 && <Dropdown menuArray={navMenus.admission}/>}
               </li>
 
               <li className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -95,15 +95,13 @@ function NavBar() {
 
               <li  className='nav-item ' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <NavLink to={'/school'} className='nav-links' onClick={closeMobileMenu}>
-                      SCHOOL LIFE
+                    STUDENT LIFE
                 </NavLink>
-                {activeMenu.menu4 && <Dropdown menuArray={navMenus.school}/>}
               </li>
               <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  >
                 <NavLink to={'/news'} className='nav-links' onClick={closeMobileMenu}>
                   GALLERY
                 </NavLink>
-                {activeMenu.menu5 && <Dropdown menuArray={navMenus.news}/>}
               </li>
 
               <li className='nav-item '> 

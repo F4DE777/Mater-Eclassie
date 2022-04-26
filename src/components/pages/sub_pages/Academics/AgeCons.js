@@ -1,5 +1,5 @@
 import React from 'react';
-import Pex from "../../../../assets/AgeConsideratation2@2x.png";
+import Pex from "../../../../assets/building@2x.png";
 
 
 function AgeCons() {
@@ -16,25 +16,37 @@ function AgeCons() {
         <section className="container-md">
                 <div className="comments">
                     <div className="intro">
-                        <small>ACADEMICS </small>
-                        <header>Age Consideration</header>
+                        <small>ADMISSION </small>
+                        <header>School Fees</header>
                     </div>
-                    <div className="row create">
-                        <div className="col-12 move-down">
-                            <div className="speech">
-                                <div>
-                                    <p>EPITOME MODEL ISLAMIC SCHOOLS is a group of co-educational institutions established in year 2008. The aim is to prepare youth for the where issues of ethnicity, tribalism nepotism, etc will not have a place to make an attempt towards creating a country that will be crisis free, where the fear of God will guide the actions of our youth rather than the manipulation of some ungodly people in the society, are also part of the school programme.</p>
-                                    <div className='vis-state'>
-                                        <h4>Vision Statement</h4>
-                                        <p>Preparing for a nation where the fear of Allah will be paramount in the minds of the leaders and mutual suspicion among tribes will be a thing of the past.</p>
-                                    </div>
-                                    <div>
+                    <div className=" create">
+                            <div>
+                                <p>
+                                    Maryland Comprehensive Secondary School is a co-educational Catholic School, and the fees are affordable in comparison with standard private schools. 
+                                </p>
+                                <p>
+                                    PROCEDURES FOR ADMISSION – BOARDING HOUSE, JSS 1, JSS 2, SS 1.
+                                </p>
+                                <p>
+                                    BOARDING HOUSE 
+                                </p>
+                                <p>
+                                    Payment of N10,000.00 for Boarding House Application form into: 
 
-                                    </div>
-                                </div>
-                                
+                                </p>
+                                <p>
+                                    Fidelity Bank 
+                                </p>
+                                <p>
+                                    Acc/No: 5080109077 
+                                </p>
+                                <p>
+                                    Acc.Name: MCSS 
+                                </p>
+                                <p>
+                                    Return of teller stating candidates name and class on the reverse side.
+                                </p>
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>

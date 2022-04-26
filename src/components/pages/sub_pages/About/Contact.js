@@ -1,5 +1,5 @@
 import React from 'react';
-import Pex from "../../../../assets/Rectanglebby2@2x.png";
+import Pex from "../../../../assets/building@2x.png";
 
 import './Style.css'
 
@@ -19,16 +19,11 @@ function Contact() {
         <section className="container-md">
                 <div className="comments">
                     <div className="intro">
-                        <small>About </small>
-                        <header>Contact Us</header>
+                        <small>ADMISSION </small>
+                        <header>Contact </header>
                     </div>
-                    <div className="row create">
-                        <div className="col-12 move-down">
-                            <div className="speech">
-                                    
-                                
-                            </div>
-                        </div>
+                    <div className="create">
+                       
                     </div>
                 </div>
             </section>

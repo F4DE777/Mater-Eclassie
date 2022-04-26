@@ -2,13 +2,26 @@
     background: #4CA149 !important;
     width: 368px !important;
     position: absolute;
-    top: 40px !important;
+    top: 50px !important;
     list-style: none;
     text-align: start;
     left: auto !important;
     margin-left: 250px;
     padding: 20px;
 
+}
+
+.dropdown-menu::before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 1.5em;
+	border: .75rem solid transparent;
+	border-top: none;
+	border-bottom-color: #4CA149;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
 .dropdown-menu li {

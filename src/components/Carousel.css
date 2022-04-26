@@ -1,5 +1,4 @@
 
-@media(min-width:1000px){
 
 .slick-slider {
     position: relative;
@@ -159,7 +158,6 @@
 
 
 
-}
 
 
 .view-more h5:hover::after{
@@ -186,8 +184,8 @@
 
 
     .contents-slide{
-        background-image: url('../assets/OrangeBck.svg');
-        background-position: cover;
+        background-image: url('../assets/Rectangle10024@2x.png');
+        background-position: -10vw -17px;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -199,6 +197,23 @@
         flex: 1 1;
         max-height: 32rem;
         padding-left: 20px;
+    }
+
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        transform: translate(21vw, 8rem) !important;
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
     }
 
     
@@ -249,6 +264,33 @@
    
     display: none !important;
  
+}
+
+.content-coner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.hero-img {
+    background-position: -30vw -17px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: .8 1;
+    display: flex;
+    height: 40rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.date-event {
+    margin: -1rem auto !important;
+    height: 35rem;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
 }

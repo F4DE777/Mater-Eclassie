@@ -53,7 +53,7 @@ function HeroSection() {
               <h4>Inspire.</h4>
               <h4>Succeed.</h4>
           </div>
-          <div className="hooked-cov">
+          <div className="hooked-cov ">
             <div className="hooked">
                 <div className="search-fixed"> <Link>Search</Link> </div>
                 <div className="enquire-fixed"><Link>Enquire</Link></div>
@@ -108,30 +108,31 @@ function HeroSection() {
                             </p>
                           </div>
                         </div>
-                        <div>
-                          <div className="row" style={{marginTop:'7rem'}}>
-                            <div className="col-lg-4 col-sm-4  col-xs-4">
-                              <div style={{ background: `url(${Believe}) center/cover no-repeat`,   height: '624px', width: '-webkit-fill-available'}} className="swift">
-                                  <h4>Believe</h4>
-                              </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-4 col-xs-4">
-                              <div style={{ background: `url(${Inspire}) center/cover no-repeat`,   height: '881px', width: '-webkit-fill-available'}} className="swift">
-                                  <h4>Inspire</h4>
-                              </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-4 col-xs-4">
-                              <div style={{ background: `url(${Succeed}) center/cover no-repeat`,   height: '724px', width: '-webkit-fill-available'}} className="swift">
-                                  <h4>Succeed</h4>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
+              
                       </div>
                     </div>
               </div>
           </div>
+          <div className="container">
+                          <div className="row" style={{marginTop:'7rem'}}>
+                            <div className="col-lg-4 col-md-4 col-sm-4  col-xs-4 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
+                                 height: '624px', width: 'auto'
+                                 }}>
+                                  <h4>Believe</h4>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
+                                height: '881px', width: 'auto'
+                                }}>
+                                  <h4>Inspire</h4>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
+                                height: '724px', width: 'auto'
+                                }}>
+                                  <h4>Succeed</h4>
+                            </div>
+                          </div>
+
+                        </div>
 
           <div className="our-mission">
               <div className="wit">

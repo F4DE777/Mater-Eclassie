@@ -654,6 +654,8 @@
 }
 
 
+
+
 .our-mission{
     display: flex;
     margin-top: 17rem;
@@ -887,7 +889,25 @@
     top: -27px;
     right: 0;
 }
+
+.swift h4 {
+    position: relative;
+    bottom: -88%;
+    height: 0%;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'skia';
+    font-weight: 900;
+    color: #fff;
 }
+
+.swift {
+    text-align: center;
+    margin: 0 6px;
+}
+}
+
+
 
 @media (min-width: 1200px){
     .container{

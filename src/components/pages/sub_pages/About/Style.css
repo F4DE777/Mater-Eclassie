@@ -4,16 +4,34 @@
   display: block;
 }
 
+.principals-img{
+  width: 431px;
+  height: 571px;
+  float: left;
+  padding: 20px;
+}
 
 
+.house-img{
+  width: 840px;
+height: 453px;
+  float: right;
+  padding: 20px;
+}
 
+
+.tour-img{
+  display: flex;
+  margin-top: 60px;
+  position: relative;
+}
 
 .header-img img {
     position: relative;
     display: block;
     height: 40rem;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 
@@ -57,7 +75,7 @@
 }
 
 .intro {
-  border-bottom: 1px solid rgba(97 94 94 / 23%);
+  /* border-bottom: 1px solid rgba(97 94 94 / 23%);  */
   padding-top: 1rem;
 }
 
@@ -65,16 +83,17 @@
     text-align: left;
     font: normal normal bold 16px/21px monserat;
     letter-spacing: 5.76px;
-    color: #BA4A6E;
+    color: #F29A38;
     text-transform: uppercase;
     opacity: 1;
 }
 
 .intro header {
   text-align: left;
-  font-family: noteworthy;
+  font-family: Skia;
   font-size: 45px;
   letter-spacing: 0px;
+  font-weight: 900;
   color: #191a1d;
   opacity: 1;
 }
@@ -176,8 +195,18 @@
 }
 
 .vis-state h4{
-font-family: noteworthy;
+font-family: Skia;
 font-size: 30px;
+}
+
+.create{
+  min-height: 40rem;
+}
+
+.create p{
+font-family: monserat;
+font-size: 20px;
+padding-top: 20px;
 }
 
 /* @media (min-width: 1200px) {
@@ -190,6 +219,23 @@ font-size: 30px;
 
   }
 } */
+
+.rev{
+  margin-top: 30px;
+}
+
+.rev h4{
+  font-size: 20px;
+  color: #F29A38;
+  font-weight: 900;
+}
+
+.bio{
+  font-size: 25px;
+  font-family: Skia;
+  font-weight: 900;
+  margin: 20px 0;
+}
 
 @media (max-width: 960px) {
   .header-img img {

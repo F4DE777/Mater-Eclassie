@@ -3,8 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Quote from "../assets/Quote.svg";
-import Team from "../assets/Rectangle72.png";
-import Parade from "../assets/Rectangle71.png";
+import Parade from "../assets/Ellipse1@2x.png";
 
 
 
@@ -17,7 +16,7 @@ function Carousel() {
         infinite: true,
         fade: true,
         arrows:true,
-        speed: 700,
+        speed: 700, 
         slidesToShow: 1,
         slidesToScroll: 1,
         // autoplay:true,
@@ -27,7 +26,7 @@ function Carousel() {
       
 
     
-     <div className="mb-5 mt-5">
+     <div className="mb-5 mt-5 " style={{width:'100%', overflow:'hidden'}}>
         <Slider {...settings}>
           <div >
                     <div className="content-coner">
@@ -61,7 +60,7 @@ function Carousel() {
                           <div className='date-event'>
                               <label>VOICES</label>
                               <h1>Testimonials</h1>
-                              <div>
+                              <div style={{textAlign:'center', display:'flex', justifyContent:'center'}}>
                                 <img src={Quote} alt="something" className="img-fluid  quote"  />
                               </div>
                               <p>Dut qui officia Dolorem ut rerum nisi aut nemo laboriosam.
@@ -76,13 +75,13 @@ function Carousel() {
                     <div className="content-coner">
                         
                         <div className='hero-img'>
-                          <img src={Team} alt="something" className="img-fluid "  />
+                          <img src={Parade} alt="something" className="img-fluid "  />
                         </div>
                         <div className="contents-slide">
                           <div className='date-event'>
                               <label>VOICES</label>
                               <h1>Testimonials</h1>
-                              <div>
+                              <div style={{textAlign:'center', display:'flex', justifyContent:'center'}}>
                                 <img src={Quote} alt="something" className="img-fluid  quote"  />
                               </div>
                               <p>Illo quo sint sed et voluptates.

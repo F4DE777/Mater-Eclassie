@@ -17,7 +17,7 @@ function Academics() {
                           <Redirect to={'/academics/how_to_apply'}/>
                         </Route>
                         <Route path="/academics/how_to_apply" component={Apply}   exact/>
-                        <Route path="/academics/age_consideration" component={AgeCons}   exact/>
+                        <Route path="/academics/school-fees" component={AgeCons}   exact/>
                         <Route path="/academics/result_&_scholarships" component={Result}   exact/>
 
                       <Route path="*" component={NotFound}  />

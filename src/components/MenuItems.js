@@ -1,11 +1,12 @@
 export const navMenus = {
     about: [
         // {title: 'About ' + process.env.REACT_APP_SITE_NAME, path: '/about', cName: 'dropdown-link'},
-        {title: 'Principal\'s Desk', path: '/about/principal', cName: 'dropdown-link'},
-        {title: 'Human Resource Manager', path: '/about/hrm', cName: 'dropdown-link'},
-        {title: 'Contact Us', path: '/about/contact', cName: 'dropdown-link'},
+        {title: 'Administrator’s Message', path: '/about/administrators-message', cName: 'dropdown-link'},
+        {title: 'Proprietor’s Message', path: '/about/proprietors-message', cName: 'dropdown-link'},
+        {title: 'History of the School', path: '/about/history', cName: 'dropdown-link'},
+        {title: 'Contact Us', path: '/about/contact-us', cName: 'dropdown-link'},
     ],
-    academics: [
+    admission: [
         // {
         //     title: 'Academics',
         //     description: `At ${process.env.REACT_APP_SITE_NAME}, we aim to provide an innovative learning program that promotes our values of Respect, Diversity, Sustainability and Excellence.`,
@@ -13,8 +14,8 @@ export const navMenus = {
         //     cName: 'dropdown-link',
         // },
         {title: 'How to Apply', path: '/academics/how_to_apply', cName: 'dropdown-link', description: '', },
-        {title: 'Age Consideration', path: '/academics/age_consideration', cName: 'dropdown-link'},
-        {title: 'Results & Scholarships', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
+        {title: 'School Fees', path: '/academics/school-fees', cName: 'dropdown-link'},
+        {title: 'Transfer', path: '/academics/result_&_scholarships', cName: 'dropdown-link'},
    
     ],
     learn: [
@@ -24,11 +25,8 @@ export const navMenus = {
         //     path: '/learn',
         //     cName: 'dropdown-link'
         // },
-        {title: 'EYFS', path: '/learn/early-years', cName: 'dropdown-link'},
-        {title: 'Nursery', path: '/learn/nursery', cName: 'dropdown-link'},
-        {title: 'Primary', path: '/learn/primary_school', cName: 'dropdown-link'},
-        {title: 'Junior School',   path: '/learn/junior_school', cName: 'dropdown-link' },
-        {title: 'Secondary School', path: '/learn/secondary_school', cName: 'dropdown-link' },
+        {title: 'Senior School', path: '/learn/early-years', cName: 'dropdown-link'},
+        {title: 'Junior school', path: '/learn/nursery', cName: 'dropdown-link'},
     ],
     school: [
         {title: 'Curriculum', path: '/school/curriculum', cName: 'dropdown-link'},

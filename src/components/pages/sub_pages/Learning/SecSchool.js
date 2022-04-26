@@ -1,5 +1,5 @@
 import React from 'react'
-import Pex from "../../../../assets/Result&Scholarship2@2x.png";
+import Pex from "../../../../assets/building@2x.png";
 
 function SecSchool() {
   return (
