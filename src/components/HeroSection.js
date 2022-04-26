@@ -117,17 +117,17 @@ function HeroSection() {
           <div className="container">
                           <div className="row" style={{marginTop:'7rem'}}>
                             <div className="col-lg-4 col-md-4 col-sm-4  col-xs-4 swift" style={{ background: `url(${Believe}) center/cover no-repeat`,
-                                 height: '624px', width: 'auto'
+                                 height: '624px', width: '501px'
                                  }}>
                                   <h4>Believe</h4>
                             </div>
                             <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift"  style={{ background: `url(${Inspire}) center/cover no-repeat`, 
-                                height: '881px', width: 'auto'
+                                height: '881px', width: '501px'
                                 }}>
                                   <h4>Inspire</h4>
                             </div>
                             <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 swift" style={{ background: `url(${Succeed}) center/cover no-repeat`, 
-                                height: '724px', width: 'auto'
+                                height: '724px', width: '501px'
                                 }}>
                                   <h4>Succeed</h4>
                             </div>
