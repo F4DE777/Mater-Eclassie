@@ -236,6 +236,7 @@
 .head-teacher-img{
     height: 30rem;
     width: 90%;
+    object-fit: contain;
 }
 
 .tip-block{

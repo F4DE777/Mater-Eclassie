@@ -84,14 +84,18 @@
 
 .rec-arrow-left {
     /* -webkit-transform: translate(4rem,13rem)!important; */
-    transform: translate(42vw,10rem)!important;
-    z-index: 100;
+    transform: translate(40vw,10rem)!important;
+    /* width: -6vw !important; */
+
+    /* z-index: 100; */
 }
 
 
 .rec-arrow-right {
     /* -webkit-transform: translate(12rem,10rem)!important; */
-    transform: translate(60vw,10rem)!important;
+    transform: translate(60vw,13rem)!important;
+    width: 12% !important;
+
 }
 
 .more-news1{
