@@ -479,7 +479,7 @@
 
 .gallery{
     margin-top: 5rem;
-    height: 90vh;
+    height: 30rem;
 }
 
 
@@ -499,10 +499,9 @@
     opacity: .7;
     cursor: pointer;
     text-align: center;
-    background-color: rgba(29,25,25,.596078431372549);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-}
+    background-color: #1d191998;
+    backdrop-filter: blur(5px);}
 
 .text-cover:hover .text-content{
     opacity: 1;
@@ -921,7 +920,7 @@
 
 .swift {
     text-align: center;
-    margin: 0 6px;
+    margin: 0 2px;
 }
 }
 

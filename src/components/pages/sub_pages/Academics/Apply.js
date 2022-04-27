@@ -24,7 +24,7 @@ function Apply() {
                         <header>How to Apply</header>
                     </div>
                     <div className="create">
-                        <div>
+                        <div className='sale'>
                             <p>
                                 Sale of Admission form into Jss1 usually starts in November (the year preceding the admission year) examination date is around February /March.
                             </p>

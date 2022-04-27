@@ -245,6 +245,10 @@ padding-top: 20px;
   line-height: 4;
 }
 
+.sale h4{
+  font-weight: 900;
+}
+
 .happy1 {
   font-family: Skia;
   font-size: 20px;
