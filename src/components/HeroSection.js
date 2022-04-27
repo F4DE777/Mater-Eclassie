@@ -20,10 +20,6 @@ import { Link } from "react-router-dom";
 import Cart from "./Carousel"
 import Violin from "../assets/1632735791._DSC3088@2x.png";
 import Play from "../assets/1632735791._DSC3088ed@2x.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 
 import Vision from "./Vision";
 import "./HeroSection.css";
