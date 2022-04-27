@@ -533,7 +533,7 @@
 /* first */
 
 .join-img{
-    width: 501px;
+    width: 100%;
     height: 440px;
 }
 
@@ -566,7 +566,7 @@
 /* second image */
 
 .join-img2{
-    width: 501px;
+    width: 100%;
     height: 440px;
 }
 
@@ -600,7 +600,7 @@
 /* third image */
 
 .join-img1{
-    width: 501px;
+    width: 100%;
     height: 440px;
 }
 
@@ -845,17 +845,17 @@
     }
 
 .join-img {
-    width: auto;
+    width: 100%;
     height: 440px;
 }
 
 .join-img1 {
-    width: auto;
+    width: 100%;
     height: 440px;
 }
 
 .join-img2 {
-    width: auto;
+    width: 100%;
     height: 440px;
 }
 
