@@ -83,7 +83,6 @@ function HeroSection() {
                     Read More
                   </button>
                 </div>
-                <span className="green-line"></span>
               </div>
               <div className="welcome-img">
                 <img className="head-teacher-img " src={Teacher} alt="" />

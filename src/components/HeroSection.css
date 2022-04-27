@@ -8,7 +8,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 99vh;
+    height: 100vh;
 }
 
 .carousel::after{

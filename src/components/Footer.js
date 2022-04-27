@@ -157,7 +157,7 @@ function Footer() {
                     </div>
                     <div className='affliation'>
                         <div className='white-line'></div>
-                        <div className='text-aff'><h4>AFFLIATIONS</h4></div>
+                        {/* <div className='text-aff'><h4>AFFLIATIONS</h4></div> */}
                         <div  className='white-line'> </div>
                     </div>
                     <div className='contain-sponsors'>
