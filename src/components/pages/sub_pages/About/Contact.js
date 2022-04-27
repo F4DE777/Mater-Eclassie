@@ -23,7 +23,7 @@ function Contact() {
                 <CBreadcrumbItem active>Contact</CBreadcrumbItem>
             </CBreadcrumb>
 
-        <section className="container-md">
+        <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>ADMISSION </small>

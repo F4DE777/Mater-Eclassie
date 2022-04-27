@@ -17,7 +17,7 @@ function Apply() {
                 <CBreadcrumbItem active>History of the School</CBreadcrumbItem>
             </CBreadcrumb>
 
-        <section className="container-md">
+        <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>ADMISSION </small>

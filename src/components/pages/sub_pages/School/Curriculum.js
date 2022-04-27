@@ -17,7 +17,7 @@ function Curriculum() {
                 <CBreadcrumbItem active>Student Life</CBreadcrumbItem>
             </CBreadcrumb>
 
-        <section className="container-md">
+        <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>HOME </small>

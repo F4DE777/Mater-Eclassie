@@ -18,7 +18,7 @@ function AgeCons() {
                 <CBreadcrumbItem active>School Fees</CBreadcrumbItem>
             </CBreadcrumb>
 
-        <section className="container-md">
+        <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>ADMISSION </small>

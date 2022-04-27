@@ -11,7 +11,7 @@ function AccStructure() {
         </section>
 
 
-        <section className="container-md">
+        <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>ACADEMICS </small>
