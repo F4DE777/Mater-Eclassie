@@ -84,7 +84,7 @@
 
 .rec-arrow-left {
     /* -webkit-transform: translate(4rem,13rem)!important; */
-    transform: translate(40vw,13rem)!important;
+    transform: translate(40vw,10rem)!important;
     /* width: -6vw !important; */
 
     /* z-index: 100; */
@@ -201,6 +201,14 @@
 }
 
 
+.rec-arrow-left {
+    /* -webkit-transform: translate(4rem,13rem)!important; */
+    transform: translate(40vw,13rem)!important;
+    /* width: -6vw !important; */
+
+    /* z-index: 100; */
+}
+
 
 .rec-pagination {
     display: flex;
@@ -217,7 +225,7 @@
     color: transparent!important;
     position: absolute;
     z-index: 10;
-    bottom: -216rem;
+    bottom: -151rem;
     left: -40px;}
 
 .v-hide{
