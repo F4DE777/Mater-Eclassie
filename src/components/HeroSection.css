@@ -840,7 +840,9 @@
         font-family: skia;
         color: #fff;
     }
-
+    .hooked-cov{
+        display: none;
+    }
 
 .join-img {
     width: auto;
