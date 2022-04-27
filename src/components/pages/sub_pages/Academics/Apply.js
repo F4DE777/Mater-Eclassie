@@ -14,7 +14,7 @@ function Apply() {
             <CBreadcrumb style={{"--cui-breadcrumb-divider": "'>'"}}>
                 <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
                 <CBreadcrumbItem href="/academics/how_to_apply">Admission</CBreadcrumbItem>
-                <CBreadcrumbItem active>History of the School</CBreadcrumbItem>
+                <CBreadcrumbItem active>How to Apply</CBreadcrumbItem>
             </CBreadcrumb>
 
         <section className="container">
