@@ -2,6 +2,7 @@ import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Apply() {
   return (
@@ -24,6 +25,32 @@ function Apply() {
                         <header>How to Apply</header>
                     </div>
                     <div className="create">
+                    <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link  className="active"  to={'/academics/how_to_apply'}>
+                                                How To Apply
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link  to={'/academics/school-fees'}>
+                                                School Fees
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/academics/result_&_scholarships'}>
+                                                Transfer
+                                            </Link>
+                                           
+                                        </li>
+                                        
+                                    </ul>
+                    </div>
                         <div className='sale'>
                             <p>
                                 Sale of Admission form into Jss1 usually starts in November (the year preceding the admission year) examination date is around February /March.

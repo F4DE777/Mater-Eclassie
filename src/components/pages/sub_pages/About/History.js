@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Pex from "../../../../assets/smile@2x.png";
 import Rev from "../../../../assets/front@2x.png";
 import Build from "../../../../assets/building@2x.png";
@@ -28,6 +29,37 @@ function History() {
                         <header>History of the School</header>
                     </div>
                     <div className=" create">
+                    <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link  to={'/about/administrators-message'}>
+                                                Administrator’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link  to={'/about/proprietors-message'}>
+                                                Proprietor’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="active" to={'/about/history'}>
+                                                History Of The School
+                                            </Link>
+                                           
+                                        </li>
+                                        <li>
+                                            <Link to={'contact-us'}>
+                                                Contact Us
+                                            </Link>
+                                            
+                                        </li>
+                                    </ul>
+                    </div>
                                 <h4 className='bio'>
                                 THE NAME MARYLAND
                                 </h4>
@@ -44,10 +76,10 @@ function History() {
                                     </p>
                                     
                                 </div>
-                                <div className='tour-img'>
+                                {/* <div className='tour-img'>
                                     <img src={Rev} alt="" className='img-fluid' /> 
                                     <img src={Build} alt="" className='img-fluid v-hide' /> 
-                                </div>
+                                </div> */}
                                 
                                 <h4 className='bio'>
                                 THE TAKE-OVER OF SCHOOL

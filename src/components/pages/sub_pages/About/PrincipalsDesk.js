@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Teacher from "../../../../assets/sister10@2x.png";
 import Pex from "../../../../assets/Group10121@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
@@ -27,9 +28,41 @@ function PrincipalsDesk() {
                             <header>Administrator’s Message</header>
                         </div>
                         <div className=" create">
+                                <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link className="active" to={'/about/administrators-message'}>
+                                                Administrator’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/about/proprietors-message'}>
+                                                Proprietor’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/about/history'}>
+                                                History Of The School
+                                            </Link>
+                                           
+                                        </li>
+                                        <li>
+                                            <Link to={'contact-us'}>
+                                                Contact Us
+                                            </Link>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
                                 <img src={Teacher} alt="" className='principals-img' /> <p>
                                 I welcome you all to this noble institution, Maryland Comprehensive Secondary School and I congratulate your beloved parents/guardian on your admission to this school. I must say that it is a great privilege to be in this great school that has and will continue to provide highly esteemed and holistic, qualitative education to many people holding key posts in various works of life in and outside our country. You have come therefore to be part of MCSS family and to show the stuff you are made of, in contributing to the good and golden legacy that the school has made in world history.
                                 </p>
+                                
                                 <p>
                                 I encourage you to be open to the information you will receive 
                                 from the school. Be prepared to participate actively in various

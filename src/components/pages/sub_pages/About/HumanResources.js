@@ -1,8 +1,10 @@
 import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
 import Rev from "../../../../assets/Rev@2x.png";
-import { CBreadcrumbItem } from '@coreui/react'
-import { CBreadcrumb } from '@coreui/react'
+import { CBreadcrumbItem } from '@coreui/react';
+import { CBreadcrumb } from '@coreui/react';
+import { Link } from 'react-router-dom';
+
 import './Style.css';
 
 
@@ -27,6 +29,37 @@ function HumanResources() {
                         <header>Proprietor’s Message</header>
                     </div>
                     <div className=" create">
+                    <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link  to={'/about/administrators-message'}>
+                                                Administrator’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="active" to={'/about/proprietors-message'}>
+                                                Proprietor’s Message
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/about/history'}>
+                                                History Of The School
+                                            </Link>
+                                           
+                                        </li>
+                                        <li>
+                                            <Link to={'contact-us'}>
+                                                Contact Us
+                                            </Link>
+                                            
+                                        </li>
+                                    </ul>
+                    </div>
                                 <img src={Rev} alt="" className='principals-img' /> 
                                 <h4 className='bio'>
                                     BIOGRAPHY

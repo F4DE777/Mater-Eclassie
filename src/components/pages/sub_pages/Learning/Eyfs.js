@@ -1,6 +1,6 @@
 import React from 'react'
 import Pex from "../../../../assets/Rectangle2e.png";
-
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 function Eyfs() {
   return (
     <>
@@ -17,8 +17,28 @@ function Eyfs() {
                         <small>Learning </small>
                         <header>Senior School</header>
                     </div>
-                    <div className="row create">
-                        
+                    <div className=" create">
+                    <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link className="active"  to={'/learn/early-years'}>
+                                                Senior School
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link  to={'/learn/nursery'}>
+                                              Junior school
+                                            </Link>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                    </div>
                     </div>
                 </div>
             </section>

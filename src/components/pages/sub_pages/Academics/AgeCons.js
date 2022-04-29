@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Pex from "../../../../assets/building@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
@@ -25,6 +26,32 @@ function AgeCons() {
                         <header>School Fees</header>
                     </div>
                     <div className=" create">
+                    <div className='sub-cover'>
+                                    <ul className='sub-menu'>
+                                        <li>
+                                            <Link to={'/'}>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li >
+                                            <Link   to={'/academics/how_to_apply'}>
+                                                How To Apply
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link className="active"  to={'/academics/school-fees'}>
+                                                School Fees
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/academics/result_&_scholarships'}>
+                                                Transfer
+                                            </Link>
+                                           
+                                        </li>
+                                        
+                                    </ul>
+                    </div>
                             <div>
                                 <p>
                                     Maryland Comprehensive Secondary School is a co-educational Catholic School, and the fees are affordable in comparison with standard private schools. 
