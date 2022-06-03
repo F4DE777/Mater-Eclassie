@@ -1,0 +1,80 @@
+
+
+.navCont{
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-height: 5rem;
+
+}
+
+
+
+
+.imgCont{
+    position: relative;
+}
+
+.imgContent{
+    position: absolute;
+    z-index: 1;
+    height: 6vw;
+
+}
+
+.btnPortal{
+    background-color: #4CA14900;
+    color: #fff;
+    height: 2.5rem;
+    width: 7rem;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    outline: 0;
+    border: 0;
+    transition: 1.5s scale linear;
+}
+
+.btnPortal:focus{
+    outline: 0;
+    border: 0;
+}
+
+.btnPortal:hover{
+    transform: scale(1.02);
+    background-color: #4CA149CF;
+}
+
+.fIcon{
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+    /* transform: translateY(-px); */
+    transform: translate(-6px, -1px);
+}
+
+@media screen and (max-width: 960px) {
+    .navCont{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-height: 5rem;
+    
+    }
+
+    .imgContent{
+        position: absolute;
+        z-index: 1;
+        height: 16vw;
+    
+    }
+
+}
+
+
+
+
