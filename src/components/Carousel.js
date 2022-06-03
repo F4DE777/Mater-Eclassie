@@ -12,7 +12,7 @@ import "./Carousel.css";
 
 function Carousel() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         fade: true,
         arrows:true,
