@@ -1,0 +1,19 @@
+.albumHeader{
+    background-color:rgb(245,245,245) !important;
+    margin-top:100px;
+}
+Tab label:active{
+    color:red
+}
+
+.levt{
+    margin-left:700px;
+}
+
+
+
+@media (max-width: 600px) {
+  .levt{
+ margin-left:100px !important;
+  }
+}

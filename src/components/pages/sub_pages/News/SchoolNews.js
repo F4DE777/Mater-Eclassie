@@ -1,45 +1,63 @@
 import React from 'react';
-import Pex from "../../../../assets/building@2x.png";
+import Pex from "../../../../assets/smile2.png";
+
+
+// import Circle from "../../../assets/circle2.png";
+import { CBreadcrumbItem } from "@coreui/react";
+import { CBreadcrumb } from "@coreui/react";
+import "./News.css";
+// import Circle from "../../assets/Circle.svg";
 
 
 function SchoolNews() {
   return (
     <>
-        <section>
-            <div className="header-img">
-                <img src={Pex} alt="Header" className="img-fluid" />
+      <section>
+        <div className="header-img">
+          <img src={Pex} alt="Header" className="img-fluid" />
+        </div>
+      </section>
+      <CBreadcrumb style={{ "--cui-breadcrumb-divider": "'>'" }}>
+        <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+
+        <CBreadcrumbItem active>News & Events</CBreadcrumbItem>
+      </CBreadcrumb>
+
+      <section className="container">
+        <div className="comments">
+          <div className="intro">
+            <small>HOME </small>
+            <header>News & Events</header>
+            {/* <img className="circle img-fluid " src={Circle} alt="" /> */}
+          </div>
+
+          <div className="col-md-12 flexy">
+            <div className="col-md-5 event event1">
+              <h6 className="title">EVENT</h6>
+              <h5>SCHOOL CONCERT</h5>
             </div>
-        </section>
 
+            <div className="col-md-5 event event2">
+              <h6 className="title">EVENT</h6>
+              <h5>INTERHOUSE SPORTS</h5>
+            </div>
+          </div>
 
-        <section className="container">
-                <div className="comments">
-                    <div className="intro">
-                        <small>ACADEMICS </small>
-                        <header>Age Consideration</header>
-                    </div>
-                    <div className="row create">
-                        <div className="col-12 move-down">
-                            <div className="speech">
-                                <div>
-                                    <p>EPITOME MODEL ISLAMIC SCHOOLS is a group of co-educational institutions established in year 2008. The aim is to prepare youth for the where issues of ethnicity, tribalism nepotism, etc will not have a place to make an attempt towards creating a country that will be crisis free, where the fear of God will guide the actions of our youth rather than the manipulation of some ungodly people in the society, are also part of the school programme.</p>
-                                    <div className='vis-state'>
-                                        <h4>Vision Statement</h4>
-                                        <p>Preparing for a nation where the fear of Allah will be paramount in the minds of the leaders and mutual suspicion among tribes will be a thing of the past.</p>
-                                    </div>
-                                    <div>
+          <div className="col-md-12 flexy">
+            <div className="col-md-5 event event3">
+              <h6 className="title">EVENT</h6>
+              <h5>CHRISTMAS PARTY</h5>
+            </div>
 
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
+            <div className="col-md-5 event event4">
+              <h6 className="title">EVENT</h6>
+              <h5>CHURCH SERVICE</h5>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
 export default SchoolNews

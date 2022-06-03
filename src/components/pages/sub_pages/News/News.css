@@ -1,0 +1,59 @@
+
+
+
+@media (min-width: 600px) {
+  .flexy{
+display:flex;
+  }
+}
+
+
+
+.event{
+    height:400px;
+    margin:30px;
+}
+.event1{
+    background-image:url(../../../../assets/vio.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.event2{
+    background-image:url(../../../../assets/march.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+
+.event3{
+    background-image:url(../../../../assets/1632735791._DSC3088eee.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+
+
+.event4{
+    background-image:url(../../../../assets/ojgvcf.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+
+.event h6{
+    background-color:white;
+    padding:10px 10px 10px 10px;
+    width:90px;
+    margin-top:20px;
+}
+.event h5{
+    margin-top:270px;
+    padding:10px 10px 10px 10px;
+     background-color:white;;
+  
+}

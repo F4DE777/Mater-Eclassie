@@ -121,7 +121,7 @@
     color: #000;
 }
 
-.date-event label{
+.date-event label2{
     font-family:monseratSemi ;
     color: #F29A38;
     font-size: 18px;
@@ -239,7 +239,7 @@
     width: 100%;
 }
 
-.date-event label{
+.date-event label2{
     font-family:monseratSemi ;
     font-size: 18px;
     margin-top: 20px;
@@ -311,3 +311,17 @@
 }
 
 }
+
+
+
+
+
+ .circle{
+        height:90px !important;
+        margin-left:-90px;
+        margin-top:20px !important
+    }
+/* 
+.down{
+    margin-top:-160px !important
+} */

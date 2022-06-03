@@ -18,8 +18,8 @@
     
     .use{
         color: #ffffff !important;
-        font-family: monserat;
-        font-weight: 700;
+        font-family: monseratSemi;
+        /* font-weight: 700; */
         font-size: 19px;
         display: flex;
         text-align: left;
@@ -132,7 +132,7 @@
     }
     
     
-    .grade-level{
+    .grade-level {
         padding: 0;
         text-align: left;
         list-style: none;
@@ -140,11 +140,16 @@
     }
     
 
-    .grade-level li{
+    .grade-level li {
         font-size: 18px;
         font-weight: 100;
     }
-    
+    .grade-level a{
+        color:white;
+        text-decoration:none;
+    font-family: monserat;
+
+    }
     
     .copyrights{
         padding-top: 1rem;
@@ -218,7 +223,7 @@
     .policy {
         position: relative;
         display: flex;
-        width: 10%;
+        width: 15%;
         justify-content: space-between;
         font-size: 12px;
     }
@@ -332,7 +337,7 @@
         color: #000;
     }
     
-    .join-head label{
+    .join-head label2{
         font-size: 18px;
         font-family: monserat;
         color: #F29A38;
@@ -361,7 +366,8 @@
 
 .contain-sponsors{
     position: relative;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom:0 !important;
 }
 
 
@@ -369,7 +375,7 @@
     display: flex;
     position: relative;
     list-style: none;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -420,9 +426,41 @@
 }
 
     
-@media(max-width:960px) {
+   
+@media(min-width:600px) {
                 
-    
+    .contain-sponsors2{
+        display:none
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+           .cir{
+               display:none;
+           }  
+        }
+
+
+@media(max-width:960px) {
+           .cir{
+               display:none;
+           }     
+    .contain-sponsors{
+        display:none
+    }
                 .footer{
                     box-sizing: border-box;
                     display: blocK;
@@ -493,6 +531,14 @@
         margin-top: 9rem;
     }
     
+
+.sponsors li img{
+    height:30px
+}
+
+
+
+
             }
     
     
@@ -503,3 +549,32 @@
                 overflow: hidden;
                 }
     
+ .cir{
+        height:70px !important;
+        margin-left:-60px;
+        margin-top:-40px !important
+    }
+    .med{
+        height:10px !important
+    }
+    .spons{
+        width:30px !important;
+    }
+
+    .ing-tag{
+        z-index:4 !important
+    }
+    .s2{
+        margin-top:15px;
+    }
+    .ing-tag h4{
+        color:white !important;
+    }
+.ing{
+        text-decoration: none !important;
+
+}
+
+.go{
+    text-decoration: none !important;
+}

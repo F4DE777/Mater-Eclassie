@@ -10,8 +10,8 @@ function PrincipalsDesk() {
   return (
     <>
         <div className="page-trans">
-                <section>
-                    <div className="header-img">
+                <section >
+                    <div className="header-img " >
                         <img src={Pex} alt="Header" className="img-fluid" />
                     </div>
                 </section>
@@ -59,7 +59,8 @@ function PrincipalsDesk() {
                                         </li>
                                     </ul>
                                 </div>
-                                <img src={Teacher} alt="" className='principals-img' /> <p>
+                                <img src={Teacher} alt="" className='principals-img' />
+                                 <p>
                                 I welcome you all to this noble institution, Maryland Comprehensive Secondary School and I congratulate your beloved parents/guardian on your admission to this school. I must say that it is a great privilege to be in this great school that has and will continue to provide highly esteemed and holistic, qualitative education to many people holding key posts in various works of life in and outside our country. You have come therefore to be part of MCSS family and to show the stuff you are made of, in contributing to the good and golden legacy that the school has made in world history.
                                 </p>
                                 
