@@ -8,7 +8,7 @@ import Photos6 from "../../assets/Rectangle9rrf@2x.png";
 import Photos7 from "../../assets/Rectangle9@2x.png";
 import Photos8 from "../../assets/Rectangle9rrr@2x.png";
 import Photo1 from "../../assets/Rectanglefff@2x.png";
-import GalleryIndex2 from "../../components/gallery/GalleryIndex2";
+// import GalleryIndex2 from "../../components/gallery/GalleryIndex2";
 
 import "../HeroSection.css";
 

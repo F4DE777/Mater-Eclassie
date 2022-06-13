@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import SchLogo from '../assets/MaryLandlogo.png'
+import SchLogo from '../assets/MaterLogo@2x.png'
 import Twitter from "../assets/Component48–1.svg";
 import Face from "../assets/Component47–1.svg";
 import Insta from "../assets/Component49–1.svg";
@@ -80,12 +80,8 @@ function Footer() {
                   <img src={SchLogo} alt="banner" />
                 </span>
                 <div className="carr-add">
-                  <p className="text-white text-small ">
-                    MCSS as an institution was established in the year 1969,
-                    that seeks after not only academic excellence but also
-                    morally sound students with integrity and nobility as proper
-                    tools for the development of a complete personality in the
-                    society.
+                  <p className="text-small ">
+                      Mater Ecclesiae College is a Catholic College established by the Church of the Assumption, Falomo to contribute to the educational sector in Lagos State. Operating since 2015 with 25 students, there has been a steady increase in the number of students admitted to the College.
                   </p>
                 </div>
               </div>
@@ -93,8 +89,8 @@ function Footer() {
 
             <div className=" col-xl-3 col-md-3 col-sm-12 col-xs-12  mt-4">
               <div className="container-lg usefuls">
-                <div className="">
-                  <header className="h5 text-white lined mb-4">
+                <div className="ett">
+                  <header className="h5  lined mb-4">
                     Get In Touch
                   </header>
                   <div className="telephone">
@@ -108,8 +104,7 @@ function Footer() {
                   <div className="telephone">
                     <h4>Address: </h4>
                     <p>
-                      Mission Compound, Maryland, <br /> Ikeja, Lagos State,
-                      Nigeria.
+                        Old Isiwo Road, Igbodu Village, Epe Lagos State
                     </p>
                   </div>
                 </div>
@@ -140,6 +135,7 @@ function Footer() {
                       <a
                         href={"http://educare.school/"}
                         target={"_blank"}
+                        rel="noreferrer"
                         style={{ display: "inline-block" }}
                       >
                         <img
@@ -154,17 +150,17 @@ function Footer() {
 
                 <div>
                   <div className="socials">
-                    <header className="h5 text-white text-left lined ">
+                    <header className="h5 text-left lined ">
                       Connect And Share
                     </header>
-                    <ul className="list-unstyled d-flex text-white mr-4 mb-4">
+                    <ul className="list-unstyled d-flex mr-4 mb-4">
                       <li className="  mr-4  dxty">
-                        <a href="#" className={"link"} target={"_blank"}>
+                        <a href="/" className={"link"} target={"_blank"}>
                           <img src={Face} alt="social" className="img-fluid" />
                         </a>
                       </li>
                       <li className="mr-4 dxty med">
-                        <a href="#" className={"link"} target={"_blank"}>
+                        <a href="/" className={"link"} target={"_blank"}>
                           <img
                             src={Twitter}
                             alt="social"
@@ -173,7 +169,7 @@ function Footer() {
                         </a>
                       </li>
                       <li className="mr-4 dxty">
-                        <a href="#" className={"link"} target={"_blank"}>
+                        <a href="/" className={"link"} target={"_blank"}>
                           <img src={Insta} alt="social" className="img-fluid" />
                         </a>
                       </li>
@@ -183,45 +179,8 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="affliation">
-            <div className="white-line"></div>
-            <div className="text-aff">
-              <h4>AFFLIATIONS</h4>
-            </div>
-            <div className="white-line"> </div>
-          </div>
-          <div className="contain-sponsors">
-            <ul className="sponsors col-md-12">
-              <li className="col-4">
-                {" "}
-                <img src={Alliance} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Cobis} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Alliance} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Microsoft} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Apen} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Acca} alt="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Aisha} alt="sponsors" srcset="" />
-              </li>
-            </ul>
-          </div>
+         
+         
 
           <div className="contain-sponsors2 s2">
             <ul className="sponsors col-md-12">
@@ -271,9 +230,8 @@ function Footer() {
           <div className="container-lg">
             <div className="copyrights">
               <div className=" ">
-                <p className=" mb-0 text-white fullyear">
-                  &copy; {new Date().getFullYear()} {""} Maryland Comprehensive
-                  Secondary School{" "}
+                <p className=" mb-0  fullyear">
+                  &copy; {new Date().getFullYear()} {""} MATER ECCLESIAE COLLEGE{" "}
                 </p>
               </div>
               <div className="policy">

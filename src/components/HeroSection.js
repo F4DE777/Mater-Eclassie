@@ -7,14 +7,6 @@ import Pex from "../assets/Rectangle-2s@2x.png";
 import Believe from "../assets/Group1080ed@2x.png";
 import Inspire from "../assets/Group1080e@2x.png";
 import Succeed from "../assets/Group1130uyjjy@2x.png";
-import Photos2 from "../assets/Rectangle-2s@2x.png";
-import Photos3 from "../assets/Rectangle9err@2x.png";
-import Photos4 from "../assets/Rectangle-22@2x.png";
-import Photos5 from "../assets/Rectanglehlijkn@2x.png";
-import Photos6 from "../assets/Rectangle9rrf@2x.png";
-import Photos7 from "../assets/Rectangle9@2x.png";
-import Photos8 from "../assets/Rectangle9rrr@2x.png";
-import Photo1 from "../assets/Rectanglefff@2x.png";
 import Teacher from "../MaryLand/1632735791._DSC3088@2x.png";
 import { Link } from "react-router-dom";
 import Cart from "./Carousel";
@@ -66,11 +58,7 @@ function HeroSection() {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="believe">
-          <h4>Believe.</h4>
-          <h4>Inspire.</h4>
-          <h4>Succeed.</h4>
-        </div>
+        
         <div className="hooked-cov ">
           <div className="hooked">
             <div className="search-fixed help">
@@ -91,9 +79,10 @@ function HeroSection() {
 
         <div className="intro-container">
           <div className="intro-cover">
+            <div className="welcome-img">
+              <img className="head-teacher-img " src={Teacher} alt="" />
+            </div>
             <div className="welcome-note">
-              <span className="tip-block"></span>
-              <label2 htmlFor="#">GREETINGS</label2>
               <h3>Welcome to MCSS</h3>
 
               <div className="mt-3 greet">
@@ -118,14 +107,9 @@ function HeroSection() {
                   Read More
                 </a>
                 <div className="col-md-2">&nbsp;</div>
-
-                <img className="line d-block " src={Line} alt="" />
               </div>
             </div>
-            <div className="welcome-img">
-              <img className="head-teacher-img " src={Teacher} alt="" />
-              <img className="head-teacher-img circle" src={Circle} alt="" />
-            </div>
+            
           </div>
         </div>
 

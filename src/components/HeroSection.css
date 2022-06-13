@@ -11,31 +11,7 @@
     height: 100vh;
 }
 
-.carousel::after{
-        display: block;
-        clear: both;
-        content: "";
-        position: absolute;
-        width: 100%;
-        overflow: hidden;
-        border-radius: 180px 180px 0 0;
-        z-index: 100;
-        margin-top: -100px;
-        height: 100px;
-        width: 100%;
-        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-        border-top-right-radius: 110px; /* 100px of height + 10px of border */
-        border: 10px solid transparent;
-        border-bottom: 0;
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-        background-image:
-        linear-gradient(
-            #4CA149,
-            #4CA149 50%,
-            #4CA149
-        );
 
-    }
 
 .imgCaro{
     width: 100%;
@@ -170,21 +146,6 @@
 
 
 
-.believe{
-    position: relative;
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 0 auto;
-    top: -80px;
-}
-
-
-.believe h4{
-    font-size: 45px;
-    font-family: skia;
-    color: #fff;
-}
 
 
 
@@ -302,49 +263,58 @@
 }
 
 .search-fixed{
-    background-color: #E9BD40;
+    background-color: #fff;
    
 }
 .help{
- height: 3rem;
+    height: 3rem;
     width: 5rem;
     padding: 20px;
-        font-size:10px !important;
+
 
 }
 
-.enquire-fixed{
-    background-color: #191919;
-         /* padding: 27px; */
+.help a{
+    font-size:16px !important;
+    color: #042482;
+    text-decoration: none;
+}
 
-     padding: 20px 0 27px 15px;
-       margin-top:-16px !important;
-height:3.1rem !important;
+.help:hover a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.help:hover {
+    background-color: #042482;
+}
+
+
+.enquire-fixed{
+        background-color: #fff;
+        padding: 20px 0 27px 15px;
+        margin-top:-16px !important;
+        height:3.1rem !important;
 
 }
 
 .apply-fixed{
-    background-color: #F29A38;
-         padding: 25px 0 27px 15px;
+    background-color: #fff;
+    padding: 25px 0 27px 15px;
     margin-top:-19px !important;
 
 }
 
 .visit-fixed{
-    background-color: #4CA149;
-         padding: 25px 0 27px 15px;
+    background-color: #fff;
+    padding: 25px 0 27px 15px;
     margin-top:-21px !important;
-height:3.4rem !important;
+    height:3.4rem !important;
     
 }
 
-.search-fixed a,.visit-fixed a,.apply-fixed a, .enquire-fixed a{
-    color: #ffff;
-    font-size: 16px;
-    text-decoration:none;
-    
 
-}
 
 .hooked-cov{
     position: fixed;
@@ -356,9 +326,6 @@ height:3.4rem !important;
 }
 
 
-.mission-cont{
-
-}
 
 .mission-cont label2{
     font-size: 15px;
@@ -847,20 +814,7 @@ height:3.4rem !important;
         font-size: 35px;
     }
 
-    .believe {
-        position: relative;
-        display: flex;
-        width: 85%;
-        justify-content: space-between;
-        margin: 0 auto;
-        top: -42px;
-    }
-
-    .believe h4 {
-        font-size: 26px;
-        font-family: skia;
-        color: #fff;
-    }
+   
     .hooked-cov{
         display: none;
     }

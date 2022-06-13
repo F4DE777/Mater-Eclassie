@@ -1,14 +1,10 @@
-
-
-    
-    
     .Gap{
         display: flex;
         flex-direction: column;
         position: relative;
         justify-content: space-between;
         height: 12rem;
-                margin-top: 4rem;
+        margin-top: 4rem;
     
     }
     
@@ -17,7 +13,7 @@
     }
     
     .use{
-        color: #ffffff !important;
+        color: #042482 !important;
         font-family: monseratSemi;
         /* font-weight: 700; */
         font-size: 19px;
@@ -43,6 +39,10 @@
         display: block;
         text-align: left;
     }
+
+    .useful1 span img{
+        width: 20vw;
+    }
     
     
     .Army{
@@ -65,7 +65,9 @@
     }
     
     
-    
+    .ett header{
+        color: #042482;
+    }
     
     
     .img-bann{
@@ -85,7 +87,7 @@
     .carr-add p{
         font-family:monserat ;
         line-height: 2;
-
+        color: #042482;
     }
     
 
@@ -96,9 +98,9 @@
     .footer{
         box-sizing: border-box;
         display: blocK;
-        background-color: #4CA149;
+        background-color: #F2F5FF;
         width: 100%;
-        color: #ffffff;
+        color: #042482;
         text-decoration: none;
         position: absolute;
         background-repeat: no-repeat;
@@ -110,20 +112,19 @@
     
     .divider{
         width: 100%;
-        border-bottom: 2px solid #ffffff69;
+        border-bottom: 2px solid #042482;
         display: block;
         text-align: right;
         justify-content: flex-end;
-        margin-top: 1.5rem;
+        margin-top: 4.5rem;
     }
     
     .divider h4{
             font-size: 12px;
-    
     }
     
     .use{
-        color: #ffffff !important;
+        color: #042482 !important;
         font-family: monserat;
         font-weight: 700;
         font-size: 19px;
@@ -145,7 +146,7 @@
         font-weight: 100;
     }
     .grade-level a{
-        color:white;
+        color:#042482;
         text-decoration:none;
     font-family: monserat;
 
@@ -160,7 +161,7 @@
     }
     
     .link {
-        color: white;
+        color: #042482;
     }
     
     .link:hover {
@@ -214,6 +215,10 @@
     .socials{
         margin-top: 2rem;
     }
+
+    .socials header{
+        color: #042482;
+    }
     
     .fullyear{
             font-size: 12px;
@@ -231,7 +236,7 @@
     
     .divide{
         content: "";
-        border-right: 2px solid #ffffff;
+        border-right: 2px solid #042482;
         display: flex;
         height: 1rem;
     }
