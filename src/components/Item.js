@@ -1,12 +1,23 @@
-import styled from "styled-components";
+import Violin from "../assets/1632735791._DSC3088@2x.png";
+import Interhouse from "../assets/fe@2x.png";
+import Church from "../assets/1632735791._DSC3088sdd@2x.png";
 
-export default styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 450px;
-  width: 100%;
-  background-color: transparent;
-  color: #fff;
-  margin: 15px;
-`;
+
+export const Vision1 = [
+    {
+
+
+    }
+]
+
+export const Listed = [
+    {
+        Holder:Violin,
+    },
+    {
+        Holder:Interhouse,
+    },
+    {
+        Holder:Church,
+    }
+]
