@@ -658,69 +658,15 @@
 
 
 
-.our-mission{
-    display: flex;
-    margin-top: 17rem;
-}
-.wit{
-    flex: .4;
-}
 
-.our-miss{
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
-    top: -5rem;
-    position: relative;
-}
 
-.our-miss label2{
-    color: #F29A38;
-    margin: 0;
-    font-style: 16px;
-}
 
-.our-miss h4{
-    font-size: 29px;
-    font-family: Skia;
-    font-weight: 900;
-}
 
-.our-miss p{
-    font-family: monserat;
-    padding: 30px 0 0 30px;
-}
 
-.wit2{
-    flex: 1;
-}
 
-.box-out::after{
-    content: '';
-    width: 379px;
-    height: 126px;
-    background-color: #F29A38;
-    border: 84px solid #F29A38;
-    opacity: 1;
-    z-index: -1;
-    position: relative;
-    left: -20px;
-    top: -80px;
-}
 
-.box-over::before{
-    content: '';
-    width: 227px;
-    height: 126px;
-    background-color: #F29A38;
-    border: 121px solid #F29A38;
-    opacity: 1;
-    z-index: -26;
-    position: absolute;
-    /* left: -20px; */
-    top: -41px;
-    right: 0;
-}
+
+
 
 .yellow-border::before{
     background: #F29A38;

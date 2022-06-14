@@ -12,7 +12,7 @@ import './NavBar.css'
 
 function NavBar() {
   const [click , setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  const [ setDropdown] = useState(false);
 
 
   const [activeMenu, setActiveMenu] = useState({
@@ -275,7 +275,7 @@ function NavBar() {
               <li class="item">
                 <a
                   className="portal btn btn-sm"
-                  href="#"
+                  href="/"
                   target="_blank"
                 >
                   PORTAL

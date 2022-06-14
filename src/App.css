@@ -1,6 +1,6 @@
 @font-face {
     font-family: monserat;
-    src: url(./assets/fonts/FontsFree-Net-Montserrat-Medium.ttf);
+    src: url(./assets/fonts/Mulish-Regular.ttf);
 }
 
 @font-face {
@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: skia;
-    src: url(./assets/fonts/Skia\ Regular.ttf);
+    font-family: Sinhala;
+    src: url(./assets/fonts/SinhalaMN.ttc);
 }
 
 .fade-appear,

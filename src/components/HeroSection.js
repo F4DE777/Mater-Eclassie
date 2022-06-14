@@ -1,69 +1,28 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import scholar from "../assets/Rectangle-2@2x.png";
-import Des from "../assets/Rectangle-22@2x.png";
-import Hard from "../assets/Rectangle-2e@2x.png";
-import Pex from "../assets/Rectangle-2s@2x.png";
-import Believe from "../assets/Group1080ed@2x.png";
-import Inspire from "../assets/Group1080e@2x.png";
-import Succeed from "../assets/Group1130uyjjy@2x.png";
-import Teacher from "../MaryLand/1632735791._DSC3088@2x.png";
 import { Link } from "react-router-dom";
 import Cart from "./Carousel";
 import Violin from "../assets/1632735791._DSC3088@2x.png";
 import Play from "../assets/1632735791._DSC3088ed@2x.png";
-import Line from "../assets/Rectangle 10018@2x.png";
 import Circle from "../assets/Circle.svg";
-import Circle2 from "../assets/Circle.png";
+import Library from "../assets/1632735791._DSC3088rf@2x.png";
 import GalleryIndex from "./gallery/GalleryIndex"
-
 import Vision from "./Vision";
 import "./HeroSection.css";
+import Hero from "./Hero";
+import { introSlider } from "./sliderData";
+import styled from "styled-components";
 
 function HeroSection() {
   return (
     <>
       <div className="page-trans ">
-        <div>
-          <Carousel fade>
-            <Carousel.Item>
-              <img
-                className="imgCaro d-block w-100 img-fluid "
-                src={scholar}
-                alt="Scholar"
-              />
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img
-                className="imgCaro  d-block w-100 img-fluid "
-                src={Des}
-                alt="Student"
-              />
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img
-                className="imgCaro d-block w-100 img-fluid "
-                src={Hard}
-                alt=""
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="imgCaro d-block w-100 img-fluid "
-                src={Pex}
-                alt=""
-              />
-            </Carousel.Item>
-          </Carousel>
-        </div>
+        <Hero/>
         
         <div className="hooked-cov ">
           <div className="hooked">
             <div className="search-fixed help">
               {" "}
-              <Link>Search</Link>{" "}
+              <Link to={'/'}>Search</Link>{" "}
             </div>
             <div className="enquire-fixed help">
               <Link to="/Contact">Enquire</Link>
@@ -77,156 +36,52 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="intro-container">
-          <div className="intro-cover">
-            <div className="welcome-img">
-              <img className="head-teacher-img " src={Teacher} alt="" />
-            </div>
-            <div className="welcome-note">
-              <h3>Welcome to MCSS</h3>
+        <Intro className="intro-container">
+          {introSlider.map((intro, idx) => {
+            return(
+              <div  key={idx} className="cover">
+                    <img src={intro.placeHolder} alt="holder" />
+                    <div className="content">
+                        <h4>{intro.Header}</h4>
+                        <p>{intro.paragraph}</p>
+                        <Link to={'/'}>Learn More</Link>
+                    </div>
+             
+              </div>
+            )
+          })}
 
-              <div className="mt-3 greet">
+        </Intro>
+
+
+        <Mission className="our-mission">
+            <div className="wit">
+              <div className="our-miss">
+                <label>OUR MISSION</label>
+                <h4>A College-Ready Environment</h4>
                 <p>
-                  I welcome you all to this noble institution, Maryland
-                  Comprehensive Secondary School and I congratulate your beloved
-                  parents/guardian on your admission to this school.
-                  <br />
-                  I must say that it is a great privilege to be in this great
-                  school that has and will continue to provide highly esteemed
-                  and holistic, qualitative education to many people holding key
-                  posts in various works of life in and outside our country.
-                  <br /> <br />
-                  You have come therefore to be part of MCSS family and to show
-                  the stuff you are made of, in contributing to the good and
-                  golden legacy that the school has made in world history. Once
-                  again you are welcome.
+                   We help our students realize their whole potential with a balanced approach to education that leads to brilliance.
                 </p>
-              </div>
-              <div className="mt-5 flexy">
-                <a href={"/principal"} className="read">
-                  Read More
-                </a>
-                <div className="col-md-2">&nbsp;</div>
+                <Link to={'/'}>Read More</Link>
               </div>
             </div>
-            
-          </div>
-        </div>
-
-        <div className="container marg ">
-          <div className="row">
-            <div className="col-12 yellow-border">
-              <div>
-                <div className="mission-cont">
-                  <label2 htmlFor="#"> OUR MISSION</label2>
-                  <h4>At A Glance</h4>
-                  <div>
-                    <p>
-                      AT MCSS we are Intentional with providing an enduring
-                      legacy of qualitative and affordable education in Nigeria.
-                      Our students as much as possible, acquire the best
-                      education in a conducive, fair, competitive and dynamic
-                      atmosphere with the assistance of competent and dedicated
-                      teache
-                    </p>
-                  </div>
+            <div className="wit2">
+              <div className="subject">
+                <div className="box-out">
+                      <img src={Violin} alt="violin" />
+                      <h4>Career Exploration</h4>
+                </div>
+                <div className="box-center">
+                      <img src={Play} alt="violin" />
+                      <h4>Faith</h4>
+                </div>
+                <div className="box-over">
+                      <img src={Library} alt="violin" />
+                      <h4>Library</h4>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="col-md-12 flexy down">
-          <div className="col-md-4"> &nbsp;</div>{" "}
-          <img className="head-teacher-img circle " src={Circle} alt="" />
-        </div>
-
-        <div className="container">
-          <div className="row " style={{ marginTop: "7rem" }}>
-            <div
-              className="col-lg-4 col-md-4 col-sm-12  col-xs-12 swift "
-              style={{
-                background: `url(${Believe}) center/cover no-repeat`,
-                height: "624px",
-                width: "31%",
-                maxWidth: "31%",
-              }}
-            >
-              <h4>Believe</h4>
-            </div>
-            <div
-              className="col-lg-4 col-md-4 col-sm-12 col-xs-12 swift"
-              style={{
-                background: `url(${Inspire}) center/cover no-repeat`,
-                height: "881px",
-                width: "31%",
-                maxWidth: "31%",
-              }}
-            >
-              <h4>Inspire</h4>
-            </div>
-            <div
-              className="col-lg-4 col-md-4 col-sm-12 col-xs-12 swift"
-              style={{
-                background: `url(${Succeed}) center/cover no-repeat`,
-                height: "724px",
-                width: "31%",
-                maxWidth: "31%",
-              }}
-            >
-              <h4>Succeed</h4>
-            </div>
-          </div>
-        </div>
-
-        <div className="our-mission">
-          <div className="wit">
-            <div className="our-miss">
-              <label2 htmlFor="">OUR MISSION</label2>
-              <h4>Our Group Of Schools</h4>
-              <p>
-                OUR STUDENTS ARE PREPARED TO SEEK KNOWLEDGE FOR IT'S OWN SAKE
-                AND TO PURSUE FURTHER STUDY AT THE FINEST COLLEGES AND
-                UNIVERSITIES.
-              </p>
-              <div className="up">
-                <img
-                  className="head-teacher-img circle "
-                  src={Circle2}
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div className="container wit2">
-            <div className="row">
-              <div className="col-6 box-out">
-                <div
-                  style={{
-                    background: `url(${Violin}) center/cover no-repeat`,
-                    height: "427px",
-                    width: "-webkit-fill-available",
-                  }}
-                  className="swift"
-                >
-                  <h4>Inspire</h4>
-                </div>
-              </div>
-              <div className="col-6 box-over">
-                <div
-                  style={{
-                    background: `url(${Play}) center/cover no-repeat`,
-                    height: "427px",
-                    width: "-webkit-fill-available",
-                  }}
-                  className="swift"
-                >
-                  <h4>Succeed</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Mission>
 
         <Vision />
         <Cart />
@@ -244,164 +99,7 @@ function HeroSection() {
                 </span>
               </p>
             </div>
-            <GalleryIndex />
-            {/* <table className="gallery">
-              <tr>
-                <td className="mic-img">
-                  <div
-                    style={{
-                      background: `url(${Photos7}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td colSpan="2" style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos4}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td rowSpan="2" style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos2}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos3}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos8}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photo1}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos5}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td style={{ width: "350px" }}>
-                  <div
-                    style={{
-                      background: `url(${Photos6}) center/cover no-repeat`,
-                      height: "100%",
-                      width: "-webkit-fill-available",
-                      objectFit: "cover",
-                    }}
-                    className="img-fluid"
-                  >
-                    <div className="text-cover">
-                      <div className="text-content">
-                        <i class="fas fa-caret-left"></i>
-                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        <i class="fas fa-caret-right"></i>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </table> */}
+              <GalleryIndex />
             <div>
               <Link to="/News" className="more-news1">
                 <button>Go to Gallery</button>
@@ -415,3 +113,250 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+
+
+const Intro = styled.div`
+
+  height:100vh ;
+  display:flex ;
+  flex-direction:column ;
+  align-items:center ;
+  justify-content:center ;
+  position: relative;
+  &::after{
+    content:'' ;
+    background-image: url('../assets/Path4695@2x.png');
+    /* background-color:#F2F5FF ; */
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    z-index:-10 ;
+    bottom:-25rem ;
+    border-bottom-right-radius:5rem;
+    /* opacity:.3 ; */
+    border: 30rem solid transparent;
+	  border-right: none;
+    border-left-color: #F2F5FF;
+
+  }
+  .cover{
+      width:70% ;
+      margin:0 auto ;
+      display:grid ;
+      grid-template-columns:repeat(2 ,1fr) ;
+      justify-content:center ;
+      align-items:center ;
+      gap:2rem;
+      img{
+        width:100% ;
+        height:100% ;
+        object-fit:cover ;
+        border-radius:10px;
+      }
+
+      .content{
+        font-family:sinhala ;
+
+        h4{
+          font-size:clamp(2rem , 6vw, 2.5rem) ;
+        }
+
+        p{
+          font-size:1rem ;
+          line-height:25px ;
+          font-family: monserat;
+          padding:20px 0 0 20px  ;
+
+        }
+
+        a{
+          width:5rem ;
+          border:1px solid #042482 ;
+          color:#042482 ;
+          text-decoration:none ;
+          border-radius:40px ;
+          padding:10px 20px  ;
+          font-size:18px;
+          font-family: monserat;
+          margin-top: 20px;
+        }
+      }
+  }
+`
+
+const Mission = styled.div`
+    display: flex;
+    margin-top: 17rem;
+    justify-content:center ;
+    align-items:center ;
+    position:relative ;
+    height:30rem ;
+.wit{
+    flex: .4;
+
+    .our-miss{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    top: -5rem;
+      label{
+          color: #042482;
+          margin: 0;
+          font-style: 16px;
+          position:absolute ;
+          top:0 ;
+          font-family: monserat;
+          padding: 0;
+
+          &::after{
+            content:'' ;
+          }
+        }
+        h4{
+            font-size: 2.5rem;
+            font-family: Sinhala;
+            font-weight: 900;
+          }
+          p{
+            font-family: monserat;
+            padding: 30px 0 0 30px;
+            margin-bottom:2rem ;
+
+          }
+
+          a{
+            border:1px solid #042482 ;
+            color:#042482 ;
+            text-decoration:none;
+            padding: 10px 20px  ;
+            border-radius:20px ;
+          }
+}
+}
+.wit2{
+    flex: 1;
+    height: 100%;
+
+    .subject{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr) ;
+      gap:1.5rem;
+
+      .box-out{
+        position:relative ;
+        justify-content: center;
+        display: flex;
+        img{
+          width:100% ;
+          height:100% ;
+          object-fit:cover ;
+        }
+        h4{
+              position:absolute ;
+              bottom:10% ;
+              text-align:center ;
+              width: 80%;
+              margin: 0 auto;
+              background-color:#FFFFFF ;
+              padding: 10px 20px ;
+              font-family: monserat;
+
+            }
+
+
+        &::after{
+            content: '';
+            width: 379px;
+            height: 126px;
+            background-color: #F2F5FF;
+            border: 84px solid #F2F5FF;
+            opacity: 1;
+            z-index: -1;
+            position: absolute;
+            left: -20px;
+            top: -80px;
+          }
+      }
+      .box-center{
+        position:relative ;
+        justify-content: center;
+        display: flex;
+            img{
+              width:100% ;
+              height:100% ;
+              object-fit:cover ;
+            }
+
+            h4{
+              position:absolute ;
+              bottom:10% ;
+              text-align:center ;
+              width: 80%;
+              margin: 0 auto;
+              background-color:#FFFFFF ;
+              padding: 10px 20px ;
+              font-family: monserat;
+
+            }
+
+            &::before{
+                content: '';
+                width: 50%;
+                height: 126px;
+                background-color: #F2F5FF;
+                border: 121px solid #F2F5FF;
+                /* opacity: 1; */
+                z-index: -26;
+                position: absolute;
+                /* top: -41px; */
+                right: 0;
+                /* left: 0; */
+                margin: 0 auto;
+                bottom: -90px;
+              }
+    }
+
+      .box-over{
+         position:relative ;
+        justify-content: center;
+        display: flex;
+            img{
+              width:100% ;
+              height:100% ;
+              object-fit:cover ;
+            }
+
+            h4{
+              position:absolute ;
+              bottom:10% ;
+              text-align:center ;
+              width: 80%;
+              margin: 0 auto;
+              background-color:#FFFFFF ;
+              padding: 10px 20px ;
+              font-family: monserat;
+              
+            }
+        &::before{
+            content: '';
+            width: 227px;
+            height: 126px;
+            background-color: #F2F5FF;
+            border: 121px solid #F2F5FF;
+            opacity: 1;
+            z-index: -26;
+            position: absolute;
+            /* left: -20px; */
+            top: -41px;
+            right: 0;
+          }
+      }
+
+    }
+}
+
+
+
+`

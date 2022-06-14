@@ -29,6 +29,7 @@
     outline: 0;
     border: 0;
     transition: 1.5s scale linear;
+    font-weight: 900;
 }
 
 .btnPortal:focus{
