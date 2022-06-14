@@ -18,7 +18,7 @@ function HeroSection() {
       <div className="page-trans ">
         <Hero/>
         
-        <div className="hooked-cov ">
+        <Hooked >
           <div className="hooked">
             <div className="search-fixed help">
               {" "}
@@ -34,7 +34,7 @@ function HeroSection() {
               <Link to="/Contact">Visit</Link>
             </div>
           </div>
-        </div>
+        </Hooked>
 
         <Intro className="intro-container">
           {introSlider.map((intro, idx) => {
@@ -86,27 +86,19 @@ function HeroSection() {
         <Vision />
         <Cart />
 
-        <div className="gallery-cont">
-          <div className="btm-yellow">
-            <div className="gallery-head">
-              <label2 htmlFor="">EXPLORE</label2>
-              <h1>Take A School Tour</h1>
-              <p>
-                Our Campus Have A Lot To Offer For Our Students{" "}
-                <span className="levt">
-                  {" "}
-                  <img className="circle img-fluid " src={Circle} alt="" />
-                </span>
-              </p>
+        <Gallery>
+            <div className="explore">
+              <div className="gall">
+                  <label>EXPLORE</label>
+                  <h1>Take A School Tour</h1>
+                </div>
+                  <GalleryIndex />
+                <MoreImg to={'/'}>
+                      See More
+                </MoreImg>
             </div>
-              <GalleryIndex />
-            <div>
-              <Link to="/News" className="more-news1">
-                <button>Go to Gallery</button>
-              </Link>
-            </div>
-          </div>
-        </div>
+              
+        </Gallery>
       </div>
     </>
   );
@@ -114,7 +106,110 @@ function HeroSection() {
 
 export default HeroSection;
 
+const Hooked = styled.div`
+      position: fixed;
+      right: 0;
+      display: flex;
+      z-index: 100;
+      top: 20%;
 
+      .hooked{
+
+        div{
+              transform: rotate(91deg) ;
+              margin: 48px -30px;
+              height: 3rem;
+              width: 5rem;
+              padding: 20px;
+            }
+            .search-fixed {
+                text-align:center ;
+                display:flex ;
+                justify-content:center ;
+
+                a{
+                          font-size:16px ;
+                          color: #042482 ;
+                          text-decoration: none;
+                      }
+
+                      &:hover{
+                        background-color:#042482 ;
+                        a{
+                            color: #fff;
+                            text-decoration: underline;
+                            
+                          }
+                      }
+              }
+
+              .enquire-fixed{
+                      background-color: #fff;
+                      padding: 20px 0 27px 15px;
+                      margin-top:-16px ;
+                      height:3.1rem ;
+
+                      a{
+                          font-size:16px ;
+                          color: #042482 ;
+                          text-decoration: none;
+                      }
+
+                      &:hover{
+                        background-color:#042482 ;
+                        a{
+                            color: #fff;
+                            text-decoration: underline;
+                            
+                          }
+                      }
+                }
+
+                .apply-fixed{
+                    background-color: #fff;
+                    padding: 25px 0 27px 15px;
+                    margin-top:-19px ;
+                    a{
+                          font-size:16px ;
+                          color: #042482 ;
+                          text-decoration: none;
+                      }
+
+                      &:hover{
+                        background-color:#042482 ;
+                        a{
+                            color: #fff;
+                            text-decoration: underline;
+                            
+                          }
+                      }
+
+                }
+
+                .visit-fixed{
+                    background-color: #fff;
+                    padding: 25px 0 27px 15px;
+                    margin-top:-21px ;
+                    height:3.4rem ;
+                    a{
+                          font-size:16px ;
+                          color: #042482 ;
+                          text-decoration: none;
+                      }
+
+                      &:hover{
+                        background-color:#042482 ;
+                        a{
+                            color: #fff;
+                            text-decoration: underline;
+                            
+                          }
+                      }
+                    
+                }
+
+      }
+`
 
 const Intro = styled.div`
 
@@ -126,7 +221,7 @@ const Intro = styled.div`
   position: relative;
   &::after{
     content:'' ;
-    background-image: url('../assets/Path4695@2x.png');
+    /* background-image: url('../assets/Path4695@2x.png'); */
     /* background-color:#F2F5FF ; */
     position: absolute;
     left: 0;
@@ -359,4 +454,60 @@ const Mission = styled.div`
 
 
 
+`
+
+const Gallery = styled.div`
+      justify-content: center;
+      position:relative ;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 30%;
+        z-index: -10;
+        bottom: -35rem;
+        border-bottom-right-radius: 5rem;
+        border-radius: 5rem;
+        border: 30rem solid transparent;
+        border-right: none;
+        border-left-color: #F2F5FF;
+      }
+
+    .explore{
+        margin:  15rem auto;
+        width:90% ;
+        display:flex ;
+        flex-direction:column ;
+      .gall{
+      margin-bottom:5rem;
+      label{
+        color:#042482 ;
+        font-family:monserat ;
+        font-weight:100;
+        padding:0 ;
+        font-size:18px;
+      }
+      h1{
+        font-family: Sinhala;
+        font-size:2.5rem;
+        color:#000 ;
+      }
+    }
+    }
+
+`
+
+const MoreImg = styled(Link)`
+
+    position:relative ;
+    margin:3rem auto ;
+    border:1px solid #042482 ;
+    color:#042482 ;
+    text-decoration:none ;
+    padding:10px 20px  ;
+    border-radius:30px ;
+    font-size:20px ;
+    font-family:monserat ;
 `

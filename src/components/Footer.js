@@ -65,12 +65,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-
-
-
-
-
       <footer className="footer ">
         <div className="container-lg">
           <div className="row">
