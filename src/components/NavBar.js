@@ -169,9 +169,9 @@ function NavBar() {
           <div className="wrapper">
             <ui className="mainMenu">
               <li className="item" id="account">
-                <a href="#account" className="btn">
+                <Link href="#account" className="btn">
                   About
-                </a>
+                </Link>
                 <div className="subMenu">
                   <NavLink
                     to={"/principal"}
@@ -205,9 +205,9 @@ function NavBar() {
               </li>
 
               <li className="item" id="academics">
-                <a href="#academics" class="btn">
+                <Link href="#academics" class="btn">
                   Admission
-                </a>
+                </Link>
                 <div className="subMenu">
                   <NavLink
                     to={"/apply"}
@@ -234,9 +234,9 @@ function NavBar() {
               </li>
 
               <li className="item" id="admission">
-                <a href="#admission" class="btn">
+                <Link href="#admission" class="btn">
                   Learning
-                </a>
+                </Link>
                 <div className="subMenu">
                   <NavLink
                     to={"/senior"}
@@ -256,30 +256,30 @@ function NavBar() {
               </li>
 
               <li className="item" id="support">
-                <a href={"/school"} class="btn">
+                <Link href={"/school"} class="btn">
                   School Life
-                </a>
+                </Link>
               </li>
 
               <li className="item" id="support">
-                <a href="/Gallery" class="btn">
+                <Link href="/Gallery" class="btn">
                   Gallery
-                </a>
+                </Link>
               </li>
 
               <li className="item" id="support">
-                <a href="/News" class="btn">
+                <Link href="/News" class="btn">
                   News & Events
-                </a>
+                </Link>
               </li>
               <li class="item">
-                <a
+                <Link
                   className="portal btn btn-sm"
                   href="/"
                   target="_blank"
                 >
                   PORTAL
-                </a>
+                </Link>
               </li>
             </ui>
           </div>

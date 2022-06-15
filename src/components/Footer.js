@@ -5,18 +5,9 @@ import Twitter from "../assets/Component48–1.svg";
 import Face from "../assets/Component47–1.svg";
 import Insta from "../assets/Component49–1.svg";
 import WaterMark from "../assets/Group1066.png";
-import Alliance from "../assets/alliancef1.png";
-import Cobis from "../assets/cobis.png";
-import Acca from "../assets/Acca.png";
 import Enquire from "../assets/1632735791._DSC3088ytht@2x.png"
 import Visit from "../assets/1632735791._DSC3088sdd@2x.png"
 import Apply from "../assets/1632735791._DSC3088rf@2x.png"
-import Aisha from "../assets/aisa-logo-blk.png";
-import Apen from "../assets/Apen.png";
-import Microsoft from "../assets/Microsoft.png";
-
-
-
 import "./Footer.css";
 import styled from 'styled-components';
 
@@ -286,6 +277,14 @@ const ApplyCov = styled.div`
           }
         }
       }
+      @media screen and (max-width: 960px) {
+        display:grid ;
+        grid-template-columns:repeat(1, 1fr) ;
+        gap:1.5rem;
     }
+    }
+    @media screen and (max-width: 960px) {
+      margin: 0 auto;
 
+    }
 `

@@ -118,6 +118,7 @@ const Slidecover = styled.div`
             right: 0;
             opacity: 1;
             background: #F2F5FF;
+            z-index:-10 ;
         }
 `
 
@@ -149,7 +150,26 @@ const Heroslider = styled.div`
         opacity: 1;
         background:#F2F5FF ;
     }
-
+    @media screen and (max-width: 960px) {
+        position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    /* flex-direction: column; */
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    }
    
 `
  const Herocontent = styled.div`
@@ -169,6 +189,10 @@ const Heroslider = styled.div`
             font-size:18px ;
             padding:20px 0 0 20px ;
         }
+
+        @media screen and (max-width: 960px) {
+            padding:0 10px ;
+        }
 `
 const Heroimg = styled.img`
     /* position:absolute ; */
@@ -180,9 +204,20 @@ const Heroimg = styled.img`
     z-index:1 ;
 `
 const Sliderbuttons = styled.div`
-   position: absolute;
-    bottom: 10%;
-    left:10% ;
+   
+    @media screen and (min-width: 960px) {
+        position: absolute;
+        bottom: 10%;
+        left:10% ;
+    }
+
+    @media screen and (max-width: 960px) {
+        position: absolute;
+        bottom: 0 ;
+        right: 0 ;
+
+    }
+    
 `
 const arrowButtons = css`
     width:50px ;

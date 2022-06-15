@@ -41,7 +41,7 @@ function HeroSection() {
             return(
               <div  key={idx} className="cover">
                     <img src={intro.placeHolder} alt="holder" />
-                    <div className="content">
+                    <div className="contentUp">
                         <h4>{intro.Header}</h4>
                         <p>{intro.paragraph}</p>
                         <Link to={'/'}>Learn More</Link>
@@ -251,7 +251,7 @@ const Intro = styled.div`
         border-radius:10px;
       }
 
-      .content{
+      .contentUp{
         font-family:sinhala ;
 
         h4{
@@ -277,6 +277,21 @@ const Intro = styled.div`
           font-family: monserat;
           margin-top: 20px;
         }
+        @media screen and (max-width: 960px) {
+          p{
+            padding:0 ;
+          }
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        width:90% ;
+        display:grid ;
+        grid-template-columns:repeat(1 ,1fr) ;
+        justify-content:center ;
+        align-items:center ;
+        gap:2rem;
+        padding:0 !important ;
       }
   }
 `
