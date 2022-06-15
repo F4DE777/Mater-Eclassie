@@ -18,53 +18,46 @@ import Microsoft from "../assets/Microsoft.png";
 
 
 import "./Footer.css";
+import styled from 'styled-components';
 
 
 
 function Footer() {
   return (
     <>
-      <div className="container  smooth">
+      <ApplyCov className="container  smooth">
         <div className="join-head">
-          <label2 htmlFor="">EXPLORE</label2>
-          <h1>Discover More</h1>
+            <label>EXPLORE</label>
+            <h1>Discover More</h1>
         </div>
-        <div className="row mb-5 mt-5">
-          <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12  ">
-            <div className="join-img">
-              <img src={Enquire} alt="stairs " className="img-fluid" />
-            </div>
-
-            <Link to="/Contact" className="go">
-              <div className="ing-tag">
-                <h4>Enquire</h4>
-              </div>
-            </Link>
+        <div className="joinCont">
+          <div className="sub ">
+                <img src={Enquire} alt="stairs " className="img-fluid" />
+                <Link to="/Contact" className="go">
+                     <h4>Enquire</h4>
+                    <div className="int-tag">  </div>
+                </Link>
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-            <div className="join-img1">
-              <img src={Visit} alt="stairs" className="img-fluid" />
-            </div>
-
-            <Link to="/Contact" className="go">
-              <div className="ing-tag">
-                <h4>Visit</h4>
-              </div>
-            </Link>
+          <div className="sub ">
+                <img src={Visit} alt="stairs " className="img-fluid" />
+                <Link to="/Contact" className="go">
+                      <h4>Visit</h4>
+                      <div className="int-tag">  </div>
+                </Link>
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
-            <div className="join-img2 ">
-              <img src={Apply} alt="stairs" className="img-fluid" />{" "}
-            </div>
-
-            <Link to="/Apply" className="go">
-              <div className="ing-tag">
-                <h4>Apply</h4>
-              </div>
-            </Link>
+          <div className=" sub">
+                <img src={Apply} alt="stairs " className="img-fluid" />
+                <Link to="/Contact" className="go">
+                    <h4>Apply</h4>
+                    <div className="int-tag">  </div>
+                </Link>
           </div>
         </div>
-      </div>
+      </ApplyCov>
+
+
+
+
       <footer className="footer ">
         <div className="container-lg">
           <div className="row">
@@ -242,3 +235,94 @@ function Footer() {
 }
 
 export default Footer
+
+
+const ApplyCov = styled.div`
+    margin: 13rem auto;
+
+    .join-head{
+        text-align: center;
+        /* margin-top: 9rem; */
+    
+        h1{
+        font-size: 40px;
+        font-family: sinhala;
+        color: #000;
+      }
+
+      label{
+        font-size: 18px;
+        font-family: monserat;
+        color: #042482;
+        font-weight:100 ;
+        margin: 0;
+    }
+    }
+
+    .joinCont{
+      margin: 5rem 0 6rem 0 ;
+      display:grid ;
+      grid-template-columns:repeat(3, 1fr) ;
+      gap:1.5rem;
+
+      .sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img{
+              width: 100%;
+              position: relative;
+              object-fit: cover;
+              height: 20rem;
+              border-radius:10px 10px 0 0 ;
+        }
+        a{
+          height:5rem ;
+          border-radius: 0 0 10px 10px  ;
+          position:relative ;
+          justify-content:center ;
+          text-align:center ;
+          transition: all .5s linear ;
+            h4{
+              font-family:sinhala ;
+              color:#000 ;
+              font-size:30px ;
+            }
+          .int-tag{
+            background-color:#042482 ;
+            /* position:absolute ; */
+            height:2rem ;
+            bottom:0 ;
+            border-radius: 0 0 10px 10px  ;
+
+          }
+
+          &:hover{
+            h4{
+              font-family:sinhala ;
+              color:#fff ;
+              font-size:30px ;
+              position:absolute ;
+              text-align:center ;
+              display:flex ;
+              width:100% ;
+              left:0 ;
+              right:0 ;
+              justify-content: center;
+
+            }
+          .int-tag{
+            background-color:#042482 ;
+            /* position:absolute ; */
+            height:5rem ;
+            bottom:0 ;
+            border-radius: 0 0 10px 10px  ;
+
+          }
+          }
+        }
+      }
+    }
+
+`

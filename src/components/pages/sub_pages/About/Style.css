@@ -83,16 +83,16 @@ height: 453px;
 
 .intro small {
     text-align: left;
-    font: normal normal bold 16px/21px monserat;
+    font: normal normal normal 16px/21px monserat;
     letter-spacing: 5.76px;
-    color: #F29A38;
+    color: #042482;
     text-transform: uppercase;
     opacity: 1;
 }
 
 .intro header {
   text-align: left;
-    font-family: Skia;
+    font-family: sinhala;
     font-size: 45px;
     letter-spacing: -2px;
     font-weight: 500;
@@ -235,8 +235,9 @@ padding-top: 20px;
 
 .rev h4{
   font-size: 20px;
-  color: #F29A38;
+  color: #042482;
   font-weight: 900;
+  font-family: monserat;
 }
 
 .bio{
@@ -619,19 +620,19 @@ label {
       border-bottom:solid 1px grey;
 
 }
-label:hover {
+/* label:hover {
     background: inherit;
     color:green;
-}
+} */
 
-label::after {
+/* label::after {
     content: '+';
     font-size: 22px;
     font-weight: bold;
     position: absolute;
     right: 10px;
     top: 2px;
-}
+} */
 
 input:checked + label::after {
     content: '-';

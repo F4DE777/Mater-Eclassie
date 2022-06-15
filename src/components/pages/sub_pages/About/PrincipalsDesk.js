@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Teacher from "../../../../assets/sister10@2x.png";
 import Pex from "../../../../assets/Group10121@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import './Style.css'
+import styled from 'styled-components';
 
 function PrincipalsDesk() {
   return (
@@ -20,15 +21,7 @@ function PrincipalsDesk() {
                     <CBreadcrumbItem href="/about/administrators-message">About</CBreadcrumbItem>
                     <CBreadcrumbItem active>Administrator’s Message</CBreadcrumbItem>
                 </CBreadcrumb>
-
-                <section className="container">
-                    <div className="comments">
-                        <div className="intro">
-                            <small>About </small>
-                            <header>Administrator’s Message</header>
-                        </div>
-                        <div className=" create">
-                                <div className='sub-cover'>
+                                {/* <div className='sub-cover'>
                                     <ul className='sub-menu'>
                                         <li>
                                             <Link to={'/'}>
@@ -58,41 +51,70 @@ function PrincipalsDesk() {
                                             
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
+
+                <section className="container">
+                    <div className="comments">
+                        <div className="intro">
+                            <small>About </small>
+                            <header>Administrator’s Message</header>
+                        </div>
+                        <div className="create">
+                                
                                 <img src={Teacher} alt="" className='principals-img' />
                                  <p>
-                                I welcome you all to this noble institution, Maryland Comprehensive Secondary School and I congratulate your beloved parents/guardian on your admission to this school. I must say that it is a great privilege to be in this great school that has and will continue to provide highly esteemed and holistic, qualitative education to many people holding key posts in various works of life in and outside our country. You have come therefore to be part of MCSS family and to show the stuff you are made of, in contributing to the good and golden legacy that the school has made in world history.
                                 </p>
                                 
                                 <p>
-                                I encourage you to be open to the information you will receive 
-                                from the school. Be prepared to participate actively in various
-                                 school programmes:- academic, spiritual, social and morally geared
-                                  towards giving you holistic formation. In order to achieve your aim
-                                   and the purpose for which you are here, your sincere contribution 
-                                   and co-operation is highly needed. You must makeup your mind to 
-                                   work hard from day one; you are also encouraged not to hide your
-                                    talent, because talent shared is talent regained. Be a dignified 
-                                    personage not only in character but also in thoughts, words and 
-                                    actions. Believe in your dreams and work towards achieving your aim
-                                     and purpose for which you are here for. Dear parents, we encourage
-                                      you to once again on the admission of your child/ward to this noble
-                                       institution, thank you for entrusting them to our care. We are all 
-                                       entrusted to God’s care in return. We want to assure of our commitment
-                                        to work diligently in ensuring the physical, social, emotional and 
-                                        intellectual growth of each child that is entrusted to us here in MCSS.
+                                    Welcome to Mater Ecclesiae College, a co-educational home for learning and culture. 
                                 </p>
                                 <p>
-                                Here in MCSS we believe in varying the teaching methods, adapting the curriculum to suit individual student’s needs and providing challenge that will help develop knowledge, self esteem, independent thinking, and community awareness. As a Catholic Secondary School which places emphasis on traditional Christian values, we also endeavour to educate our students to become responsible citizens. We emphasize cooperation and concern for others and respect for individual and cultural differences. Furthermore we promote a comfortable atmosphere where home and school may work together to support student’s success. Back to you my dear children; be optimistic that you can join the team of achievers that both Nigeria and the world have ever received; it may not be easy, but it is possible. As you have come to be part of MCSS family, try to be good Ambassadors of this great citadel of learning obey the school rules and regulations, be punctual, attentive
-                                 and open. Once again you are highly welcome and remain blessed.
+                                    The the burning desire of the catholic community of the Church of the Assumption, Falomo to offer a world-class institution of learning as well as contribute to the educational sector of the nation gave birth to this noble College project. In line with the desire of the universal church for catholic education, our College develops the spiritual, intellectual, moral and socio-cultural dimensions of her students. 
+                                </p>
+                                <p>
+                                    With an understanding of today and a look at tomorrow, we prepare students for purposeful living in whatever society they find themselves. 
+                                </p>
+                                <p>
+                                    Mater Ecclesiae students crave for excellence. Filled with dedication and commitment, the programme of studies fosters a steady understanding of self and the world. With a team of dedicated staff, we journey along with all our students to make them the best of themselves. 
+                                    Life-long skills are incorporated into the learning experience to explore and enhance the creative skills and abilities of our students. 
+                                </p>
+                                <p>
+                                        Mater Ecclesiae College has the desire to be a first-class institution of learning, equipped with ultra-modern facilities that enhance teaching and learning for purposeful living in a serene and quiet environment.
+                                </p>
+                                <p>
+                                    Respect for the human person and appreciation of the uniqueness of the male and female genders is fostered in our students. 
+                                </p>
+                                <p>
+                                    In an atmosphere of complementarity, our young boys and girls work together and offer their special abilities and potentials for the common good. The dignity of every human person regardless of gender is of utmost concern in our College.
+                                </p>
+                                <p>
+                                    Trusting in the unfailing intercession of the Blessed Virgin Mary – the Mother of the Church – we are confident of God’s unfailing help as we strive to reach the heights in all we do.
+                                </p>
+                                <p>
+                                    Imagine yourself at Mater Ecclesiae College. It is a tranquil place. 
+                                </p>
+                                <p>
+                                Peace and God bless.
+
                                 </p>
                         </div> 
                         <div className='rev'>
-                            <h4>REV. SR. AGNES ADEPOJU, OLA </h4>
+                            <h4>REV. FR. JOHN NJORTEAH</h4>
                             <h4>ADMINISTRATOR</h4>
                         </div>
                     </div>
                 </section>
+
+                <Part>
+                      <div>
+                          
+                      </div>
+                      <div>
+
+                      </div>
+                      <div>
+                          </div>              
+                </Part>
  
         </div>
             
@@ -101,3 +123,8 @@ function PrincipalsDesk() {
 }
 
 export default PrincipalsDesk
+
+const Part = styled.div`
+
+
+`
