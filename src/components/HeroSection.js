@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Cart from "./Carousel";
 import Violin from "../assets/1632735791._DSC3088@2x.png";
 import Play from "../assets/1632735791._DSC3088ed@2x.png";
-import Circle from "../assets/Circle.svg";
 import Library from "../assets/1632735791._DSC3088rf@2x.png";
 import GalleryIndex from "./gallery/GalleryIndex"
 import Vision from "./Vision";
@@ -54,7 +53,7 @@ function HeroSection() {
         </Intro>
 
 
-        <Mission className="our-mission">
+        <Mission>
             <div className="wit">
               <div className="our-miss">
                 <label>OUR MISSION</label>
@@ -466,7 +465,45 @@ const Mission = styled.div`
 
     }
 }
+@media screen and (max-width: 960px) {
+      flex-direction:column ;
+      gap:3rem;
+      margin-top: 7rem;
 
+      .wit{
+        flex:1 ;
+
+        .our-miss{
+          width: 90%;
+
+            label{
+              top: -50px;
+            }
+
+            p{
+              padding:0 !important;
+            }
+        }
+      }
+
+      .wit2{
+
+        
+        .subject{
+            display:grid;
+            grid-template-columns:repeat(2, 1fr) ;
+            gap:1.5rem;
+            width:90% ;
+            margin:0 auto ;
+           div{
+            &:last-child{
+              display:none ;
+            }
+           }
+          }
+      }
+         
+        }
 
 
 `

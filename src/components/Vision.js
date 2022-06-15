@@ -159,5 +159,14 @@ const Item = styled.div`
         }
       }
     }
+    @media screen and (max-width: 960px) {
+      grid-template-columns: repeat(1,1fr);
+
+    }
 }
+@media screen and (max-width: 960px) {
+  grid-template-columns: repeat(1,1fr);
+
+}
+
 `

@@ -1,3 +1,41 @@
 .page-trans{
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+
+.rec-arrow-left {
+    position: absolute;
+    display: flex;
+    bottom: 13% !important;
+    align-items: center;
+    display: flex;
+    width: 45% !important;
+    justify-content: right;
+    z-index: 1;
+
+}
+
+
+.rec-arrow-right {
+    position: absolute;
+    display: flex;
+    bottom: 13% !important;
+    align-items: center;
+    display: flex;
+    width: 45% !important;
+    justify-content: left;
+    z-index: 1;
+    right: 0;
+}
+
+.rec-arrow-left, .rec-arrow-right {
+    background-color: transparent!important;
+    box-shadow: none!important;
+    position: absolute;
+    color: transparent!important;
+}
+@media screen and (max-width: 960px) {
+    .rec-arrow-left, .rec-arrow-right {
+       display: none;
+    }
 }

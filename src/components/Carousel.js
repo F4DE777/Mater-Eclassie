@@ -22,7 +22,7 @@ export default function Carousel() {
             setCurrent(current => (current === length - 1 ? 0 : current + 1))
         }
 
-        timeout.current = setTimeout(nextSlide, 3000)
+        // timeout.current = setTimeout(nextSlide, 3000)
 
         return function () {
             if (timeout.current){
@@ -93,11 +93,9 @@ export default function Carousel() {
 
 
 
-// HeroSection
 const HeroCov = styled.section`
     height:80vh ;
     position:relative ;
-   
     margin-top:8rem ;
     display:flex ;
 
@@ -114,6 +112,7 @@ const HeroCov = styled.section`
     border: 30rem solid transparent;
 	  border-left: none;
     border-right-color: #F2F5FF;
+    z-index:-10 ;
 
   }
 
@@ -146,12 +145,14 @@ const Heroslider = styled.div`
     grid-template-columns:repeat(2, 1fr) ;
     margin: 0 auto ;
    
+    @media screen and (max-width: 960px) {
+        grid-template-columns:repeat(1, 1fr) ;
 
+    }
    
 `
  const Herocontent = styled.div`
         position: relative;
-        /* z-index:10 ; */
         display:flex ;
         flex-direction:column ;
         text-align: center;
@@ -200,6 +201,11 @@ const Heroslider = styled.div`
             }
           }
         }
+
+        @media screen and (max-width: 960px) {
+            width: 60%;
+            margin: 0 auto;
+        }
 `
 
 const HolderBc = styled.div`
@@ -217,6 +223,7 @@ const HolderBc = styled.div`
       position:relative ;
       border-radius:50%;
       top:0 ;
+      z-index:-10 ;
     }
 
  
@@ -230,11 +237,21 @@ const Heroimg = styled.img`
     top: 15%;
     border-radius: 50%;
     z-index: 10;
+    @media screen and (max-width: 960px) {
+        width: 20rem;
+        height:20rem;           
+        margin: 0 auto;
+        }
 `
 const Sliderbuttons = styled.div`
    position: absolute;
     bottom: 0;
     left:25% ;
+    @media screen and (max-width: 960px) {
+    position: absolute;
+    bottom: -60px;
+    left: auto;
+    }
 `
 const arrowButtons = css`
     width:50px ;
