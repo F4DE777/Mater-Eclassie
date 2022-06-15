@@ -169,43 +169,6 @@ function Footer() {
          
          
 
-          <div className="contain-sponsors2 s2">
-            <ul className="sponsors col-md-12">
-              <li className="col-4">
-                {" "}
-                <img src={Alliance} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Cobis} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-4">
-                {" "}
-                <img src={Alliance} alt="sponsors" srcset="" />
-              </li>
-            </ul>
-          </div>
-
-          <div className="contain-sponsors2">
-            <ul className="sponsors col-md-12">
-              <li className="col-3">
-                {" "}
-                <img src={Microsoft} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-3">
-                {" "}
-                <img src={Apen} alt="sponsors" srcset="" />
-              </li>
-              <li className="col-3">
-                {" "}
-                <img src={Acca} alt="" />
-              </li>
-              <li className="col-3">
-                {" "}
-                <img src={Aisha} alt="sponsors" srcset="" />
-              </li>
-            </ul>
-          </div>
 
           <div className="divider">
             <div className="container-lg">
