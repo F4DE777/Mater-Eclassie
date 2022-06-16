@@ -10,6 +10,7 @@ import "./HeroSection.css";
 import Hero from "./Hero";
 import { introSlider } from "./sliderData";
 import styled from "styled-components";
+import {Flip, LightSpeed} from 'react-reveal';
 
 function HeroSection() {
   return (
@@ -39,13 +40,17 @@ function HeroSection() {
           {introSlider.map((intro, idx) => {
             return(
               <div  key={idx} className="cover">
-                    <img src={intro.placeHolder} alt="holder" />
-                    <div className="contentUp">
-                        <h4>{intro.Header}</h4>
-                        <p>{intro.paragraph}</p>
-                        <Link to={'/'}>Learn More</Link>
-                    </div>
-             
+                <Flip left cascade>
+                  <img src={intro.placeHolder} alt="holder" />
+                </Flip>
+                <LightSpeed right cascade>
+                      <div className="contentUp">
+                          <h4>{intro.Header}</h4>
+                          <p>{intro.paragraph}</p>
+                          <Link to={'/'}>Learn More</Link>
+                      </div>
+                  </LightSpeed>
+
               </div>
             )
           })}
