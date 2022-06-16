@@ -5,6 +5,7 @@ import Violin from "../assets/1632735791._DSC3088@2x.png";
 import Play from "../assets/1632735791._DSC3088ed@2x.png";
 import Library from "../assets/1632735791._DSC3088rf@2x.png";
 import GalleryIndex from "./gallery/GalleryIndex"
+import Search from '../assets/vuesax-outline-search-normal.svg'
 import Vision from "./Vision";
 import "./HeroSection.css";
 import Hero from "./Hero";
@@ -20,9 +21,9 @@ function HeroSection() {
         
         <Hooked >
           <div className="hooked">
-            <div className="search-fixed help">
+            <div className="search-fixed ">
               {" "}
-              <Link to={'/'}>Search</Link>{" "}
+              <Link to={'/'}> <img src={Search} alt="search" /> &nbsp; Search</Link>{" "}
             </div>
             <div className="enquire-fixed help">
               <Link to="/Contact">Enquire</Link>
@@ -118,19 +119,47 @@ const Hooked = styled.div`
       top: 20%;
 
       .hooked{
+        position:relative ;
+        display:grid ;
+        grid-template-columns:repeat(1, 1fr) ;
+        border-radius: 10px  ;
 
+       
         div{
-              transform: rotate(91deg) ;
-              margin: 48px -30px;
-              height: 3rem;
-              width: 5rem;
-              padding: 20px;
+              background-color: #fff;
+
+              
+              &:nth-child(2){
+                margin-top:3rem ;
+              }
+              &:nth-child(n+2){
+                  transform: rotate(91deg) ;
+                  height: 6rem;
+                  width: 6rem;
+                  padding: 7px;
+                  text-align: flex-end;
+                  right: -50px;
+                  position: relative;
+                  align-items: flex-end;
+                  justify-content: center;
+                  display: flex;
+                  
+        }
             }
             .search-fixed {
-                text-align:center ;
-                display:flex ;
-                justify-content:center ;
-
+                  right: -7.1rem;
+                  position: absolute;
+                  height: 3rem;
+                  width: 10rem;
+                  align-items:center ;
+                  display:flex ;
+                  justify-content:flex-start ;
+                  gap:1rem;
+                  padding-left:10px ;
+                  transition: right .5s ease ;
+                  &:hover{
+                    right:0 ;
+                  }
                 a{
                           font-size:16px ;
                           color: #042482 ;
@@ -148,10 +177,10 @@ const Hooked = styled.div`
               }
 
               .enquire-fixed{
-                      background-color: #fff;
+                      /* background-color: #fff;
                       padding: 20px 0 27px 15px;
                       margin-top:-16px ;
-                      height:3.1rem ;
+                      height:3.1rem ; */
 
                       a{
                           font-size:16px ;
@@ -170,9 +199,9 @@ const Hooked = styled.div`
                 }
 
                 .apply-fixed{
-                    background-color: #fff;
+                    /* background-color: #fff;
                     padding: 25px 0 27px 15px;
-                    margin-top:-19px ;
+                    margin-top:-19px ; */
                     a{
                           font-size:16px ;
                           color: #042482 ;
@@ -191,10 +220,10 @@ const Hooked = styled.div`
                 }
 
                 .visit-fixed{
-                    background-color: #fff;
+                    /* background-color: #fff;
                     padding: 25px 0 27px 15px;
                     margin-top:-21px ;
-                    height:3.4rem ;
+                    height:3.4rem ; */
                     a{
                           font-size:16px ;
                           color: #042482 ;
