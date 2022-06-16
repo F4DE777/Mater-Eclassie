@@ -204,7 +204,7 @@ height: 453px;
 }
 
 .vis-state h4{
-font-family: Skia;
+font-family: sinhala;
 font-size: 30px;
 }
 
@@ -242,16 +242,15 @@ padding-top: 20px;
 
 .bio{
   font-size: 25px;
-  font-family: Skia;
+  font-family: sinhala;
   font-weight: 900;
   margin: 20px 0;
 }
 
 .happy {
-  font-family: Skia;
+  font-family: sinhala;
   font-size: 27px;
   letter-spacing: -1px;
-  font-weight: 900;
   line-height: 4;
 }
 
@@ -260,10 +259,9 @@ padding-top: 20px;
 }
 
 .happy1 {
-  font-family: Skia;
-  font-size: 20px;
+  font-family: sinhala;
+  font-size: 30px;
   letter-spacing: -1px;
-  font-weight: 900;
   margin: 20px 0 20px 0;
 }
 
@@ -277,10 +275,9 @@ padding-top: 20px;
 }
 
 .telecont div h6{
-  font-family: Skia;
+  font-family: sinhala;
   font-size: 22px;
   letter-spacing: -1px;
-  font-weight: 900;
 }
 
 .telecont div p{

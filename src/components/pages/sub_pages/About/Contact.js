@@ -28,57 +28,32 @@ function Contact() {
       <section className="container">
         <div className="comments">
           <div className="intro">
-            <small>ADMISSION </small>
+            <small>About </small>
             <header>Contact </header>
           </div>
           <div className="create">
-            <div className="sub-cover">
-              <ul className="sub-menu">
-                <li>
-                  <Link to={"/"}>Home</Link>
-                </li>
-                <li>
-                  <Link to={"/about/administrators-message"}>
-                    Administrator’s Message
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/about/proprietors-message"}>
-                    Proprietor’s Message
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/about/history"}>History Of The School</Link>
-                </li>
-                <li>
-                  <Link className="active" to={"contact-us"}>
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            
             <div>
               <h6 className="happy">We’re Happy To Hear From You</h6>
               <h6 className="happy1">
-                Maryland Comprehensive Secondary School
+                  Mater Ecclesiae College
               </h6>
             </div>
             <div className="telecont flexy">
               <div>
                 <h6>Telephone: </h6>
-                <p>(+234) 802 323 0290</p>
+                <p>(+234) 0807 559 4742, 0704 507 7560</p>
               </div>
               <div>
                 <h6>Address: </h6>
                 <p>
-                  {" "}
-                  Mission Compound, Maryland, <br /> Ikeja, Lagos State,
-                  Nigeria.
+                  Address: Old Isiwo Road, Igbodu Village, Epe <br /> Lagos State
                 </p>
               </div>
               <div>
                 <h6>Enquiries Email: </h6>
-                <p> info@mcssmaryland.org</p>
+                <p> info@materecclesiaecollege.com <br />
+                 Mon – Fri (8.00am – 5pm) <br /> Saturday – Sunday: Closed</p>
               </div>
             </div>
 

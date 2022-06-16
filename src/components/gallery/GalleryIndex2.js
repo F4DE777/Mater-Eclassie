@@ -7,181 +7,198 @@ import Photos5 from "../../assets/Rectanglehlijkn@2x.png";
 import Photos6 from "../../assets/Rectangle9rrf@2x.png";
 import Photost8 from "../../assets/Rectangle9rrr@2x.png";
 import Craft from "../../assets/craft.png";
-import Exam from "../../assets/exam.png";
-import Drama from "../../assets/drama.png";
-import Grass from "../../assets/grass.png";
-import Smile from "../../assets/smile2.png";
-import Craft2 from "../../assets/craft2.png";
-
-import Gift from "../../assets/gift.png";
+import styled from 'styled-components';
 import "../HeroSection.css";
 
-function GalleryIndex2() {
+export default function GalleryIndex2() {
   return (
-    <>
-      <table className="gallery">
-        <tr>
-          <td className="mic-img">
-            <div
-              style={{
-                background: `url(${Craft}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td classname="col-md-3">
-            <div
-              style={{
-                background: `url(${Gift}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-
-          <td classname="col-md-3">
-            <div
-              style={{
-                background: `url(${Exam}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td classname="col-md-3">
-            <div
-              style={{
-                background: `url(${Drama}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-
-          
-        </tr>
-        <tr>
-          <td rowSpan="3" style={{ width: "350px" }}>
-            <div
-              style={{
-                background: `url(${Grass}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-
-          <td rowSpan="4" style={{ width: "350px" }}>
-            <div
-              style={{
-                background: `url(${Smile}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td rowSpan="4" style={{ width: "350px" }}>
-            <div
-              style={{
-                background: `url(${Craft2}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td rowSpan="4" style={{ width: "350px" }}>
-            <div
-              style={{
-                background: `url(${Photos6}) center/cover no-repeat`,
-                height: "100%",
-                width: "-webkit-fill-available",
-                objectFit: "cover",
-              }}
-              className="img-fluid"
-            >
-              <div className="text-cover">
-                <div className="text-content">
-                  <i class="fas fa-caret-left"></i>
-                  <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  <i class="fas fa-caret-right"></i>
-                </div>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </>
-  );
+            <>
+           
+            <ImageSection>
+                <ImageCont className='one'>
+                    <img src={Photos2} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont className='two'>
+                    <img src={Photos3} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont className='three'>
+                    <img src={Photos4} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont className='four'  >
+                    <img src={Photos5} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont className='five'>
+                    <img src={Photos6} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont className='six'>
+                    <img src={Photost8} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+                <ImageCont  className='seven'>
+                    <img src={Craft} alt="gallery" />
+                    <div className='overlay'>
+                        <div>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </ImageCont>
+            </ImageSection>
+      </>
+    
+  )
 }
-export default GalleryIndex2;
 
+
+
+
+const ImageSection = styled.section` 
+    position:relative ;
+    display:grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows:repeat(2, minmax(150px, auto)) ;
+    transition: all 5s linear;
+
+   .one{
+       grid-column:1/4 ;
+   }
+
+   .two{
+       grid-column:4/7 ;
+   }
+
+   .three{
+       grid-column:7/11 ;
+   }
+
+   .four{
+       grid-column:1/3 ;
+   }
+
+   .five{
+       grid-column:3/6 ;
+   }
+
+   .six{
+       grid-column:6/8 ;
+   }
+
+   .seven{
+       grid-column:8/11 ;
+   }
+   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows:repeat(2, minmax(150px, auto)) ;
+    .one{
+       grid-column:1/5 ;
+   }
+
+   .two{
+       grid-column:5/9 ;
+   }
+
+   .three{
+       grid-column:1/9 ;
+   }
+   .four{
+       grid-column:1/4 ;
+
+   }
+
+   .five{
+       grid-column:4/9 ;
+
+   }
+
+   .six{
+       grid-column:1/5 ;
+
+   }
+   .seven{
+       grid-column:5/9 ;
+
+   }
+   }
+`
+
+
+const ImageCont = styled.div`
+            height:350px ;
+            position:relative ;
+
+        img{
+            width:100% ;
+            height:100%;
+            object-fit:cover ;
+        }
+
+
+
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            display:none ;
+            flex-direction:column ;
+            justify-content:center ;
+            align-items:center ;
+            background-color:rgba(0,0,0,0.5) ;
+            cursor: pointer;
+            
+            div{
+                display:flex ;
+                gap:1rem;
+                color:#fff ;
+            }
+
+        }
+
+
+        &:hover .overlay{
+                display:flex ;
+                
+            }
+`

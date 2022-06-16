@@ -1,7 +1,5 @@
 import React from "react";
 import Pex from "../../assets/craft2.png";
-import Circle from "../../assets/Circle.svg";
-
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import "./Gallery.css";
@@ -10,7 +8,6 @@ import GalleryIndex2 from "../../components/gallery/GalleryIndex2";
 import GalleryIndex3 from "../../components/gallery/GalleryIndex3";
 import GalleryIndex0 from "../../components/gallery/GalleryIndex0";
 
-import "./Gallery.css";
 import { CBreadcrumbItem } from "@coreui/react";
 import { CBreadcrumb } from "@coreui/react";
 function Gallery() {
@@ -31,13 +28,12 @@ function Gallery() {
 
       <section className="container">
         <div className="gallery-head">
-          <label2 htmlFor="">EXPLORE</label2>
+          <label2 htmlFor="">HOME</label2>
           <h1>Gallery</h1>
           <p>
             Our Campus Have A Lot To Offer For Our Students{" "}
             <span className="levt">
               {" "}
-              <img className="circle img-fluid " src={Circle} alt="" />
             </span>
           </p>
         </div>

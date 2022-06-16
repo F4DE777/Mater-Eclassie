@@ -37,7 +37,7 @@ export const sliderData =[
 export const Voices =[
     {
         title:'What They Say About Us',
-        paragraph:'We must say that Mater Ecclesiae College has exceeded our expectations as an institution of learning for our wards. COVID-19 has made virtually all spheres of life difficult. We thank God for technology and the school authority for taking advantage of the opportunities technology presented and the readiness. We’ve had wonderful experiences although not without some challenges, mostly network related. But overall, great efforts to keep the children engaged and also keep pace with the school calendar for the year. We truly appreciate and pray that God rewards everyone abundantly in Jesus name, Amen. Thank you.',
+        paragraph:'We must say that Mater Ecclesiae College has exceeded our expectations as an institution of learning for our wards.',
         Holder: Hard,
         Parent:'Mr. & Mrs. Nicholas Odiete',
         Commentor:'Parent'
