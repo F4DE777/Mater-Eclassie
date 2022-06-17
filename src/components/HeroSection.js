@@ -96,17 +96,19 @@ function HeroSection() {
         <Cart />
 
         <Gallery>
-            <div className="explore">
-              <div className="gall">
-                  <label>EXPLORE</label>
-                  <h1>Take A School Tour</h1>
+            <Zoom right cascade>
+              <div className="explore">
+                <div className="gall">
+                    <label>EXPLORE</label>
+                    <h1>Take A School Tour</h1>
+                  </div>
+                    <GalleryIndex />
+                  <MoreImg to={'/'}>
+                        See More
+                    </MoreImg>
                 </div>
-                  <GalleryIndex />
-                <MoreImg to={'/'}>
-                      See More
-                </MoreImg>
-            </div>
-              
+            </Zoom>
+ 
         </Gallery>
       </div>
     </>

@@ -7,10 +7,8 @@ import Image5 from "../../assets/Rectanglehlijkn@2x.png";
 import Image6 from "../../assets/Rectangle9rrf@2x.png";
 import Image2 from "../../assets/Rectangle9@2x.png";
 import ExploreTwo from "../../assets/Rectangle9rrr@2x.png";
-import Photo1 from "../../assets/Rectanglefff@2x.png";
-// import GalleryIndex2 from "../../components/gallery/GalleryIndex2";
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import {Fade} from 'react-reveal';
 
 
 
@@ -22,79 +20,81 @@ import "../HeroSection.css";
 export default function GalleryIndex() {
   return (
             <>
-           
+        <Fade bottom cascade>
             <ImageSection>
-                <ImageCont className='one'>
-                    <img src={Image1} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    <ImageCont className='one' >
+                        <img src={Image1} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont className='two'>
-                    <img src={Image2} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont className='two'>
+                        <img src={Image2} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont className='three'>
-                    <img src={Image3} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont className='three'>
+                        <img src={Image3} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont className='four'  >
-                    <img src={Image4} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont className='four'  >
+                        <img src={Image4} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont className='five'>
-                    <img src={Image5} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont className='five'>
+                        <img src={Image5} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont className='six'>
-                    <img src={Image6} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont className='six'>
+                        <img src={Image6} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
-                <ImageCont  className='seven'>
-                    <img src={ExploreTwo} alt="gallery" />
-                    <div className='overlay'>
-                        <div>
-                            <i class="fas fa-caret-left"></i>
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            <i class="fas fa-caret-right"></i>
+                    </ImageCont>
+                    <ImageCont  className='seven'>
+                        <img src={ExploreTwo} alt="gallery" />
+                        <div className='overlay'>
+                            <div>
+                                <i class="fas fa-caret-left"></i>
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                <i class="fas fa-caret-right"></i>
+                            </div>
                         </div>
-                    </div>
-                </ImageCont>
+                    </ImageCont>
             </ImageSection>
+        </Fade>
+
       </>
     
   )

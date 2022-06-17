@@ -5,7 +5,8 @@ import styled from "styled-components";
 import {Bounce } from 'react-reveal';
 import "./Vision.css";
 import { Listed, Vision1 } from './Item';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Vision() {
   return (
@@ -13,8 +14,8 @@ function Vision() {
       <div className="box-event">
       <Bounce bottom cascade>
           <div className="box-event-cont">
-            <label >NEWS + EVENTS</label>
-            <h4>News and Updates</h4>
+            <label data-aos="zoom-in-left">NEWS + EVENTS</label>
+            <h4 data-aos="zoom-in-right">News and Updates</h4>
             <p> Stay in loop with our school events and activities  </p>
           </div>
         </Bounce>
@@ -25,20 +26,22 @@ function Vision() {
           {Vision1.map(() => {
             return(
             <Item>
-                  <ul className="event-list col-md-12 flexy">
+                  <ul className="event-list col-md-12 flexy" >
                     {Listed.map((list, index)=> {
                       return(
-                        <li key={index}>
-                            <img src={list.Holder} alt=""  />
-                            <Link to={'/'}  className='event'>EVENT</Link>
-                            <button>
-                                <span>
-                                  <p>CULTURAL DAY</p>
-                                  <label >02/04/2020</label>
-                                </span>
-                                <Link to={'/'}>Read More</Link>
-                            </button>
-                        </li>
+                        <Bounce bottom cascade > 
+                            <li key={index} >
+                                <img src={list.Holder} alt=""  />
+                                <Link to={'/'}  className='event'>EVENT</Link>
+                                <button>
+                                    <span>
+                                      <p>CULTURAL DAY</p>
+                                      <label >02/04/2020</label>
+                                    </span>
+                                    <Link to={'/'}>Read More</Link>
+                                </button>
+                            </li>
+                        </Bounce>
                       )
                     })}
                   </ul>

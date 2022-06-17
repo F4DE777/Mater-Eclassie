@@ -3,8 +3,9 @@ import styled,{css} from 'styled-components/macro';
 import { Voices } from './sliderData';
 import RighArrow from '../assets/right-long-arrow.svg';
 import LeftArrow from '../assets/left-long-arrow.svg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Quote from "../assets/Quote.svg";
+import {LightSpeed,Rotate} from 'react-reveal';
 
 
 
@@ -62,19 +63,24 @@ export default function Carousel() {
                 <Sliderpage key={idx}>
                         {idx === current && (
                             <Heroslider>
-                                <Herocontent>
-                                    <label>VOICES</label>
-                                    <h4>{slider.title}</h4>
-                                    <img src={Quote} alt="quote" />
-                                    <p>{slider.paragraph}</p>
-                                    <div className='comment'>
-                                      <h6>{slider.Parent}</h6>
-                                      <h6>{slider.Commentor}</h6>
-                                    </div>
-                                </Herocontent>
-                                <HolderBc>
-                                  <Heroimg src ={slider.Holder}/>
-                                </HolderBc>
+                                <LightSpeed left cascade>
+                                    <Herocontent>
+                                        <label>VOICES</label>
+                                        <h4>{slider.title}</h4>
+                                        <img src={Quote} alt="quote" />
+                                        <p>{slider.paragraph}</p>
+                                        <div className='comment'>
+                                        <h6>{slider.Parent}</h6>
+                                        <h6>{slider.Commentor}</h6>
+                                        </div>
+                                    </Herocontent>
+                                </LightSpeed>
+                                <Rotate top right cascade>
+                                    <HolderBc>
+                                        <Heroimg src ={slider.Holder}/>
+                                    </HolderBc>
+                                </Rotate>
+
                             </Heroslider>
                         )}
                     

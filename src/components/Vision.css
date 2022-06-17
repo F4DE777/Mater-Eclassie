@@ -47,31 +47,7 @@
 
 
 
-.more-news1{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 60px;
-    text-decoration:none;
-}
 
-.more-news1 > button{
-    width: 230px;
-    height: 52px;
-    background: #4CA149 0% 0% no-repeat padding-box;
-    border: 1px solid #4CA149;
-    opacity: 1;
-    color: #fff;
-    transform: translateX(60px);
-}
-
-.more-news1 > button:hover{
-   
-    background: white no-repeat padding-box;
-    border: 1px solid #4CA149;
-    color:#4CA149;
-   
-}
 .rec-arrow-left:after {
     content: url('../assets/left-long-arrow.png');
     color: #00022c;
