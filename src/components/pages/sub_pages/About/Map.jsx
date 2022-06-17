@@ -6,13 +6,15 @@ function Map() {
     <div className="col-md-12">
 
         <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2705.2810612647922!2d3.3696073465581704!3d6.571635406856072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b923100000001%3A0xf4ab17cecb22135a!2sMaryland%20Comprehensive%20Secondary%20School!5e0!3m2!1sen!2sng!4v1650985317549!5m2!1sen!2sng"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4119.517578568797!2d3.9052795842095103!3d6.643097141556986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103944ab5f7e6e3b%3A0x98f58a1bf109692a!2sIsiwom%20Road%20Igbodu%20MATER%20ECCLESIAE%20COLLEGE!5e0!3m2!1sen!2sng!4v1655501208840!5m2!1sen!2sng"
          
-          height="750"
-           style={{ border: "0" , width:'100%'}}
+          height="500"
+          width="700"
+          //  style={{ border: "0" , width:'100%'}}
             allowfullscreen=""
              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
     </div>
   )

@@ -7,7 +7,7 @@ import { CBreadcrumb } from '@coreui/react'
 import styled from 'styled-components';
 
 import './Style.css';
-import AboutItems, { Parts } from './AboutItems';
+import AboutItems, { Parts, Tech } from './AboutItems';
 
 
 function History() {
@@ -55,12 +55,65 @@ function History() {
 
                         }           
             </Part>
+
+            <Techno>
+               {Tech.map((pt,ind) => {
+                            return(
+                                <div key={ind}>
+                                    <span>
+                                        <img src={pt.Svg} alt="holder" />
+                                        <header>{pt.Head}</header>
+                                    </span>
+                                    <p>{pt.Text}</p>
+                                </div>
+
+                            )
+                        })
+
+                        }  
+
+            </Techno>
+
       </Section>
     </>
   );
 }
 
 export default History
+
+
+const Techno = styled.div`
+  display:grid ;
+  grid-template-columns:repeat(3, 1fr) ;
+  margin-top:10rem ;
+  justify-content:center ;
+
+
+  div{
+
+    span{
+        display:flex ;
+        align-items:center ;
+        gap:1rem;
+        font-family:sinhala ;
+        font-size:2rem ;
+        color:#191919 ;
+        img{
+          height:3rem ;
+          width:3rem ;
+          object-fit:contain ;
+        }
+      }
+
+      p{
+        font-size:1.1rem ;
+        font-family:monserat ;
+      }
+      &:last-child:nth-child(3n - 2) {
+          grid-column-end: 3;
+        }
+  }
+`
 
 const Section = styled.section`
   width:80% ;

@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import Image1 from '../../../../assets/Rectanglet10030@2x.png';
 import Image2 from '../../../../assets/Rectanglett10046@2x.png';
 import Image3 from '../../../../assets/Rectanglex10047@2x.png';
+import Svg1 from '../../../../assets/handset@2x.png';
+import Svg2 from '../../../../assets/web@2x.png';
+import Svg3 from '../../../../assets/books@2x.png';
+import Svg4 from '../../../../assets/hat@2x.png';
+
 
 
 function AboutItems() {
@@ -114,4 +119,29 @@ export const Parts = [
         Header:'Our Values',
         Text:'We believe firmly in christian morality,politeness, hard work,responsibility, respect, courtesy and good manners.'
     }
+]
+
+
+export const Tech  = [
+    {
+        Svg:Svg1,
+        Head:'E-Learning',
+        Text:'We expose students to all of the best available resources online and offline to keep abreast with theeir counterparts in other schools of the world.'
+    },
+    {
+        Svg:Svg2,
+        Head:'Technology',
+        Text:'Our E-learning educational platforms and resources aim to help parents, teachers and pupils relate and make learning easier .'
+    },
+    {
+        Svg:Svg3,
+        Head:'Tuition',
+        Text:'Our tuition fees are the best available for the standards we provide contact us for more information on tuition fees'
+    },
+    {
+        Svg:Svg4,
+        Head:'Alumni',
+        Text:'Students are exposed to extra artificial intelligience technology provided by Robotic Center.'
+    }
+
 ]

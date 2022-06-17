@@ -3,10 +3,11 @@ import Pex from "../../../../assets/building@2x.png";
 import Map from './Map';
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 // import Circle from "../assets/Circle.svg";
 import './Style.css'
+import AboutItems, {  Tech } from './AboutItems';
 
 function Contact() {
   return (
@@ -24,6 +25,7 @@ function Contact() {
         </CBreadcrumbItem>
         <CBreadcrumbItem active>Contact</CBreadcrumbItem>
       </CBreadcrumb>
+      <AboutItems/>
 
       <section className="container">
         <div className="comments">
@@ -59,6 +61,23 @@ function Contact() {
 
 
             <Map />
+            <Techno>
+               {Tech.map((pt,ind) => {
+                            return(
+                                <div key={ind}>
+                                    <span>
+                                        <img src={pt.Svg} alt="holder" />
+                                        <header>{pt.Head}</header>
+                                    </span>
+                                    <p>{pt.Text}</p>
+                                </div>
+
+                            )
+                        })
+
+                        }  
+
+            </Techno>
           </div>
         </div>
       </section>
@@ -68,3 +87,37 @@ function Contact() {
 }
 
 export default Contact
+
+
+const Techno = styled.div`
+  display:grid ;
+  grid-template-columns:repeat(3, 1fr) ;
+  margin-top:10rem ;
+  justify-content:center ;
+
+
+  div{
+
+    span{
+        display:flex ;
+        align-items:center ;
+        gap:1rem;
+        font-family:sinhala ;
+        font-size:2rem ;
+        color:#191919 ;
+        img{
+          height:3rem ;
+          width:3rem ;
+          object-fit:contain ;
+        }
+      }
+
+      p{
+        font-size:1.1rem ;
+        font-family:monserat ;
+      }
+      &:last-child:nth-child(3n - 2) {
+          grid-column-end: 3;
+        }
+  }
+`
