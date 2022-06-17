@@ -169,7 +169,7 @@ function NavBar() {
           <div className="wrapper">
             <ui className="mainMenu">
               <li className="item" id="account">
-                <Link href="#account" className="btn">
+                <Link href="#account" to={"/about"} className="btn">
                   About
                 </Link>
                 <div className="subMenu">

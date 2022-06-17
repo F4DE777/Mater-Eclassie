@@ -3,26 +3,26 @@ import Pex from "../../../../assets/building@2x.png";
 import Rev from "../../../../assets/Rev@2x.png";
 import { CBreadcrumbItem } from '@coreui/react';
 import { CBreadcrumb } from '@coreui/react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import styled from 'styled-components';
 
 import './Style.css';
+import AboutItems from './AboutItems';
 
 
 function HumanResources() {
   return (
     <>
-      <section>
         <div className="header-img">
           <img src={Pex} alt="Header" className="img-fluid" />
-        </div>
-      </section>
-      <CBreadcrumb style={{ "--cui-breadcrumb-divider": "'>'" }}>
-        <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
-        <CBreadcrumbItem href="/about/administrators-message">
-          About
-        </CBreadcrumbItem>
-        <CBreadcrumbItem active>Proprietor’s Message</CBreadcrumbItem>
-      </CBreadcrumb>
+        </div>        
+
+          <CBreadcrumb >
+            <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+            <CBreadcrumbItem href="/about/administrators-message"> About </CBreadcrumbItem>
+            <CBreadcrumbItem active>Proprietor’s Message</CBreadcrumbItem>
+          </CBreadcrumb>
+          <AboutItems/>
 
       <section className="container">
         <div className="comments">

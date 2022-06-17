@@ -427,6 +427,13 @@ const Mission = styled.div`
             left: -20px;
             top: -80px;
           }
+          @media screen and (max-width: 960px) {
+            &::after{
+            content: '';
+            background-color: transparent;
+            border:0 ;
+          }
+          }
       }
       .box-center{
         position:relative ;
@@ -465,6 +472,13 @@ const Mission = styled.div`
                 margin: 0 auto;
                 bottom: -90px;
               }
+              @media screen and (max-width: 960px) {
+            &::before{
+            content: '';
+            background-color: transparent;
+              border: 0;
+          }
+          }
     }
 
       .box-over{

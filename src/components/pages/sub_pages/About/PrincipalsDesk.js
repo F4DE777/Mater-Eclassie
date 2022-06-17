@@ -6,7 +6,7 @@ import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import './Style.css'
 import styled from 'styled-components';
-
+import AboutItems, { Parts } from './AboutItems';
 function PrincipalsDesk() {
   return (
     <>
@@ -21,37 +21,7 @@ function PrincipalsDesk() {
                     <CBreadcrumbItem href="/about/administrators-message">About</CBreadcrumbItem>
                     <CBreadcrumbItem active>Administrator’s Message</CBreadcrumbItem>
                 </CBreadcrumb>
-                                {/* <div className='sub-cover'>
-                                    <ul className='sub-menu'>
-                                        <li>
-                                            <Link to={'/'}>
-                                                Home
-                                            </Link>
-                                        </li>
-                                        <li >
-                                            <Link className="active" to={'/about/administrators-message'}>
-                                                Administrator’s Message
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to={'/about/proprietors-message'}>
-                                                Proprietor’s Message
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to={'/about/history'}>
-                                                History Of The School
-                                            </Link>
-                                           
-                                        </li>
-                                        <li>
-                                            <Link to={'contact-us'}>
-                                                Contact Us
-                                            </Link>
-                                            
-                                        </li>
-                                    </ul>
-                                </div> */}
+                <AboutItems/>
 
                 <section className="container">
                     <div className="comments">
@@ -106,14 +76,18 @@ function PrincipalsDesk() {
                 </section>
 
                 <Part>
-                      <div>
-                          
-                      </div>
-                      <div>
+                      {Parts.map((pt,ind) => {
+                          return(
+                              <div key={ind}>
+                                  <img src={pt.Holder} alt="holder" />
+                                  <header>{pt.Header}</header>
+                                  <p>{pt.Text}</p>
+                              </div>
 
-                      </div>
-                      <div>
-                          </div>              
+                          )
+                      })
+
+                      }           
                 </Part>
  
         </div>
@@ -125,6 +99,27 @@ function PrincipalsDesk() {
 export default PrincipalsDesk
 
 const Part = styled.div`
+    width:90% ;
+    margin:10rem auto 0 auto;
+    display:grid ;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap:3rem;
+div{
+    img{
+        width:100% ;
+        height:20rem ;
+        object-fit:cover ;
+    }
 
+    header{
+        font-size:2.5rem ;
+        font-family:sinhala ;
+        margin:20px 0 ;
+    }
 
+    p{
+        font-size:1.3rem ;
+        font-family:monserat ;
+    }
+}
 `
