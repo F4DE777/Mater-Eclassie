@@ -11,7 +11,7 @@ import "./HeroSection.css";
 import Hero from "./Hero";
 import { introSlider } from "./sliderData";
 import styled from "styled-components";
-import {Flip, LightSpeed} from 'react-reveal';
+import {Flip, LightSpeed,Rotate,Zoom} from 'react-reveal';
 
 function HeroSection() {
   return (
@@ -61,6 +61,7 @@ function HeroSection() {
 
         <Mission>
             <div className="wit">
+            <Zoom left cascade>
               <div className="our-miss">
                 <label>OUR MISSION</label>
                 <h4>A College-Ready Environment</h4>
@@ -69,22 +70,25 @@ function HeroSection() {
                 </p>
                 <Link to={'/'}>Read More</Link>
               </div>
+            </Zoom>
             </div>
             <div className="wit2">
-              <div className="subject">
-                <div className="box-out">
-                      <img src={Violin} alt="violin" />
-                      <h4>Career Exploration</h4>
+              <Rotate top right cascade>
+                <div className="subject">
+                  <div className="box-out">
+                        <img src={Violin} alt="violin" />
+                        <h4>Career Exploration</h4>
+                  </div>
+                  <div className="box-center">
+                        <img src={Play} alt="violin" />
+                        <h4>Faith</h4>
+                  </div>
+                  <div className="box-over">
+                        <img src={Library} alt="violin" />
+                        <h4>Library</h4>
+                  </div>
                 </div>
-                <div className="box-center">
-                      <img src={Play} alt="violin" />
-                      <h4>Faith</h4>
-                </div>
-                <div className="box-over">
-                      <img src={Library} alt="violin" />
-                      <h4>Library</h4>
-                </div>
-              </div>
+              </Rotate>
             </div>
         </Mission>
 

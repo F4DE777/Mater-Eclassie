@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-elastic-carousel'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import {Bounce } from 'react-reveal';
 import "./Vision.css";
 import { Listed, Vision1 } from './Item';
 
@@ -11,13 +11,13 @@ function Vision() {
   return (
     <>
       <div className="box-event">
-        <div className="box-event-cont">
-          <label htmlFor="">NEWS + EVENTS</label>
-          <h4>News and Updates</h4>
-          <p> Stay in loop with our school events and activities  </p>
-
-          
-        </div>
+      <Bounce bottom cascade>
+          <div className="box-event-cont">
+            <label >NEWS + EVENTS</label>
+            <h4>News and Updates</h4>
+            <p> Stay in loop with our school events and activities  </p>
+          </div>
+        </Bounce>
       </div>
 
       <div className="vision-cont">

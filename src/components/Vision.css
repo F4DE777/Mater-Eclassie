@@ -11,7 +11,7 @@
 }
 .box-event-cont > label{
     letter-spacing: 3.6px;
-    color: #F29A38;
+    color: #042482;
     font-size: 15px;
     font-family: monserat;
     margin: 0;
@@ -19,9 +19,8 @@
 
 .box-event-cont > h4{
     text-align: center;
-    font-family: Skia;
+    font-family: sinhala;
     font-size: 40px;
-    font-weight: 900;
     color: #191919;
 }
 
@@ -30,7 +29,6 @@
     font-family: monserat;
     font-size: 18px;
     color: #191919;
-    width: 70%;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -39,17 +37,6 @@
 
 
 
-
-.yellow-stand::after{
-    background: #F29A38;
-    position: absolute;
-    content: '';
-    border: 1px solid #F29A38;
-    width: 30px;
-    height: 10rem;
-    left:  112px;
-    bottom: 0;
-}
 
 .event-list li img{
     width: -webkit-fill-available;
