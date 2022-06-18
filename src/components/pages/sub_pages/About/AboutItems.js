@@ -145,3 +145,79 @@ export const Tech  = [
     }
 
 ]
+
+
+export const Staff = [
+
+{
+  Holder:Image1,
+  Name:'Sr. Regina Ada Odeh Ssma (V.P)',
+  Tag:'V.P'
+},
+{
+  Holder:Image1,
+  Name:'Sr. Felicita-Mary Agbanu',
+  Tag:'Bursar'
+},
+{
+  Holder:Image1,
+  Name:'Amanyi Louis',
+  Tag:'Sciences Teacher'
+},
+{
+  Holder:Image1,
+  Name:'Irekiigbe Adedoyin',
+  Tag:'Languages'
+},
+{
+  Holder:Image1,
+  Name:'Onoriode Benson',
+  Tag:'Vocational Teacher'
+},
+{
+  Holder:Image1,
+  Name:'Yusuff Oluwakemi',
+  Tag:'Sciences'
+},
+{
+  Holder:Image1,
+  Name:'Madubuike Kingsley C.',
+  Tag:'Languages'
+}
+,
+{
+  Holder:Image1,
+  Name:'Ibrahim Falilat',
+  Tag:'Sciences'
+},
+{
+  Holder:Image1,
+  Name:'Eruaga Rita',
+  Tag:'Sciences'
+},
+{
+  Holder:Image1,
+  Name:'Odege Sunday',
+  Tag:'Sciences Teacher'
+},
+{
+  Holder:Image1,
+  Name:'Udechukwu Chika',
+  Tag:'Vocational Teacher'
+},
+{
+  Holder:Image1,
+  Name:'Nwaobasi Godspower',
+  Tag:'Sciences'
+},
+{
+  Holder:Image1,
+  Name:'Igoche Anthony',
+  Tag:'Sciences'
+},
+{
+  Holder:Image1,
+  Name:'Omonua Benjamin',
+  Tag:'Social Sciences'
+}
+]

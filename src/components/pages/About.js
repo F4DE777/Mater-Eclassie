@@ -6,6 +6,7 @@ import Resources from    './sub_pages/About/HumanResources'
 import NotFound from './NotFound';
 import Contact from './sub_pages/About/Contact';
 import History from './sub_pages/About/History';
+import Faculty from './sub_pages/About/Faculty';
 
 function About() {
   return (
@@ -15,10 +16,11 @@ function About() {
                     <Route path={'/about'} exact >
                       <Redirect to={'/about/administrators-message'}/>
                     </Route>
-                    <Route path="/about/administrators-message" component={Desk}   exact/>
-                    <Route path="/about/history" component={History}   exact/>
-                    <Route path="/about/proprietors-message" component={Resources}   exact/>
-                    <Route path="/about/contact-us" component={Contact}   exact/>
+                    <Route path="/about/administrators-message" component={Desk}   />
+                    <Route path="/about/history" component={History}   />
+                    <Route path="/about/proprietors-message" component={Resources}   />
+                    <Route path="/about/contact-us" component={Contact}   />
+                    <Route path="/about/faculty" component={Faculty}   />
 
                   <Route path="*" component={NotFound}  />
             </Switch>
