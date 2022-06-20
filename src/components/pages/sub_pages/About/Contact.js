@@ -4,14 +4,14 @@ import Map from './Map';
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import styled from 'styled-components';
-
-// import Circle from "../assets/Circle.svg";
+import {Bounce } from 'react-reveal';
 import './Style.css'
 import AboutItems, {  Tech } from './AboutItems';
 
 function Contact() {
   return (
     <>
+    <Bounce bottom cascade>
       <div></div>
       <section>
         <div className="header-img">
@@ -26,62 +26,63 @@ function Contact() {
         <CBreadcrumbItem active>Contact</CBreadcrumbItem>
       </CBreadcrumb>
       <AboutItems/>
-
-      <section className="container">
-        <div className="comments">
-          <div className="intro">
-            <small>About </small>
-            <header>Contact </header>
-          </div>
-          <div className="create">
-            
-            <div>
-              <h6 className="happy">We’re Happy To Hear From You</h6>
-              <h6 className="happy1">
-                  Mater Ecclesiae College
-              </h6>
+      <Bounce bottom cascade>
+        <section className="container">
+          <div className="comments">
+            <div className="intro">
+              <small>About </small>
+              <header>Contact </header>
             </div>
-            <div className="telecont flexy">
+            <div className="create">
+              
               <div>
-                <h6>Telephone: </h6>
-                <p>(+234) 0807 559 4742, 0704 507 7560</p>
+                <h6 className="happy">We’re Happy To Hear From You</h6>
+                <h6 className="happy1">
+                    Mater Ecclesiae College
+                </h6>
               </div>
-              <div>
-                <h6>Address: </h6>
-                <p>
-                  Address: Old Isiwo Road, Igbodu Village, Epe <br /> Lagos State
-                </p>
+              <div className="telecont flexy">
+                <div>
+                  <h6>Telephone: </h6>
+                  <p>(+234) 0807 559 4742, 0704 507 7560</p>
+                </div>
+                <div>
+                  <h6>Address: </h6>
+                  <p>
+                    Address: Old Isiwo Road, Igbodu Village, Epe <br /> Lagos State
+                  </p>
+                </div>
+                <div>
+                  <h6>Enquiries Email: </h6>
+                  <p> info@materecclesiaecollege.com <br />
+                  Mon – Fri (8.00am – 5pm) <br /> Saturday – Sunday: Closed</p>
+                </div>
               </div>
-              <div>
-                <h6>Enquiries Email: </h6>
-                <p> info@materecclesiaecollege.com <br />
-                 Mon – Fri (8.00am – 5pm) <br /> Saturday – Sunday: Closed</p>
-              </div>
+
+
+              <Map />
+              <Techno>
+                {Tech.map((pt,ind) => {
+                              return(
+                                  <div key={ind}>
+                                      <span>
+                                          <img src={pt.Svg} alt="holder" />
+                                          <header>{pt.Head}</header>
+                                      </span>
+                                      <p>{pt.Text}</p>
+                                  </div>
+
+                              )
+                          })
+
+                          }  
+
+              </Techno>
             </div>
-
-
-            <Map />
-            <Techno>
-               {Tech.map((pt,ind) => {
-                            return(
-                                <div key={ind}>
-                                    <span>
-                                        <img src={pt.Svg} alt="holder" />
-                                        <header>{pt.Head}</header>
-                                    </span>
-                                    <p>{pt.Text}</p>
-                                </div>
-
-                            )
-                        })
-
-                        }  
-
-            </Techno>
           </div>
-        </div>
-      </section>
-      <div className="overlay-page"></div>
+        </section>
+      </Bounce>
+      </Bounce>
     </>
   );
 }

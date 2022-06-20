@@ -4,43 +4,47 @@ import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import AboutItems, { Staff } from './AboutItems';
 import styled from 'styled-components';
+import {Bounce } from 'react-reveal';
 
 export default function Faculty() {
   return (
     <div>
-        <section>
-            <div className="header-img">
-            <img src={Pex} alt="Header" className="img-fluid" />
-            </div>
-        </section>
-        <CBreadcrumb style={{ "--cui-breadcrumb-divider": "'>'" }}>
-            <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
-                <CBreadcrumbItem href="/about/administrators-message">
-                About
-                </CBreadcrumbItem>
-            <CBreadcrumbItem active>Faculty & Staff Directory</CBreadcrumbItem>
-      </CBreadcrumb>
-      <AboutItems/>
-      <Section>
-            <div className="intro">
-              <small>About </small>
-              <header>Faculty & Staff Directory</header>
-            </div>
+        <Bounce bottom cascade>
+                <section>
+                    <div className="header-img">
+                    <img src={Pex} alt="Header" className="img-fluid" />
+                    </div>
+                </section>
+                <CBreadcrumb style={{ "--cui-breadcrumb-divider": "'>'" }}>
+                    <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+                        <CBreadcrumbItem href="/about/administrators-message">
+                        About
+                        </CBreadcrumbItem>
+                    <CBreadcrumbItem active>Faculty & Staff Directory</CBreadcrumbItem>
+            </CBreadcrumb>
+            <AboutItems/>
+            <Section>
+                    <div className="intro">
+                    <small>About </small>
+                    <header>Faculty & Staff Directory</header>
+                    </div>
+                        <div className='images'>
+                            <Bounce bottom cascade>
+                                {Staff.map(( st, ind) =>{
+                                    return(
+                                        <div key={ind}>
+                                            <img src={st.Holder} alt="staff photo" />
+                                            <h4>{st.Name}</h4>
+                                            <label>{st.Tag}</label>
+                                        </div>
+                                    )
+                                })
 
-            <div className='images'>
-                {Staff.map(( st, ind) =>{
-                    return(
-                        <div key={ind}>
-                            <img src={st.Holder} alt="staff photo" />
-                            <h4>{st.Name}</h4>
-                            <label>{st.Tag}</label>
+                                }
+                            </Bounce>
                         </div>
-                    )
-                })
-
-                }
-            </div>
-    </Section>
+            </Section>
+        </Bounce>
     </div>
   )
 }
