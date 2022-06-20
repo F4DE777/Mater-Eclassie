@@ -2,14 +2,8 @@ import React from 'react'
 import Pex from "../../../../assets/studentLife.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
-import Rev from "../../../../assets/thanks2.png";
-import Pray from "../../../../assets/pray.png";
-import Arts from "../../../../assets/Rectangle 9err.png";
-import Leadership from "../../../../assets/Rectangle 9rfcd.png";
-import Activities from "../../../../assets/Rectangle9.png";
-import Xmas from "../../../../assets/ojgvcf.png";
-import Academics from "../../../../assets/Rectangle 9rrf.png";
 import SchoolItems from './SchoolItems';
+import styled from 'styled-components';
 
 function Curriculum() {
   return (
@@ -20,194 +14,332 @@ function Curriculum() {
         </div>
       </section>
       <CBreadcrumb style={{ "--cui-breadcrumb-divider": "'>'" }}>
-        <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
-        <CBreadcrumbItem active>Student Life</CBreadcrumbItem>
+          <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
+          <CBreadcrumbItem active>Student Life</CBreadcrumbItem>
       </CBreadcrumb>
       <SchoolItems/>
-      <section className="container">
-        <div className="comments">
+      <Section>
+        <div className="commen">
           <div className="intro">
             <small>HOME </small>
             <header>Student Life</header>
           </div>
-          <div className="create">
-            <h5 className="shift">We are passionate about giving you more</h5>
-
+          <div className='passion'>
+            <h5>We are passionate about giving you more</h5>
             <p>
-            At Mater Ecclesiae College we provide state of the art facilities for your wards in order to promote good academic standards ,staff & students’ comfort and safety as well as general well being at all times
+              At Mater Ecclesiae College we provide state of the art facilities for your wards in order to promote good academic standards ,staff & students’ comfort and safety as well as general well being at all times
             </p>
-            <div>
-              
+            <div className='hostels'>
+                <div className='right-img'>
+                  <div>
+                    <h3>Condusive Hostels</h3>
+                    <p>Our new campus hostels , designed by world-renowned architect provide myriad advantages for our learning community.</p>
+                  </div>
+                  <div>
+                      <img src={Pex} alt="sfd" />
+                  </div>
+                </div>
+                <div className='left-img'>
+                  <div>
+                    <h3>Library</h3>
+                    <p>We pride ourselves on offering a well-balanced education with opportunities for students to excel in many different areas. Academics are of course a priority for our students, and their hard work and talents are demonstrated through a variety of assessments, including external examinations.Thanks to our echelons of library resources online and offline.</p>
+                  </div>
+                  <div>
+                      <img src={Pex} alt="sfd" />
+                  </div>
+                </div>
+                <div className='right-img-fix'>
+                  <div>
+                  <img src={Pex} alt="sfd" />
+                    
+                  </div>
+                  <div>
+                    <h3>Sports Activities</h3>
+                    <p>Learning is a developmental process that changes our thinking and behaviours, enabling us to acquire skills, knowledge and attitudes while providing a catalyst for creativity, critical thinking and independent reasoning.</p>
+                  </div>
+                </div>
+                <div className='left-img-fix'>
+                  <div>
+                      <img src={Pex} alt="sfd" />
+                  </div>
+                  <div>
+                    <h3>Laboratories</h3>
+                    <p>Learning through inquiry extends the development of students. Our students get the best practical knowledge as their conterparts around the world.</p>
+                  </div>
+                  
+                </div>
+                <div className='right-img'>
+                  <div>
+                    <h3>Extra-curricular Activités</h3>
+                    <p>Every day in Mater Ecclesiae College is special. Our inspiring nutrition concept, signature programmes, and extensive range of extra-curricular activities round out a holistic BIS education.</p>
+                  </div>
+                  <div>
+                      <img src={Pex} alt="sfd" />
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className=" webhide">
-        <div className="col-12">
-          <h2 className="accTitle">Annual Student Traditions</h2>
-          <h5> Maryland School Thanksgiving & Young Alumni Luncheon</h5>
-          <img src={Rev} alt="" className="house-img accImg" />
-          Thanksgiving at Maryland Comprehensive School as one of the school’s
-          longstanding traditions—gives students, faculty, staff, and alumni
-          alike one of the fullest Maryland School experiences possible. On this
-          day, the community gathers for a celebratory Service, homeroom
-          parties, an alumni luncheon, and a massive community service rally.
-        </div>
-
-        <div className="col-12">
-          <h5>Retreats</h5>
-          <img src={Pray} alt="" className="house-img accImg" />
-          <p>
-            {" "}
-            Students get to immerse themselves in even more formative
-            experiences on Maryland School's myriad retreat offerings on and off
-            16th Street. Across all six years,Students of Maryland embark on the
-            Freshman Retreat, Easter Retreat, and a host of others—experiencing
-            prayer, reflection, companionship, and God’s love and forgiveness.
-          </p>
-        </div>
-
-        <div className="col-md-12">
-          <h5>Christmas At Maryland School</h5>
-          <div>
-            {" "}
-            <img src={Xmas} alt="" className="house-img accImg" />
-          </div>
-          <p>
-            The holiday celebrations continue at Christmas at Maryland School—a
-            day the community gathers to participate in a beautiful Service in
-            The School Chapel, sing Christmas Carols, watch Christmas classics
-            with their homerooms, and spread overwhelming Christmas cheer and
-            excitement to one another through the halls. The day serves as a
-            delightfully holly, jolly sendoff to students before their Christmas
-            break.
-          </p>
-        </div>
-
-        <div className="col-md-12">
-          <h5 className="">Charity</h5>
-          <p>
-            It is usually an exciting experience as students and management of
-            Maryland Comprehensive School embark on charity work- A move set up
-            by the school in order to find an avenue to give back to the
-            community, help the needy around us and inculcate in our students
-            the life long virtue of rendering help and benevolence.
-          </p>
-          <div>
-            {" "}
-            <img src={Pray} alt="" className="house-img accImg" />
-          </div>
-        </div>
-
-        <div className=" col-md-12">
-          <h2 className="accTitle">Clubs & Activities</h2>
-
-          <h5 for="title5">Activities</h5>
-
-          <div>
-            {" "}
-            <img src={Activities} alt="" className="house-img accImg" />
-          </div>
-
-          <ul classname="col-md-12">
-            <li>Birding Club</li>
-            <li>Board Game Club</li>
-
-            <li>Boxing Club</li>
-
-            <li>Chess Club</li>
-
-            <li>Culinary Club</li>
-            <li>Sports Club</li>
-
-            <li>Paintball Club</li>
-
-            <li>Science Club</li>
-          </ul>
-        </div>
-
-        <div className="col-md-12">
-          <h5 for="title6">Academic & Competition CLub</h5>
-
-          <ul classname="col-md-12">
-            <li>Engineering Club</li>
-            <li>League of Computer Scientists</li>
-
-            <li>Math Club</li>
-
-            <li>Medical Science Club</li>
-
-            <li>Microfinance Club</li>
-            <li>National Junior Classical League</li>
-
-            <li>Philosophy and Ethics Club</li>
-
-            <li>Speech and Debate</li>
-          </ul>
-
-          <div className="col-md-4">&nbsp;</div>
-
-          <div className="col-md-5">
-            {" "}
-            <img src={Academics} alt="" className="house-img accImg" />
-          </div>
-
-          <div className="content flexy col-md-12">
-            <h5>Leadership Clubs</h5>
-            <div>
-              {" "}
-              <img src={Leadership} alt="" className="house-img accImg" />
-            </div>
-
-            <ul classname="col-md-12">
-              <li>Academic and Leadership Team</li>
-              <li>Student Alumni Ambassadors</li>
-
-              <li>Student Leadership Council</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className=" col-md-12">
-          <h5>Production, Arts & Performance</h5>
-          <ul classname="col-md-12">
-            <li>Book Club</li>
-            <li>Cultural Arts Club</li>
-
-            <li>Dramatics Society</li>
-
-            <li>Film Club</li>
-
-            <li>Freshman Drama</li>
-            <li>Lexicon</li>
-
-            <li>Photography Club</li>
-
-            <li>Podcast Club</li>
-            <li>Poetry Club</li>
-          </ul>
-
-
-          <div >
-            {" "}
-            <img src={Arts} alt="" className="house-img accImg" />
-          </div>
-        </div>
-      </div>
+      </Section>
+      
     </>
   );
 }
 
 export default Curriculum
+
+
+const Section = styled.div`
+  width:85% ;
+  margin:0 auto ;
+
+  .commen{
+      .intro{  }
+
+      .passion{
+          h5{
+            font-family:sinhala ;
+            font-size:35px ;
+            color:#191919 ;
+          }
+
+          p{
+            font-family:monserat ;
+            font-size:20px ;
+            color:#191919 ;
+          }
+
+          .hostels{
+
+            .right-img{
+              display:grid ;
+              grid-template-columns:repeat(2, 1fr) ;
+              justify-content:center ;
+              align-items:center ;
+              margin-top:5rem;
+              gap:3rem;
+
+              div{
+                height:20rem ;
+                display:flex ;
+                flex-direction:column ;
+                text-align:left ;
+                text-align: left;
+                justify-content: center;
+                align-items: baseline;
+                position:relative ;
+                h3{
+                  font-family:sinhala ;
+                  color:#191919 ;
+                  font-size:35px ;
+                }
+
+                p{
+                  font-family:monserat ;
+                  font-size:19px ;
+                }
+                img{
+                  width:80% ;
+                  height:100%;
+                  object-fit:cover ;
+
+                  
+                }
+
+                &:last-child{
+                  &::after{
+                    content:'' ;
+                    position:absolute ;
+                    background-color:#F2F5FF ;
+                    height:130% ;
+                    width:80% ;
+                    display:flex ;
+                    right:0 ;
+                    z-index:-10 ;
+
+                  }
+                }
+
+                &:first-child{
+                  padding: 0 3rem 0 7rem;
+
+                }
+                
+              }
+            }
+
+            .left-img{
+              display:grid ;
+              grid-template-columns:repeat(2, 1fr) ;
+              justify-content:center ;
+              align-items:center ;
+              margin-top:10rem;
+              gap:3rem;
+
+              div{
+                height:20rem ;
+                display:flex ;
+                flex-direction:column ;
+                text-align:left ;
+                text-align: left;
+                justify-content: center;
+                align-items: baseline;
+                position:relative ;
+                h3{
+                  font-family:sinhala ;
+                  color:#191919 ;
+                  font-size:35px ;
+                }
+
+                p{
+                  font-family:monserat ;
+                  font-size:19px ;
+                }
+                img{
+                  width:80% ;
+                  height:100%;
+                  object-fit:cover ;
+
+                  
+                }
+
+                /* &:last-child{
+                  &::after{
+                    content:'' ;
+                    position:absolute ;
+                    background-color:#F2F5FF ;
+                    height:130% ;
+                    width:80% ;
+                    display:flex ;
+                    right:0 ;
+                    z-index:-10 ;
+
+                  }
+                } */
+
+                &:first-child{
+                  background-color:#F2F5FF ;
+                  padding: 0 3rem 0 7rem;
+                }
+                
+              }
+            }
+            .right-img-fix{
+              display:grid ;
+              grid-template-columns:repeat(2, 1fr) ;
+              justify-content:center ;
+              align-items:center ;
+              margin-top:5rem;
+              gap:3rem;
+
+              div{
+                height:20rem ;
+                display:flex ;
+                flex-direction:column ;
+                text-align:left ;
+                text-align: left;
+                justify-content: center;
+                align-items: baseline;
+                position:relative ;
+                h3{
+                  font-family:sinhala ;
+                  color:#191919 ;
+                  font-size:35px ;
+                }
+
+                p{
+                  font-family:monserat ;
+                  font-size:19px ;
+                }
+                img{
+                  width:100% ;
+                  height:100%;
+                  object-fit:cover ;
+
+                  
+                }
+
+                &:first-child{
+                  &::after{
+                    content:'' ;
+                    position:absolute ;
+                    background-color:#F2F5FF ;
+                    height:130% ;
+                    width:80% ;
+                    display:flex ;
+                    left:0 ;
+                    z-index:-10 ;
+
+                  }
+                }
+
+                &:first-child{
+                  padding: 0 3rem 0 7rem;
+
+                }
+                
+              }
+            }
+
+            .left-img-fix{
+              display:grid ;
+              grid-template-columns:repeat(2, 1fr) ;
+              justify-content:center ;
+              align-items:center ;
+              margin-top:10rem;
+              gap:3rem;
+
+              div{
+                height:20rem ;
+                display:flex ;
+                flex-direction:column ;
+                text-align:left ;
+                text-align: left;
+                justify-content: center;
+                /* align-items: baseline; */
+                position:relative ;
+                h3{
+                  font-family:sinhala ;
+                  color:#191919 ;
+                  font-size:35px ;
+                }
+
+                p{
+                  font-family:monserat ;
+                  font-size:19px ;
+                }
+                img{
+                  width:100% ;
+                  height:100%;
+                  object-fit:cover ;
+
+                  
+                }
+
+                /* &:last-child{
+                  &::after{
+                    content:'' ;
+                    position:absolute ;
+                    background-color:#F2F5FF ;
+                    height:130% ;
+                    width:80% ;
+                    display:flex ;
+                    right:0 ;
+                    z-index:-10 ;
+
+                  }
+                } */
+
+                &:last-child{
+                  background-color:#F2F5FF ;
+                  padding-left: 20px;
+                }
+                
+              }
+            }
+
+          }
+      }
+  }
+
+`
