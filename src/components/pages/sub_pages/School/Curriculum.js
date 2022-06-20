@@ -4,10 +4,12 @@ import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import SchoolItems from './SchoolItems';
 import styled from 'styled-components';
+import {Bounce } from 'react-reveal';
 
 function Curriculum() {
   return (
     <>
+    <Bounce bottom cascade>
       <section>
         <div className="header-img">
           <img src={Pex} alt="Header" className="img-fluid" />
@@ -29,6 +31,7 @@ function Curriculum() {
             <p>
               At Mater Ecclesiae College we provide state of the art facilities for your wards in order to promote good academic standards ,staff & students’ comfort and safety as well as general well being at all times
             </p>
+          <Bounce bottom cascade>
             <div className='hostels'>
                 <div className='right-img'>
                   <div>
@@ -77,11 +80,17 @@ function Curriculum() {
                       <img src={Pex} alt="sfd" />
                   </div>
                 </div>
+                <div className='lefter'>
+                  <img src={Pex} alt="sfd" />
+                  <img src={Pex} alt="sfd" />
+                  <img src={Pex} alt="sfd" />
+                </div>
             </div>
+          </Bounce>
           </div>
         </div>
       </Section>
-      
+    </Bounce>
     </>
   );
 }
@@ -337,7 +346,21 @@ const Section = styled.div`
                 
               }
             }
-
+            .lefter{
+              width:100% ;
+              display:grid ;
+              grid-template-columns:repeat(3, 1fr) ;
+              height:20rem ;
+              justify-content:space-between ;
+              gap:5rem;
+              margin-top:15rem ;
+              img{
+                width:100% ;
+                height:100% ;
+                object-fit:cover ;
+                border-right:50px;
+              }
+            }
           }
       }
   }

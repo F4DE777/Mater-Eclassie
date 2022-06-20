@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Svg1 from '../../../../assets/junior@2x.png';
+import Svg2 from '../../../../assets/chart@2x.png';
+import Svg3 from '../../../../assets/people@2x.png';
+import Svg4 from '../../../../assets/hat@2x.png';
 function AcaItems() {
     const currentPath = window.location.pathname;
 
@@ -86,5 +90,29 @@ const subRoute = [
     //   cName:'linked',
     //   path:'/about/faculty'
     // }
+
+]
+
+export const Tech  = [
+    {
+        Svg:Svg1,
+        Head:'Junior & Secondary Schools',
+        Text:'We are accepting applications into the Junior Secondary School as well as Senior Secondary Schools. Let’s prepare you for the most promising future you can imagine'
+    },
+    {
+        Svg:Svg2,
+        Head:'Academic Growth',
+        Text:'Returning students experience all-round academic growth compared to where they have been. We provide very good standards academically and we allow students to explore their innate strengths.'
+    },
+    {
+        Svg:Svg3,
+        Head:'Best Learning Space',
+        Text:'We have over 200 students, comfortable classrooms and laboratories for all students.'
+    },
+    {
+        Svg:Svg4,
+        Head:'Alumni',
+        Text:'Our alumni will attest to the quality of education and formation we provide as they are successful in their endeavors in life.'
+    }
 
 ]
