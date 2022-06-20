@@ -33,7 +33,7 @@ export default function Faculty() {
                                 {Staff.map(( st, ind) =>{
                                     return(
                                         <div key={ind}>
-                                            <img src={st.Holder} alt="staff photo" />
+                                            <img src={st.Holder} alt="staff phooto" />
                                             <h4>{st.Name}</h4>
                                             <label>{st.Tag}</label>
                                         </div>

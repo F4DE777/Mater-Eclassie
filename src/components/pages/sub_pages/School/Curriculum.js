@@ -1,5 +1,5 @@
 import React from 'react'
-import Pex from "../../../../assets/building@2x.png";
+import Pex from "../../../../assets/studentLife.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import Rev from "../../../../assets/thanks2.png";
@@ -9,6 +9,7 @@ import Leadership from "../../../../assets/Rectangle 9rfcd.png";
 import Activities from "../../../../assets/Rectangle9.png";
 import Xmas from "../../../../assets/ojgvcf.png";
 import Academics from "../../../../assets/Rectangle 9rrf.png";
+import SchoolItems from './SchoolItems';
 
 function Curriculum() {
   return (
@@ -22,7 +23,7 @@ function Curriculum() {
         <CBreadcrumbItem href="/">&nbsp; Home</CBreadcrumbItem>
         <CBreadcrumbItem active>Student Life</CBreadcrumbItem>
       </CBreadcrumb>
-
+      <SchoolItems/>
       <section className="container">
         <div className="comments">
           <div className="intro">
