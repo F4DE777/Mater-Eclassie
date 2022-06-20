@@ -2,13 +2,14 @@ import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import AcaItems from './AcaItems';
+import {Bounce } from 'react-reveal';
 
 function Apply() {
   return (
     <>
-     <section>
+    <Bounce bottom cascade>
+        <section>
             <div className="header-img">
                 <img src={Pex} alt="Header" className="img-fluid" />
             </div>
@@ -19,7 +20,8 @@ function Apply() {
                 <CBreadcrumbItem active>How to Apply</CBreadcrumbItem>
             </CBreadcrumb>
             <AcaItems/>
-        <section className="container">
+        <Bounce bottom cascade>
+            <section className="container">
                 <div className="comments">
                     <div className="intro">
                         <small>ADMISSION </small>
@@ -28,8 +30,9 @@ function Apply() {
                     
                 </div>
             </section>
-    
-    
+        </Bounce>
+    </Bounce> 
+
     
     
     </>
