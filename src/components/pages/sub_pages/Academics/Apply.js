@@ -3,6 +3,7 @@ import Pex from "../../../../assets/building@2x.png";
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import AcaItems from './AcaItems';
 
 function Apply() {
   return (
@@ -17,7 +18,7 @@ function Apply() {
                 <CBreadcrumbItem href="/academics/how_to_apply">Admission</CBreadcrumbItem>
                 <CBreadcrumbItem active>How to Apply</CBreadcrumbItem>
             </CBreadcrumb>
-
+            <AcaItems/>
         <section className="container">
                 <div className="comments">
                     <div className="intro">

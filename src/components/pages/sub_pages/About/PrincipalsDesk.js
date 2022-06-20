@@ -80,20 +80,20 @@ function PrincipalsDesk() {
                         </section>
                 </Bounce>
                 <Bounce bottom cascade>
-                        <Part>
-                            {Parts.map((pt,ind) => {
-                                return(
-                                    <div key={ind}>
-                                        <img src={pt.Holder} alt="holder" />
-                                        <header>{pt.Header}</header>
-                                        <p>{pt.Text}</p>
-                                    </div>
+                    <Part>
+                        {Parts.map((pt,ind) => {
+                            return(
+                                <div key={ind}>
+                                    <img src={pt.Holder} alt="holder" />
+                                    <header>{pt.Header}</header>
+                                    <p>{pt.Text}</p>
+                                </div>
 
-                                )
-                            })
+                            )
+                        })
 
-                            }           
-                        </Part>
+                        }           
+                    </Part>
                 </Bounce>
         </div>
            </Bounce> 

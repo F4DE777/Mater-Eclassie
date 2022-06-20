@@ -1,8 +1,8 @@
 import React from 'react';
 import Pex from "../../../../assets/building@2x.png";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CBreadcrumbItem } from '@coreui/react'
 import { CBreadcrumb } from '@coreui/react'
+import AcaItems from './AcaItems';
 
 function Result() {
   return (
@@ -17,7 +17,7 @@ function Result() {
                 <CBreadcrumbItem href="/academics/how_to_apply">Admission</CBreadcrumbItem>
                 <CBreadcrumbItem active>Transfer</CBreadcrumbItem>
             </CBreadcrumb>
-
+            <AcaItems/>
         <section className="container">
                 <div className="comments">
                     <div className="intro">
