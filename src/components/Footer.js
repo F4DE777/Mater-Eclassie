@@ -11,13 +11,14 @@ import Apply from "../assets/1632735791._DSC3088rf@2x.png"
 import "./Footer.css";
 import styled from 'styled-components';
 import {Bounce,Roll} from 'react-reveal';
+import Quote from "../assets/Path4695.svg";
 
 
 
 function Footer() {
   return (
     <>
-      <ApplyCov className="container  smooth">
+      <ApplyCov className=" smooth">
       <Bounce bottom cascade>
           <div className="join-head">
               <label>EXPLORE</label>
@@ -166,8 +167,26 @@ export default Footer
 
 
 const ApplyCov = styled.div`
-    margin: 13rem auto;
-
+    margin: 0 auto;
+    width:85% ;
+    z-index:-10 ;
+    position:relative ;
+    overflow:visible ;
+    &::before{
+        content:'' ;
+        position: absolute;
+        left: -45%;
+        height: 70rem;
+        width: 70%;
+        z-index:-1 ;
+        bottom:10rem ;
+        border-right: none;
+        background-image: url(${Quote});
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(13deg) ;
+      }
     .join-head{
         text-align: center;
         /* margin-top: 9rem; */

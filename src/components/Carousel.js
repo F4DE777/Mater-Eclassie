@@ -5,7 +5,9 @@ import RighArrow from '../assets/right-long-arrow.svg';
 import LeftArrow from '../assets/left-long-arrow.svg';
 // import { Link } from 'react-router-dom';
 import Quote from "../assets/Quote.svg";
-import {LightSpeed,Rotate} from 'react-reveal';
+import Ham from "../assets/Path4696.svg";
+
+import {LightSpeed,Fade} from 'react-reveal';
 
 
 
@@ -60,9 +62,9 @@ export default function Carousel() {
         <Slidecover>
         {Voices.map((slider, idx)=>{
             return(
-                <Sliderpage key={idx}>
+                <Sliderpage key={idx} className='clock'>
                         {idx === current && (
-                            <Heroslider>
+                            <Heroslider >
                                 <LightSpeed left cascade>
                                     <Herocontent>
                                         <label>VOICES</label>
@@ -75,11 +77,11 @@ export default function Carousel() {
                                         </div>
                                     </Herocontent>
                                 </LightSpeed>
-                                <Rotate top right cascade>
+                                <Fade  cascade>
                                     <HolderBc>
                                         <Heroimg src ={slider.Holder}/>
                                     </HolderBc>
-                                </Rotate>
+                                </Fade>
 
                             </Heroslider>
                         )}
@@ -105,22 +107,6 @@ const HeroCov = styled.section`
     margin-top:8rem ;
     display:flex ;
 
-    &::after{
-    content:'' ;
-    position: absolute;
-    right: 0;
-    top:0 ;
-    height: 100%;
-    width: 30%;
-    z-index:1 ;
-    bottom:-25rem ;
-    border-bottom-left-radius:5rem;
-    border: 30rem solid transparent;
-	  border-left: none;
-    border-right-color: #F2F5FF;
-    z-index:-10 ;
-
-  }
 
 `
 const Slidecover = styled.div`
@@ -130,8 +116,25 @@ const Slidecover = styled.div`
         display:flex ;
         justify-content:center ;
         align-items:center ;
-       
-       
+      &::after{
+        content:'' ;
+        position: absolute;
+        right: -30%;
+        height: 100%;
+        width: 55%;
+        z-index:-100 ;
+        /* bottom:20% ; */
+
+        background-image: url(${Ham});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(19deg) ;
+        position:absolute ;
+        &:first-child{
+            background-color: red;
+        }
+      }
 `
 
 const Sliderpage = styled.div`
@@ -150,6 +153,8 @@ const Heroslider = styled.div`
     display:grid ;
     grid-template-columns:repeat(2, 1fr) ;
     margin: 0 auto ;
+
+    
    
     @media screen and (max-width: 960px) {
         grid-template-columns:repeat(1, 1fr) ;
@@ -220,7 +225,6 @@ const HolderBc = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-
     &::before{
       content:'' ;
       height:40rem ;
@@ -231,6 +235,27 @@ const HolderBc = styled.div`
       top:0 ;
       z-index:-10 ;
     }
+
+   
+
+        /* &::after{
+        content:url('../assets/Path4696.svg') ;
+        position: absolute;
+        right: 0;
+        top:0 ;
+        background-color:red ;
+        height: 100%;
+        width: 30%;
+        z-index:1 ;
+        bottom:-25rem ;
+        border-bottom-left-radius:5rem;
+        border: 30rem solid transparent;
+        border-left: none;
+        border-right-color: #F2F5FF;
+        z-index:-10 ;
+        background-image: url('../assets/Path4696.svg');
+
+    } */
 
  
 `

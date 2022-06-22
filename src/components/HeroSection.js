@@ -12,6 +12,7 @@ import Hero from "./Hero";
 import { introSlider } from "./sliderData";
 import styled from "styled-components";
 import {Flip, LightSpeed,Rotate,Zoom} from 'react-reveal';
+import Quote from "../assets/Path4695.svg";
 
 function HeroSection() {
   return (
@@ -260,20 +261,18 @@ const Intro = styled.div`
   position: relative;
   &::after{
     content:'' ;
-    /* background-image: url('../assets/Path4695@2x.png'); */
-    /* background-color:#F2F5FF ; */
     position: absolute;
-    left: 0;
+    left: -30%;
     height: 100%;
-    width: 30%;
+    width: 55%;
     z-index:-10 ;
-    bottom:-25rem ;
-    border-bottom-right-radius:5rem;
-    /* opacity:.3 ; */
-    border: 30rem solid transparent;
+    bottom:-20rem ;
 	  border-right: none;
-    border-left-color: #F2F5FF;
-
+    background-image: url(${Quote});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(9deg) ;
   }
   .cover{
       width:70% ;
@@ -566,23 +565,10 @@ const Gallery = styled.div`
       justify-content: center;
       position:relative ;
 
-      &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        height: 100%;
-        width: 30%;
-        z-index: -10;
-        bottom: -35rem;
-        border-bottom-right-radius: 5rem;
-        border-radius: 5rem;
-        border: 30rem solid transparent;
-        border-right: none;
-        border-left-color: #F2F5FF;
-      }
+     
 
     .explore{
-        margin:  15rem auto;
+        margin:  5rem auto;
         width:90% ;
         display:flex ;
         flex-direction:column ;

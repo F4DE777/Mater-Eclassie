@@ -3,7 +3,7 @@ import styled,{css} from 'styled-components/macro';
 import { sliderData } from './sliderData';
 import RighArrow from '../assets/right-long-arrow.svg';
 import LeftArrow from '../assets/left-long-arrow.svg';
-import {LightSpeed,Zoom } from 'react-reveal';
+import {LightSpeed,Fade } from 'react-reveal';
 
 // import {IoMdArrowBack,IoMdArrowForward } from 'react-icons/io'
 import { Link } from 'react-router-dom';
@@ -65,9 +65,9 @@ export default function Hero() {
                                         <BtnLink to={'/'}>Discover</BtnLink>
                                     </Herocontent>
                                 </LightSpeed>
-                                <Zoom  cascade >
+                                <Fade  cascade >
                                     <Heroimg src ={slider.Holder}/>
-                                </Zoom>
+                                </Fade>
 
                             </Heroslider>
                         )}
