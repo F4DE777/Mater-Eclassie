@@ -58,7 +58,7 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false)
   const openPortalLink = () => {
     const portal =
-      "https://marylandcomprehensive.educare.school/default.html#/admin/dashboard";
+      "/";
     window.open(portal)
   };
 
